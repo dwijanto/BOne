@@ -1,0 +1,78 @@
+2016-06-21 05:23:32.839 PM	****** Start Logging ******
+2016-06-21 05:23:32.865 PM	doWork	--------Start----------
+2016-06-21 05:23:35.164 PM	doWork	Generate HK Report.
+2016-06-21 05:24:07.869 PM	doWork	Table doesn't have a primary key.
+2016-06-21 05:24:07.871 PM	doWork	Generate Taiwan Report.
+2016-06-21 05:24:07.873 PM	doWork	--------End------------
+2016-06-21 05:24:33.694 PM	doWork	--------Start----------
+2016-06-21 05:24:33.722 PM	doWork	Generate HK Report.
+2016-06-21 05:26:13.566 PM	doWork	--------Start----------
+2016-06-21 05:26:13.599 PM	doWork	Generate HK Report.
+2016-06-21 05:28:26.434 PM	doWork	--------Start----------
+2016-06-21 05:28:26.461 PM	doWork	Generate HK Report.
+2016-06-21 05:29:41.174 PM	doWork	Generate Taiwan Report.
+2016-06-21 05:29:42.743 PM	doWork	--------End------------
+2016-06-21 05:33:00.869 PM	doWork	--------Start----------
+2016-06-21 05:33:00.897 PM	doWork	Generate HK Report.
+2016-06-21 05:33:07.932 PM	doWork	Generate Taiwan Report.
+2016-06-21 05:33:08.932 PM	doWork	--------End------------
+2016-06-21 05:33:28.444 PM	doWork	--------Start----------
+2016-06-21 05:33:28.471 PM	doWork	Generate HK Report.
+2016-06-21 05:36:22.240 PM	doWork	--------Start----------
+2016-06-21 05:36:22.276 PM	doWork	Generate HK Report.
+2016-06-21 05:37:30.172 PM	doWork	--------Start----------
+2016-06-21 05:37:30.221 PM	doWork	Generate HK Report.
+2016-06-21 05:37:54.826 PM	doWork	Generate Taiwan Report.
+2016-06-21 05:38:31.507 PM	doWork	--------End------------
+2016-06-22 10:43:54.047 AM	doWork	--------Start----------
+2016-06-22 10:43:54.061 AM	doWork	Generate HK Report.
+2016-07-05 10:40:36.063 AM	doWork	--------Start----------
+2016-07-05 10:40:36.077 AM	doWork	Generate HK Report.
+2016-07-05 10:48:20.517 AM	doWork	--------Start----------
+2016-07-05 10:48:20.531 AM	doWork	Generate HK Report.
+2016-07-05 10:51:13.426 AM	doWork	Generate Taiwan Report.
+2016-07-05 10:51:13.427 AM	doWork	--------End------------
+2016-07-05 10:52:09.016 AM	doWork	--------Start----------
+2016-07-05 10:52:09.052 AM	doWork	Generate HK Report.
+2016-07-05 10:53:21.125 AM	doWork	Generate Taiwan Report.
+2016-07-05 10:53:21.127 AM	doWork	--------End------------
+2016-07-05 11:10:03.928 AM	doWork	--------Start----------
+2016-07-05 11:10:03.945 AM	doWork	Generate HK Report.
+2016-07-05 11:11:08.630 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:11:54.486 AM	doWork	Column 'U_SEBProdLinePi2' does not belong to table Table.
+2016-07-05 11:11:54.488 AM	doWork	--------End------------
+2016-07-05 11:13:59.386 AM	doWork	--------Start----------
+2016-07-05 11:13:59.404 AM	doWork	Generate HK Report.
+2016-07-05 11:15:16.403 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:16:08.359 AM	doWork	Column 'U_SEBProdLinePi2' does not belong to table Table.
+2016-07-05 11:16:08.360 AM	doWork	--------End------------
+2016-07-05 11:16:38.401 AM	doWork	--------Start----------
+2016-07-05 11:16:38.415 AM	doWork	Generate HK Report.
+2016-07-05 11:16:38.418 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:32:50.298 AM	doWork	--------Start----------
+2016-07-05 11:32:50.313 AM	doWork	Generate HK Report.
+2016-07-05 11:32:50.314 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:32:50.595 AM	doWork	Column 'SEBbran2' does not belong to table Table.
+2016-07-05 11:32:50.595 AM	doWork	--------End------------
+2016-07-05 11:33:29.672 AM	doWork	--------Start----------
+2016-07-05 11:33:29.694 AM	doWork	Generate HK Report.
+2016-07-05 11:33:29.694 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:34:24.232 AM	doWork	Column 'SEBbran2' does not belong to table Table.
+2016-07-05 11:34:24.234 AM	doWork	--------End------------
+2016-07-05 11:37:44.312 AM	doWork	--------Start----------
+2016-07-05 11:37:44.331 AM	doWork	Generate HK Report.
+2016-07-05 11:37:44.332 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:38:48.144 AM	doWork	--------End------------
+2016-07-05 04:47:01.758 PM	doWork	--------Start----------
+2016-07-05 04:47:01.771 PM	doWork	Generate HK Report.
+2016-07-05 04:48:07.618 PM	doWork	Generate Taiwan Report.
+2016-07-05 04:49:00.604 PM	doWork	--------End------------
+2016-07-06 10:38:17.163 AM	doWork	--------Start----------
+2016-07-06 10:38:17.191 AM	doWork	Generate HK Report.
+2016-07-06 10:38:51.598 AM	doWork	Generate Taiwan Report.
+2016-07-06 10:39:08.600 AM	doWork	--------End------------
+2016-07-07 09:32:38.182 AM	doWork	--------Start----------
+2016-07-07 09:32:38.204 AM	doWork	Generate HK Report.
+2018-08-01 10:03:51.040 AM	doWork	--------Start----------
+2018-10-29 09:26:22.217 AM	doWork	--------Start----------
+2018-10-29 09:26:29.691 AM	doWork	Generate HK Report.

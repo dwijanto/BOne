@@ -1,0 +1,260 @@
+2016-06-21 05:23:32.839 PM	****** Start Logging ******
+2016-06-21 05:23:32.865 PM	doWork	--------Start----------
+2016-06-21 05:23:35.164 PM	doWork	Generate HK Report.
+2016-06-21 05:24:07.869 PM	doWork	Table doesn't have a primary key.
+2016-06-21 05:24:07.871 PM	doWork	Generate Taiwan Report.
+2016-06-21 05:24:07.873 PM	doWork	--------End------------
+2016-06-21 05:24:33.694 PM	doWork	--------Start----------
+2016-06-21 05:24:33.722 PM	doWork	Generate HK Report.
+2016-06-21 05:26:13.566 PM	doWork	--------Start----------
+2016-06-21 05:26:13.599 PM	doWork	Generate HK Report.
+2016-06-21 05:28:26.434 PM	doWork	--------Start----------
+2016-06-21 05:28:26.461 PM	doWork	Generate HK Report.
+2016-06-21 05:29:41.174 PM	doWork	Generate Taiwan Report.
+2016-06-21 05:29:42.743 PM	doWork	--------End------------
+2016-06-21 05:33:00.869 PM	doWork	--------Start----------
+2016-06-21 05:33:00.897 PM	doWork	Generate HK Report.
+2016-06-21 05:33:07.932 PM	doWork	Generate Taiwan Report.
+2016-06-21 05:33:08.932 PM	doWork	--------End------------
+2016-06-21 05:33:28.444 PM	doWork	--------Start----------
+2016-06-21 05:33:28.471 PM	doWork	Generate HK Report.
+2016-06-21 05:36:22.240 PM	doWork	--------Start----------
+2016-06-21 05:36:22.276 PM	doWork	Generate HK Report.
+2016-06-21 05:37:30.172 PM	doWork	--------Start----------
+2016-06-21 05:37:30.221 PM	doWork	Generate HK Report.
+2016-06-21 05:37:54.826 PM	doWork	Generate Taiwan Report.
+2016-06-21 05:38:31.507 PM	doWork	--------End------------
+2016-06-22 10:43:54.047 AM	doWork	--------Start----------
+2016-06-22 10:43:54.061 AM	doWork	Generate HK Report.
+2016-07-05 10:40:36.063 AM	doWork	--------Start----------
+2016-07-05 10:40:36.077 AM	doWork	Generate HK Report.
+2016-07-05 10:48:20.517 AM	doWork	--------Start----------
+2016-07-05 10:48:20.531 AM	doWork	Generate HK Report.
+2016-07-05 10:51:13.426 AM	doWork	Generate Taiwan Report.
+2016-07-05 10:51:13.427 AM	doWork	--------End------------
+2016-07-05 10:52:09.016 AM	doWork	--------Start----------
+2016-07-05 10:52:09.052 AM	doWork	Generate HK Report.
+2016-07-05 10:53:21.125 AM	doWork	Generate Taiwan Report.
+2016-07-05 10:53:21.127 AM	doWork	--------End------------
+2016-07-05 11:10:03.928 AM	doWork	--------Start----------
+2016-07-05 11:10:03.945 AM	doWork	Generate HK Report.
+2016-07-05 11:11:08.630 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:11:54.486 AM	doWork	Column 'U_SEBProdLinePi2' does not belong to table Table.
+2016-07-05 11:11:54.488 AM	doWork	--------End------------
+2016-07-05 11:13:59.386 AM	doWork	--------Start----------
+2016-07-05 11:13:59.404 AM	doWork	Generate HK Report.
+2016-07-05 11:15:16.403 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:16:08.359 AM	doWork	Column 'U_SEBProdLinePi2' does not belong to table Table.
+2016-07-05 11:16:08.360 AM	doWork	--------End------------
+2016-07-05 11:16:38.401 AM	doWork	--------Start----------
+2016-07-05 11:16:38.415 AM	doWork	Generate HK Report.
+2016-07-05 11:16:38.418 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:32:50.298 AM	doWork	--------Start----------
+2016-07-05 11:32:50.313 AM	doWork	Generate HK Report.
+2016-07-05 11:32:50.314 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:32:50.595 AM	doWork	Column 'SEBbran2' does not belong to table Table.
+2016-07-05 11:32:50.595 AM	doWork	--------End------------
+2016-07-05 11:33:29.672 AM	doWork	--------Start----------
+2016-07-05 11:33:29.694 AM	doWork	Generate HK Report.
+2016-07-05 11:33:29.694 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:34:24.232 AM	doWork	Column 'SEBbran2' does not belong to table Table.
+2016-07-05 11:34:24.234 AM	doWork	--------End------------
+2016-07-05 11:37:44.312 AM	doWork	--------Start----------
+2016-07-05 11:37:44.331 AM	doWork	Generate HK Report.
+2016-07-05 11:37:44.332 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:38:48.144 AM	doWork	--------End------------
+2016-07-05 04:47:01.758 PM	doWork	--------Start----------
+2016-07-05 04:47:01.771 PM	doWork	Generate HK Report.
+2016-07-05 04:48:07.618 PM	doWork	Generate Taiwan Report.
+2016-07-05 04:49:00.604 PM	doWork	--------End------------
+2016-07-06 10:38:17.163 AM	doWork	--------Start----------
+2016-07-06 10:38:17.191 AM	doWork	Generate HK Report.
+2016-07-06 10:38:51.598 AM	doWork	Generate Taiwan Report.
+2016-07-06 10:39:08.600 AM	doWork	--------End------------
+2016-07-07 09:32:38.182 AM	doWork	--------Start----------
+2016-07-07 09:32:38.204 AM	doWork	Generate HK Report.
+2017-06-30 02:32:23.654 PM	doWork	--------Start----------
+2017-06-30 02:32:31.906 PM	doWork	Generate HK Report.
+2017-06-30 02:45:48.510 PM	doWork	CookwareSalesReportHK.
+2017-06-30 02:47:14.791 PM	doWork	SDASalesReportHK.
+2017-06-30 02:58:47.493 PM	doWork	--------Start----------
+2017-06-30 02:59:17.322 PM	doWork	Generate HK Report.
+2017-06-30 03:20:26.156 PM	doWork	CookwareSalesReportHK.
+2017-06-30 03:24:40.308 PM	doWork	Reference isn't valid.
+2017-06-30 03:24:40.312 PM	doWork	SDASalesReportHK.
+2017-06-30 03:26:42.908 PM	doWork	--------End------------
+2017-07-31 11:50:35.220 AM	doWork	--------Start----------
+2017-07-31 11:51:15.917 AM	doWork	Generate HK Report.
+2017-08-15 09:24:45.551 AM	doWork	--------Start----------
+2017-08-15 09:24:55.726 AM	doWork	Generate HK Report.
+2017-09-26 02:28:47.982 PM	doWork	--------Start----------
+2017-09-26 02:29:38.033 PM	doWork	Generate HK Report.
+2017-09-26 02:39:46.850 PM	doWork	--------Start----------
+2017-09-26 02:39:55.380 PM	doWork	Generate HK Report.
+2017-09-26 02:44:21.114 PM	doWork	--------Start----------
+2017-09-26 02:49:47.197 PM	doWork	--------Start----------
+2017-09-26 02:50:04.688 PM	doWork	Generate HK Report.
+2017-09-28 10:19:42.172 AM	doWork	--------Start----------
+2017-09-28 10:19:53.059 AM	doWork	Generate HK Report.
+2017-09-28 10:25:59.873 AM	doWork	--------Start----------
+2017-09-28 10:26:10.004 AM	doWork	Generate HK Report.
+2017-09-28 10:26:27.201 AM	doWork	General ODBC Error
+2017-11-13 03:49:37.196 PM	doWork	--------Start----------
+2017-11-13 03:53:10.267 PM	doWork	Unable to cast COM object of type 'System.__ComObject' to interface type 'Microsoft.Office.Interop.Excel.Worksheet'. This operation failed because the QueryInterface call on the COM component for the interface with IID '{000208D8-0000-0000-C000-000000000046}' failed due to the following error: No such interface supported (Exception from HRESULT: 0x80004002 (E_NOINTERFACE)).
+2017-11-13 03:55:00.287 PM	doWork	--------Start----------
+2017-11-13 03:58:06.785 PM	doWork	Unable to cast COM object of type 'System.__ComObject' to interface type 'Microsoft.Office.Interop.Excel.Worksheet'. This operation failed because the QueryInterface call on the COM component for the interface with IID '{000208D8-0000-0000-C000-000000000046}' failed due to the following error: No such interface supported (Exception from HRESULT: 0x80004002 (E_NOINTERFACE)).
+2017-11-13 03:59:22.271 PM	doWork	--------Start----------
+2017-11-13 04:04:45.774 PM	doWork	Select method of Worksheet class failed
+2017-11-13 04:07:33.000 PM	doWork	--------Start----------
+2017-11-13 04:13:03.854 PM	doWork	Select method of Worksheet class failed
+2017-11-13 04:14:17.780 PM	doWork	--------Start----------
+2017-11-13 04:14:25.488 PM	doWork	Generate HK Report.
+2017-11-21 10:17:43.984 AM	doWork	--------Start----------
+2017-11-21 10:18:03.754 AM	doWork	Generate HK Report.
+2017-11-21 10:26:57.936 AM	doWork	--------Start----------
+2017-11-21 10:27:07.587 AM	doWork	Generate HK Report.
+2017-11-21 10:35:07.940 AM	doWork	CookwareSalesReportHK.
+2017-11-21 10:37:15.033 AM	doWork	SDASalesReportHK.
+2017-11-21 10:39:01.602 AM	doWork	AntonioSalesReportHK.
+2017-11-21 10:40:40.645 AM	doWork	CatherineSalesReportHK.
+2017-11-21 10:42:51.814 AM	doWork	FelixSalesReportHK.
+2017-11-21 10:46:44.247 AM	doWork	JoeSalesReportHK.
+2017-11-21 10:49:35.462 AM	doWork	Cannot access 'JoeSalesReportHK.xlsx'.
+2017-11-21 10:49:35.464 AM	doWork	SauYingSalesReportHK.
+2017-11-21 10:52:02.403 AM	doWork	Cannot access 'SauYingSalesReportHK.xlsx'.
+2017-11-21 10:52:02.408 AM	doWork	WaiKitSalesReportHK.
+2017-11-21 10:54:55.423 AM	doWork	KilySalesReportHK.
+2017-11-21 10:57:11.373 AM	doWork	MarketingSalesReportHK.
+2017-11-21 10:59:46.265 AM	doWork	Generate Taiwan Report.
+2017-11-21 11:05:18.854 AM	doWork	Exception from HRESULT: 0x800A03EC
+2017-11-21 11:05:43.872 AM	doWork	--------End------------
+2017-11-21 11:24:05.486 AM	doWork	--------Start----------
+2017-11-21 11:24:48.951 AM	doWork	Generate Taiwan Report.
+2017-11-21 11:29:50.836 AM	doWork	--------End------------
+2017-12-28 03:59:44.539 PM	doWork	--------Start----------
+2017-12-28 03:59:57.855 PM	doWork	Generate HK Report.
+2017-12-28 05:41:20.328 PM	doWork	--------Start----------
+2017-12-28 05:41:42.331 PM	doWork	Generate HK Report.
+2017-12-28 05:50:00.825 PM	doWork	--------Start----------
+2017-12-28 05:50:08.855 PM	doWork	Generate HK Report.
+2017-12-29 01:52:07.143 AM	doWork	--------Start----------
+2017-12-29 01:52:38.022 AM	doWork	Generate HK Report.
+2018-01-12 02:43:56.824 PM	doWork	--------Start----------
+2018-01-12 02:44:46.431 PM	doWork	Generate HK Report.
+2018-01-12 03:06:10.749 PM	doWork	--------Start----------
+2018-01-12 03:06:19.985 PM	doWork	Generate HK Report.
+2018-01-18 12:22:22.970 PM	doWork	--------Start----------
+2018-01-18 12:23:14.436 PM	doWork	FelixSalesReportHK.
+2018-01-18 04:42:59.298 PM	doWork	--------Start----------
+2018-01-18 04:43:56.841 PM	doWork	FelixSalesReportHK.
+2018-01-31 04:39:54.796 PM	doWork	--------Start----------
+2018-01-31 04:40:06.090 PM	doWork	Generate HK Report.
+2018-01-31 04:46:31.981 PM	doWork	Unable to get the PivotFields property of the PivotTable class
+2018-02-28 05:53:39.478 PM	doWork	--------Start----------
+2018-02-28 05:53:55.650 PM	doWork	Generate HK Report.
+2018-02-28 06:01:42.085 PM	doWork	Unable to get the PivotFields property of the PivotTable class
+2018-03-27 10:14:32.699 AM	doWork	--------Start----------
+2018-03-27 10:14:55.054 AM	doWork	Generate HK Report.
+2018-03-27 10:16:27.095 AM	doWork	--------Start----------
+2018-03-27 10:16:42.081 AM	doWork	Generate HK Report.
+2018-03-27 10:18:53.105 AM	doWork	Column 'customerid' is constrained to be unique.  Value 'AR299-156' is already present.
+2018-03-27 10:23:46.123 AM	doWork	--------Start----------
+2018-03-27 10:24:03.323 AM	doWork	Generate HK Report.
+2018-03-27 10:27:58.479 AM	doWork	Column 'customerid' is constrained to be unique.  Value 'AR299-156' is already present.
+2018-03-27 10:30:09.875 AM	doWork	--------Start----------
+2018-03-27 10:30:22.038 AM	doWork	Generate HK Report.
+2018-03-27 10:35:27.974 AM	doWork	Unable to get the PivotFields property of the PivotTable class
+2018-03-27 10:41:45.031 AM	doWork	--------Start----------
+2018-03-27 10:42:34.841 AM	doWork	Unable to get the PivotFields property of the PivotTable class
+2018-03-27 10:45:22.196 AM	doWork	CookwareSalesReportHK.
+2018-03-27 10:47:03.361 AM	doWork	SDASalesReportHK.
+2018-03-27 10:48:36.717 AM	doWork	AntonioSalesReportHK.
+2018-03-27 10:50:52.153 AM	doWork	CatherineSalesReportHK.
+2018-03-27 10:52:36.166 AM	doWork	FelixSalesReportHK.
+2018-03-27 10:54:04.934 AM	doWork	Cannot access 'FelixSalesReportHK.xlsx'.
+2018-03-27 10:54:09.408 AM	doWork	JoeSalesReportHK.
+2018-03-27 10:56:04.586 AM	doWork	Cannot access 'JoeSalesReportHK.xlsx'.
+2018-03-27 10:56:04.593 AM	doWork	SauYingSalesReportHK.
+2018-03-27 10:58:16.814 AM	doWork	WaiKitSalesReportHK.
+2018-03-27 11:00:26.817 AM	doWork	KilySalesReportHK.
+2018-03-27 11:02:34.623 AM	doWork	MarketingSalesReportHK.
+2018-03-27 11:05:16.352 AM	doWork	
+2018-03-27 11:06:21.191 AM	doWork	--------End------------
+2018-03-29 04:33:02.622 PM	doWork	--------Start----------
+2018-03-29 04:33:18.173 PM	doWork	Generate HK Report.
+2018-03-29 04:39:48.731 PM	doWork	Unable to get the PivotFields property of the PivotTable class
+2018-03-29 04:41:54.923 PM	doWork	Unable to get the PivotFields property of the PivotTable class
+2018-03-29 04:44:25.005 PM	doWork	CookwareSalesReportHK.
+2018-04-11 04:58:43.580 PM	doWork	--------Start----------
+2018-04-11 04:59:20.794 PM	doWork	Generate Taiwan Report.
+2018-05-02 12:20:17.480 PM	doWork	--------Start----------
+2018-05-02 12:20:58.960 PM	doWork	MarketingSalesReportHK.
+2018-05-02 12:43:13.043 PM	doWork	--------Start----------
+2018-05-02 12:44:00.807 PM	doWork	MarketingSalesReportHK.
+2018-08-24 09:26:15.763 AM	doWork	--------Start----------
+2018-08-24 09:26:21.788 AM	doWork	Generate HK Report.
+2018-08-24 10:00:05.963 AM	doWork	--------Start----------
+2018-08-24 10:00:13.004 AM	doWork	Generate HK Report.
+2018-08-24 10:05:19.387 AM	doWork	CookwareSalesReportHK.
+2018-08-24 10:07:24.306 AM	doWork	SDASalesReportHK.
+2018-08-24 10:09:00.546 AM	doWork	AntonioSalesReportHK.
+2018-08-24 10:10:49.921 AM	doWork	CatherineSalesReportHK.
+2018-08-24 10:12:44.623 AM	doWork	FelixSalesReportHK.
+2018-08-24 10:14:40.934 AM	doWork	JoeSalesReportHK.
+2018-08-24 10:16:25.000 AM	doWork	SauYingSalesReportHK.
+2018-08-24 10:18:14.134 AM	doWork	Cannot access 'SauYingSalesReportHK.xlsx'.
+2018-08-24 10:18:14.143 AM	doWork	WaiKitSalesReportHK.
+2018-08-24 10:25:39.831 AM	doWork	KilySalesReportHK.
+2018-08-24 10:31:48.339 AM	doWork	MarketingSalesReportHK.
+2018-08-24 10:34:01.072 AM	doWork	Generate Taiwan Report.
+2018-08-24 10:38:57.678 AM	doWork	--------End------------
+2018-11-08 03:11:38.308 PM	doWork	--------Start----------
+2018-11-09 03:32:07.551 PM	doWork	--------Start----------
+2018-11-09 03:32:12.027 PM	doWork	Generate HK Report.
+2018-11-09 03:33:52.987 PM	doWork	General ODBC Error
+2018-11-09 03:40:12.758 PM	doWork	CookwareSalesReportHK.
+2018-12-03 09:36:00.828 AM	doWork	--------Start----------
+2018-12-31 09:37:37.711 AM	doWork	--------Start----------
+2018-12-31 09:37:52.362 AM	doWork	Generate HK Report.
+2018-12-31 09:37:58.412 AM	doWork	SalesExtract
+2018-12-31 10:51:07.259 AM	doWork	--------Start----------
+2018-12-31 10:59:10.424 AM	doWork	--------Start----------
+2018-12-31 11:00:12.644 AM	doWork	--------Start----------
+2018-12-31 11:00:30.160 AM	doWork	Generate HK Report.
+2018-12-31 11:00:36.422 AM	doWork	SalesExtract
+2018-12-31 11:05:37.794 AM	doWork	SalesReportHK
+2018-12-31 11:05:57.491 AM	GenerateReport	SalesReportHK - GenerateReport
+2018-12-31 11:05:58.110 AM	GenerateReport	SalesReportHK - After MySettings
+2018-12-31 11:06:09.189 AM	GenerateReport	SalesReportHK - Try
+2018-12-31 11:06:13.313 AM	GenerateReport	SalesReportHK - After Create Object
+2018-12-31 11:06:13.508 AM	GenerateReport	User :AS\dlie
+2018-12-31 11:06:29.498 AM	GenerateReport	File Exist: C:\Work\vb2013\BOne\BusinessOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx False
+2018-12-31 11:06:30.525 AM	doWork	Sorry, we couldn't find C:\Work\vb2013\BOne\BusinessOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx. Is it possible it was moved, renamed or deleted?
+2018-12-31 11:06:32.476 AM	doWork	CookwareSalesReportHK.
+2018-12-31 11:07:00.448 AM	doWork	General ODBC Error
+2018-12-31 11:07:00.450 AM	doWork	SDASalesReportHK.
+2019-01-02 02:28:33.537 PM	doWork	--------Start----------
+2019-01-02 02:28:55.680 PM	doWork	Generate HK Report.
+2019-01-02 02:29:03.318 PM	doWork	SalesReportHK
+2019-01-02 02:29:10.201 PM	GenerateReport	SalesReportHK - GenerateReport
+2019-01-02 02:29:11.753 PM	GenerateReport	SalesReportHK - After MySettings
+2019-01-02 02:29:58.415 PM	GenerateReport	SalesReportHK - Try
+2019-01-02 02:30:00.386 PM	GenerateReport	SalesReportHK - After Create Object
+2019-01-02 02:30:00.387 PM	GenerateReport	User :AS\dlie
+2019-01-02 02:30:00.392 PM	GenerateReport	File Exist: C:\Work\vb2013\BOne\BusinessOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx False
+2019-01-02 02:31:22.027 PM	GenerateReport	SalesReportHK - GenerateReport
+2019-01-02 02:31:22.609 PM	GenerateReport	SalesReportHK - After MySettings
+2019-01-02 02:31:39.446 PM	GenerateReport	SalesReportHK - Try
+2019-01-02 02:31:42.068 PM	GenerateReport	SalesReportHK - After Create Object
+2019-01-02 02:31:43.065 PM	GenerateReport	User :AS\dlie
+2019-01-02 02:34:24.908 PM	GenerateReport	File Exist: C:\Work\vb2013\BOne\BusinessOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2019-01-02 02:34:30.091 PM	GenerateReport	Can Open
+2019-01-02 02:41:35.977 PM	doWork	Unable to get the PivotFields property of the PivotTable class
+2019-01-02 02:41:44.813 PM	GenerateReport	SalesReportHK - GenerateReport
+2019-01-02 02:41:44.814 PM	GenerateReport	SalesReportHK - After MySettings
+2019-01-02 02:42:04.142 PM	GenerateReport	SalesReportHK - Try
+2019-01-02 02:42:05.704 PM	GenerateReport	SalesReportHK - After Create Object
+2019-01-02 02:42:05.705 PM	GenerateReport	User :AS\dlie
+2019-01-02 02:42:05.708 PM	GenerateReport	File Exist: C:\Work\vb2013\BOne\BusinessOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2019-01-02 02:42:05.907 PM	GenerateReport	Can Open
+2019-01-02 02:47:05.425 PM	doWork	Unable to get the PivotFields property of the PivotTable class

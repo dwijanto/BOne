@@ -1,0 +1,628 @@
+2016-06-21 05:23:32.839 PM	****** Start Logging ******
+2016-06-21 05:23:32.865 PM	doWork	--------Start----------
+2016-06-21 05:23:35.164 PM	doWork	Generate HK Report.
+2016-06-21 05:24:07.869 PM	doWork	Table doesn't have a primary key.
+2016-06-21 05:24:07.871 PM	doWork	Generate Taiwan Report.
+2016-06-21 05:24:07.873 PM	doWork	--------End------------
+2016-06-21 05:24:33.694 PM	doWork	--------Start----------
+2016-06-21 05:24:33.722 PM	doWork	Generate HK Report.
+2016-06-21 05:26:13.566 PM	doWork	--------Start----------
+2016-06-21 05:26:13.599 PM	doWork	Generate HK Report.
+2016-06-21 05:28:26.434 PM	doWork	--------Start----------
+2016-06-21 05:28:26.461 PM	doWork	Generate HK Report.
+2016-06-21 05:29:41.174 PM	doWork	Generate Taiwan Report.
+2016-06-21 05:29:42.743 PM	doWork	--------End------------
+2016-06-21 05:33:00.869 PM	doWork	--------Start----------
+2016-06-21 05:33:00.897 PM	doWork	Generate HK Report.
+2016-06-21 05:33:07.932 PM	doWork	Generate Taiwan Report.
+2016-06-21 05:33:08.932 PM	doWork	--------End------------
+2016-06-21 05:33:28.444 PM	doWork	--------Start----------
+2016-06-21 05:33:28.471 PM	doWork	Generate HK Report.
+2016-06-21 05:36:22.240 PM	doWork	--------Start----------
+2016-06-21 05:36:22.276 PM	doWork	Generate HK Report.
+2016-06-21 05:37:30.172 PM	doWork	--------Start----------
+2016-06-21 05:37:30.221 PM	doWork	Generate HK Report.
+2016-06-21 05:37:54.826 PM	doWork	Generate Taiwan Report.
+2016-06-21 05:38:31.507 PM	doWork	--------End------------
+2016-06-22 10:43:54.047 AM	doWork	--------Start----------
+2016-06-22 10:43:54.061 AM	doWork	Generate HK Report.
+2016-07-05 10:40:36.063 AM	doWork	--------Start----------
+2016-07-05 10:40:36.077 AM	doWork	Generate HK Report.
+2016-07-05 10:48:20.517 AM	doWork	--------Start----------
+2016-07-05 10:48:20.531 AM	doWork	Generate HK Report.
+2016-07-05 10:51:13.426 AM	doWork	Generate Taiwan Report.
+2016-07-05 10:51:13.427 AM	doWork	--------End------------
+2016-07-05 10:52:09.016 AM	doWork	--------Start----------
+2016-07-05 10:52:09.052 AM	doWork	Generate HK Report.
+2016-07-05 10:53:21.125 AM	doWork	Generate Taiwan Report.
+2016-07-05 10:53:21.127 AM	doWork	--------End------------
+2016-07-05 11:10:03.928 AM	doWork	--------Start----------
+2016-07-05 11:10:03.945 AM	doWork	Generate HK Report.
+2016-07-05 11:11:08.630 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:11:54.486 AM	doWork	Column 'U_SEBProdLinePi2' does not belong to table Table.
+2016-07-05 11:11:54.488 AM	doWork	--------End------------
+2016-07-05 11:13:59.386 AM	doWork	--------Start----------
+2016-07-05 11:13:59.404 AM	doWork	Generate HK Report.
+2016-07-05 11:15:16.403 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:16:08.359 AM	doWork	Column 'U_SEBProdLinePi2' does not belong to table Table.
+2016-07-05 11:16:08.360 AM	doWork	--------End------------
+2016-07-05 11:16:38.401 AM	doWork	--------Start----------
+2016-07-05 11:16:38.415 AM	doWork	Generate HK Report.
+2016-07-05 11:16:38.418 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:32:50.298 AM	doWork	--------Start----------
+2016-07-05 11:32:50.313 AM	doWork	Generate HK Report.
+2016-07-05 11:32:50.314 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:32:50.595 AM	doWork	Column 'SEBbran2' does not belong to table Table.
+2016-07-05 11:32:50.595 AM	doWork	--------End------------
+2016-07-05 11:33:29.672 AM	doWork	--------Start----------
+2016-07-05 11:33:29.694 AM	doWork	Generate HK Report.
+2016-07-05 11:33:29.694 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:34:24.232 AM	doWork	Column 'SEBbran2' does not belong to table Table.
+2016-07-05 11:34:24.234 AM	doWork	--------End------------
+2016-07-05 11:37:44.312 AM	doWork	--------Start----------
+2016-07-05 11:37:44.331 AM	doWork	Generate HK Report.
+2016-07-05 11:37:44.332 AM	doWork	Generate Taiwan Report.
+2016-07-05 11:38:48.144 AM	doWork	--------End------------
+2016-07-05 04:47:01.758 PM	doWork	--------Start----------
+2016-07-05 04:47:01.771 PM	doWork	Generate HK Report.
+2016-07-05 04:48:07.618 PM	doWork	Generate Taiwan Report.
+2016-07-05 04:49:00.604 PM	doWork	--------End------------
+2016-07-06 10:38:17.163 AM	doWork	--------Start----------
+2016-07-06 10:38:17.191 AM	doWork	Generate HK Report.
+2016-07-06 10:38:51.598 AM	doWork	Generate Taiwan Report.
+2016-07-06 10:39:08.600 AM	doWork	--------End------------
+2016-07-07 09:32:38.182 AM	doWork	--------Start----------
+2016-07-07 09:32:38.204 AM	doWork	Generate HK Report.
+2016-07-20 09:20:27.397 AM	doWork	--------Start----------
+2016-07-20 09:20:27.405 AM	doWork	Generate HK Report.
+2016-07-20 09:24:10.735 AM	doWork	--------Start----------
+2016-07-20 09:24:10.765 AM	doWork	Generate HK Report.
+2016-07-20 09:29:48.627 AM	doWork	--------Start----------
+2016-07-20 09:29:48.639 AM	doWork	Generate HK Report.
+2016-07-20 09:34:38.203 AM	doWork	--------Start----------
+2016-07-20 09:34:38.216 AM	doWork	Generate HK Report.
+2016-07-20 09:39:12.637 AM	doWork	--------Start----------
+2016-07-20 09:39:12.645 AM	doWork	Generate HK Report.
+2016-07-20 09:42:21.657 AM	doWork	Generate Taiwan Report.
+2016-07-20 09:47:43.568 AM	doWork	--------Start----------
+2016-07-20 09:47:43.576 AM	doWork	Generate HK Report.
+2016-07-20 09:49:52.867 AM	doWork	Generate Taiwan Report.
+2016-07-20 09:50:03.521 AM	doWork	Column 'Family lv1' does not belong to table Table.
+2016-07-20 09:50:03.522 AM	doWork	--------End------------
+2016-07-20 09:50:10.830 AM	doWork	--------Start----------
+2016-07-20 09:50:10.839 AM	doWork	Generate HK Report.
+2016-07-20 09:50:25.664 AM	doWork	Generate Taiwan Report.
+2016-07-20 09:53:11.661 AM	doWork	--------Start----------
+2016-07-20 09:53:11.671 AM	doWork	Generate HK Report.
+2016-07-20 09:53:25.556 AM	doWork	Generate Taiwan Report.
+2016-07-20 09:54:25.410 AM	doWork	Table doesn't have a primary key.
+2016-07-20 09:55:47.533 AM	doWork	--------Start----------
+2016-07-20 09:55:47.545 AM	doWork	Generate HK Report.
+2016-07-20 09:56:16.640 AM	doWork	Generate Taiwan Report.
+2016-07-20 09:57:13.106 AM	doWork	--------End------------
+2016-07-20 10:38:45.379 AM	doWork	--------Start----------
+2016-07-20 10:38:45.396 AM	doWork	Generate HK Report.
+2016-07-20 10:39:55.417 AM	doWork	--------Start----------
+2016-07-20 10:39:55.432 AM	doWork	Generate HK Report.
+2016-07-20 10:41:25.800 AM	doWork	--------Start----------
+2016-07-20 10:41:25.818 AM	doWork	Generate HK Report.
+2016-07-20 10:50:36.367 AM	doWork	--------Start----------
+2016-07-20 10:50:36.394 AM	doWork	Generate HK Report.
+2016-07-20 10:52:47.902 AM	doWork	--------Start----------
+2016-07-20 10:52:47.922 AM	doWork	Generate HK Report.
+2016-07-20 10:54:46.470 AM	doWork	--------Start----------
+2016-07-20 10:54:46.488 AM	doWork	Generate HK Report.
+2016-07-20 10:55:32.179 AM	doWork	Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+2016-07-20 10:55:32.181 AM	doWork	Generate Taiwan Report.
+2016-07-20 10:56:04.632 AM	doWork	Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+2016-07-20 10:56:04.633 AM	doWork	Generate Taiwan Report.
+2016-07-20 10:58:55.684 AM	doWork	--------Start----------
+2016-07-20 10:58:55.711 AM	doWork	Generate HK Report.
+2016-07-20 11:00:29.442 AM	doWork	--------Start----------
+2016-07-20 11:00:29.461 AM	doWork	Generate HK Report.
+2016-07-20 11:09:48.650 AM	doWork	--------Start----------
+2016-07-20 11:09:48.675 AM	doWork	Generate HK Report.
+2016-07-20 11:14:43.754 AM	doWork	Generate Taiwan Report.
+2016-07-20 11:20:28.432 AM	doWork	--------Start----------
+2016-07-20 11:20:28.455 AM	doWork	Generate HK Report.
+2016-07-20 11:21:00.408 AM	doWork	Generate Taiwan Report.
+2016-07-20 11:22:05.616 AM	doWork	--------End------------
+2016-07-20 11:28:38.130 AM	doWork	--------Start----------
+2016-07-20 11:28:38.156 AM	doWork	Generate HK Report.
+2016-07-20 11:29:01.027 AM	doWork	Generate Taiwan Report.
+2016-07-20 11:46:28.798 AM	doWork	--------Start----------
+2016-07-20 11:46:28.812 AM	doWork	Generate HK Report.
+2016-07-20 11:56:09.560 AM	doWork	--------Start----------
+2016-07-20 11:56:09.580 AM	doWork	Generate HK Report.
+2016-07-20 11:56:33.354 AM	doWork	Generate Taiwan Report.
+2016-07-20 11:56:50.113 AM	doWork	--------End------------
+2016-07-20 11:58:50.098 AM	doWork	--------Start----------
+2016-07-20 11:58:50.109 AM	doWork	Generate HK Report.
+2016-07-20 11:59:38.224 AM	doWork	Generate Taiwan Report.
+2016-07-20 12:00:11.255 PM	doWork	--------End------------
+2016-07-20 12:03:41.910 PM	doWork	--------Start----------
+2016-07-20 12:03:41.947 PM	doWork	Generate HK Report.
+2016-07-20 12:04:25.373 PM	doWork	Generate Taiwan Report.
+2016-07-20 12:05:00.648 PM	doWork	--------End------------
+2016-07-20 12:09:43.200 PM	doWork	--------Start----------
+2016-07-20 12:09:43.218 PM	doWork	Generate HK Report.
+2016-07-20 12:10:33.866 PM	doWork	Generate Taiwan Report.
+2016-07-20 12:11:31.741 PM	doWork	--------End------------
+2016-07-20 12:12:16.896 PM	doWork	--------Start----------
+2016-07-20 12:12:16.914 PM	doWork	Generate HK Report.
+2016-07-20 12:12:31.974 PM	doWork	Generate Taiwan Report.
+2016-07-20 12:12:47.444 PM	doWork	--------End------------
+2016-07-29 03:41:49.368 PM	doWork	--------Start----------
+2016-07-29 03:41:52.433 PM	doWork	Generate HK Report.
+2016-07-29 03:43:01.715 PM	doWork	--------Start----------
+2016-07-29 03:43:04.180 PM	doWork	Generate HK Report.
+2016-07-29 03:46:04.367 PM	doWork	--------Start----------
+2016-07-29 03:46:04.394 PM	doWork	Generate HK Report.
+2016-07-29 04:22:27.950 PM	doWork	Reference is not valid.
+2016-07-29 04:23:12.300 PM	doWork	General ODBC Error
+2016-07-29 04:34:59.186 PM	doWork	--------Start----------
+2016-07-29 04:34:59.216 PM	doWork	Generate HK Report.
+2016-07-29 04:39:17.347 PM	doWork	
+2016-07-29 05:21:14.352 PM	doWork	--------Start----------
+2016-07-29 05:21:14.379 PM	doWork	Generate HK Report.
+2016-07-29 05:24:11.693 PM	doWork	--------End------------
+2016-08-10 09:48:40.657 AM	doWork	--------Start----------
+2016-08-10 09:48:40.685 AM	doWork	Generate HK Report.
+2016-08-17 12:46:45.150 PM	doWork	--------Start----------
+2016-08-17 12:46:45.164 PM	doWork	Generate HK Report.
+2016-08-17 12:48:00.978 PM	doWork	--------End------------
+2016-08-17 12:48:22.367 PM	doWork	--------Start----------
+2016-08-17 12:48:22.383 PM	doWork	Generate HK Report.
+2016-08-17 12:50:24.951 PM	doWork	--------End------------
+2016-08-17 02:00:06.052 PM	doWork	--------Start----------
+2016-08-17 02:00:06.064 PM	doWork	Generate HK Report.
+2016-08-17 02:00:17.027 PM	doWork	--------Start----------
+2016-08-17 02:00:17.037 PM	doWork	Generate HK Report.
+2016-08-17 02:01:35.513 PM	doWork	--------End------------
+2016-08-17 02:04:20.369 PM	doWork	--------Start----------
+2016-08-17 02:04:20.401 PM	doWork	Generate HK Report.
+2016-08-17 02:09:15.326 PM	doWork	--------End------------
+2016-08-24 04:49:56.655 PM	doWork	--------Start----------
+2016-08-24 04:49:56.665 PM	doWork	Generate HK Report.
+2016-08-24 04:52:08.358 PM	doWork	--------Start----------
+2016-08-24 04:52:08.371 PM	doWork	Generate HK Report.
+2016-08-24 04:52:38.781 PM	doWork	--------Start----------
+2016-08-24 04:52:38.815 PM	doWork	Generate HK Report.
+2016-08-24 04:57:56.262 PM	doWork	--------End------------
+2016-08-24 05:04:32.212 PM	doWork	--------Start----------
+2016-08-24 05:04:32.229 PM	doWork	Generate HK Report.
+2016-08-24 05:04:44.020 PM	doWork	Generate Taiwan Report.
+2016-08-24 05:05:10.981 PM	doWork	--------End------------
+2016-08-24 05:06:46.845 PM	doWork	--------Start----------
+2016-08-24 05:06:46.859 PM	doWork	Generate HK Report.
+2016-08-24 05:12:36.537 PM	doWork	--------End------------
+2016-08-25 04:10:04.696 PM	doWork	--------Start----------
+2016-08-25 04:10:04.710 PM	doWork	Generate HK Report.
+2016-08-25 04:11:47.849 PM	doWork	--------End------------
+2016-08-25 04:12:35.224 PM	doWork	--------Start----------
+2016-08-25 04:12:35.237 PM	doWork	Generate HK Report.
+2016-08-25 04:14:45.839 PM	doWork	--------End------------
+2016-08-25 04:15:13.157 PM	doWork	--------Start----------
+2016-08-25 04:15:13.171 PM	doWork	Generate HK Report.
+2016-08-25 04:17:13.824 PM	doWork	--------Start----------
+2016-08-25 04:17:13.840 PM	doWork	Generate HK Report.
+2016-08-25 04:19:30.689 PM	doWork	--------End------------
+2016-08-25 04:19:44.311 PM	doWork	--------Start----------
+2016-08-25 04:19:44.330 PM	doWork	Generate HK Report.
+2016-08-25 04:46:50.789 PM	doWork	--------End------------
+2016-08-25 04:46:56.455 PM	doWork	--------Start----------
+2016-08-25 04:46:56.468 PM	doWork	Generate HK Report.
+2016-08-25 04:48:43.709 PM	doWork	--------End------------
+2016-08-25 04:49:04.841 PM	doWork	--------Start----------
+2016-08-25 04:49:04.854 PM	doWork	Generate HK Report.
+2016-08-25 04:52:41.543 PM	doWork	--------End------------
+2016-08-25 04:56:56.521 PM	doWork	--------Start----------
+2016-08-25 04:56:56.538 PM	doWork	Generate HK Report.
+2016-08-25 05:00:34.849 PM	doWork	--------End------------
+2016-09-02 04:46:57.613 PM	doWork	--------Start----------
+2016-09-02 04:46:57.625 PM	doWork	Generate HK Report.
+2016-09-05 02:20:59.999 PM	doWork	--------Start----------
+2016-09-05 02:21:00.587 PM	doWork	Generate HK Report.
+2016-09-08 09:30:02.009 AM	doWork	--------Start----------
+2016-09-08 09:30:02.725 AM	doWork	Generate HK Report.
+2016-09-08 09:34:14.722 AM	doWork	--------Start----------
+2016-09-08 09:34:15.288 AM	doWork	Generate HK Report.
+2016-09-08 09:36:31.459 AM	doWork	--------End------------
+2016-09-08 09:37:09.154 AM	doWork	--------Start----------
+2016-09-08 09:37:12.743 AM	doWork	Generate HK Report.
+2016-09-08 09:40:53.167 AM	doWork	--------End------------
+2016-09-09 03:27:53.852 PM	doWork	--------Start----------
+2016-09-09 03:41:22.786 PM	doWork	Unable to get the PivotFields property of the PivotTable class
+2016-09-09 03:41:22.984 PM	doWork	Generate Taiwan Report.
+2016-09-09 03:43:42.754 PM	doWork	--------Start----------
+2016-09-09 03:43:42.763 PM	doWork	Generate HK Report.
+2016-09-12 04:44:50.774 PM	doWork	--------End------------
+2016-09-15 09:33:00.778 AM	doWork	--------Start----------
+2016-09-15 09:33:01.922 AM	doWork	Generate HK Report.
+2016-09-15 09:38:15.288 AM	doWork	Generate Taiwan Report.
+2016-09-15 09:38:20.769 AM	doWork	--------End------------
+2016-09-20 11:40:59.228 AM	doWork	--------Start----------
+2016-09-20 11:40:59.236 AM	doWork	Generate HK Report.
+2016-09-20 11:52:17.618 AM	doWork	--------End------------
+2016-09-20 02:17:30.281 PM	doWork	--------Start----------
+2016-09-20 02:17:30.290 PM	doWork	Generate HK Report.
+2016-09-20 02:20:06.370 PM	doWork	--------End------------
+2016-09-28 11:06:39.420 AM	doWork	--------Start----------
+2016-09-28 11:11:08.043 AM	doWork	--------Start----------
+2016-09-28 11:11:08.066 AM	doWork	Generate HK Report.
+2016-09-28 11:13:11.659 AM	doWork	General ODBC Error
+2016-09-28 11:34:57.729 AM	doWork	--------Start----------
+2016-09-28 11:35:10.975 AM	doWork	ALLSBUExceptCookwareSalesReportHK.
+2016-09-28 11:37:15.878 AM	doWork	AntonioSalesReportHK.
+2016-09-28 11:39:01.032 AM	doWork	CatherineSalesReportHK.
+2016-09-28 11:40:11.681 AM	doWork	JackSalesReportHK.
+2016-09-28 11:41:32.332 AM	doWork	JoeSalesReportHK.
+2016-09-28 11:42:48.678 AM	doWork	SauYingSalesReportHK.
+2016-09-28 11:44:31.226 AM	doWork	WaiKitSalesReportHK.
+2016-09-28 11:45:51.537 AM	doWork	KilySalesReportHK.
+2016-09-28 11:48:25.497 AM	doWork	MarketingSalesReportHK.
+2016-09-28 11:50:40.389 AM	doWork	--------End------------
+2016-09-28 11:53:49.473 AM	doWork	--------Start----------
+2016-09-28 11:56:26.313 AM	doWork	Cannot access 'CookwareSalesReportHK.xlsx'.
+2016-09-28 11:56:26.314 AM	doWork	ALLSBUExceptCookwareSalesReportHK.
+2016-09-28 11:56:40.720 AM	doWork	MarketingSalesReportHK.
+2016-09-28 11:57:15.382 AM	doWork	
+2016-09-28 11:59:19.711 AM	doWork	--------End------------
+2016-09-29 11:39:52.497 AM	doWork	--------Start----------
+2016-09-29 11:39:52.507 AM	doWork	Generate HK Report.
+2016-09-29 11:43:25.034 AM	doWork	ALLSBUExceptCookwareSalesReportHK.
+2016-09-29 11:45:02.075 AM	doWork	AntonioSalesReportHK.
+2016-09-29 11:47:00.530 AM	doWork	--------Start----------
+2016-09-29 11:47:00.539 AM	doWork	Generate HK Report.
+2016-09-29 11:47:06.081 AM	doWork	AntonioSalesReportHK.
+2016-09-29 11:47:46.375 AM	doWork	CatherineSalesReportHK.
+2016-09-29 11:48:27.457 AM	doWork	JackSalesReportHK.
+2016-09-29 11:49:05.409 AM	doWork	Exception from HRESULT: 0x800A03EC
+2016-09-29 11:49:05.411 AM	doWork	JoeSalesReportHK.
+2016-09-29 11:49:33.031 AM	doWork	SauYingSalesReportHK.
+2016-09-29 11:50:13.769 AM	doWork	WaiKitSalesReportHK.
+2016-09-29 11:50:43.258 AM	doWork	KilySalesReportHK.
+2016-09-29 11:52:34.893 AM	doWork	MarketingSalesReportHK.
+2016-09-29 11:54:41.775 AM	doWork	--------End------------
+2016-09-30 09:36:47.313 AM	doWork	--------Start----------
+2016-09-30 09:36:59.740 AM	doWork	AntonioSalesReportHK.
+2016-09-30 09:39:54.807 AM	doWork	CatherineSalesReportHK.
+2016-09-30 09:42:39.801 AM	doWork	JackSalesReportHK.
+2016-09-30 09:42:47.139 AM	doWork	--------End------------
+2016-09-30 03:02:09.847 PM	doWork	JackSalesReportHK.
+2016-09-30 03:05:18.212 PM	doWork	Exception from HRESULT: 0x800A03EC
+2016-09-30 03:05:25.005 PM	doWork	--------End------------
+2016-09-30 03:06:13.726 PM	doWork	--------Start----------
+2016-09-30 03:06:30.635 PM	doWork	JackSalesReportHK.
+2016-09-30 03:08:54.040 PM	doWork	--------End------------
+2016-10-03 09:57:41.882 AM	doWork	--------Start----------
+2016-10-03 09:57:57.499 AM	doWork	AntonioSalesReportHK.
+2016-10-03 10:00:01.176 AM	doWork	CatherineSalesReportHK.
+2016-10-03 10:03:40.061 AM	doWork	JackSalesReportHK.
+2016-10-03 10:05:11.771 AM	doWork	JoeSalesReportHK.
+2016-10-03 10:07:57.131 AM	doWork	SauYingSalesReportHK.
+2016-10-03 10:11:08.951 AM	doWork	WaiKitSalesReportHK.
+2016-10-03 10:14:33.796 AM	doWork	KilySalesReportHK.
+2016-10-03 10:18:20.190 AM	doWork	MarketingSalesReportHK.
+2016-10-03 10:21:01.329 AM	doWork	--------End------------
+2016-10-03 05:32:21.319 PM	doWork	--------Start----------
+2016-10-03 05:32:22.509 PM	doWork	Generate HK Report.
+2016-10-03 05:32:36.260 PM	doWork	AntonioSalesReportHK.
+2016-10-03 05:35:22.049 PM	doWork	--------End------------
+2016-10-03 05:46:56.833 PM	doWork	--------Start----------
+2016-10-03 05:46:56.862 PM	doWork	Generate HK Report.
+2016-10-03 05:47:03.828 PM	doWork	AntonioSalesReportHK.
+2016-10-03 05:52:31.852 PM	doWork	--------Start----------
+2016-10-03 05:52:32.405 PM	doWork	Generate HK Report.
+2016-10-03 05:52:38.834 PM	doWork	AntonioSalesReportHK.
+2016-10-03 05:54:26.054 PM	doWork	--------End------------
+2016-10-04 11:08:10.948 AM	doWork	--------Start----------
+2016-10-04 11:08:17.161 AM	doWork	AntonioSalesReportHK.
+2016-10-27 09:09:46.099 AM	doWork	--------Start----------
+2016-10-27 09:09:47.426 AM	doWork	Generate HK Report.
+2016-10-27 09:09:55.406 AM	doWork	FelixSalesReportHK.
+2016-10-27 09:16:01.960 AM	doWork	JoeSalesReportHK.
+2016-10-27 09:16:01.962 AM	doWork	SauYingSalesReportHK.
+2016-10-27 09:16:01.963 AM	doWork	WaiKitSalesReportHK.
+2016-10-27 09:16:01.964 AM	doWork	KilySalesReportHK.
+2016-10-27 09:21:58.296 AM	doWork	--------Start----------
+2016-10-27 09:21:59.566 AM	doWork	Generate HK Report.
+2016-10-27 09:22:08.586 AM	doWork	FelixSalesReportHK.
+2016-10-27 09:23:54.473 AM	doWork	--------End------------
+2016-10-31 02:37:14.307 PM	doWork	--------Start----------
+2016-10-31 02:37:14.364 PM	doWork	Generate HK Report.
+2016-10-31 03:06:43.233 PM	doWork	CookwareSalesReportHK.
+2016-10-31 03:10:14.870 PM	doWork	SDASalesReportHK.
+2016-10-31 03:10:33.143 PM	doWork	AntonioSalesReportHK.
+2016-10-31 03:27:00.127 PM	doWork	--------End------------
+2016-11-01 09:53:31.460 AM	doWork	--------Start----------
+2016-11-01 09:53:32.089 AM	doWork	Generate HK Report.
+2016-11-01 09:59:39.595 AM	doWork	SauYingSalesReportHK.
+2016-11-01 10:04:32.030 AM	doWork	SauYingSalesReportHK.
+2016-11-01 10:08:23.075 AM	doWork	--------End------------
+2016-11-08 09:58:28.868 AM	doWork	--------End------------
+2016-11-09 09:37:42.755 AM	doWork	--------Start----------
+2016-11-09 09:37:42.786 AM	doWork	Generate HK Report.
+2016-11-09 09:39:44.960 AM	doWork	Unable to get the PivotFields property of the PivotTable class
+2016-11-09 09:39:56.552 AM	doWork	--------End------------
+2016-11-09 09:46:46.922 AM	doWork	--------Start----------
+2016-11-09 09:46:46.955 AM	doWork	Generate HK Report.
+2016-11-23 09:54:31.370 AM	doWork	--------Start----------
+2016-11-23 09:59:12.035 AM	doWork	--------End------------
+2016-11-23 10:14:56.421 AM	doWork	--------Start----------
+2016-11-23 10:14:56.869 AM	doWork	Generate HK Report.
+2016-11-23 10:18:14.711 AM	doWork	CookwareSalesReportHK.
+2016-11-23 10:18:21.808 AM	doWork	--------End------------
+2016-12-07 09:35:51.341 AM	doWork	--------Start----------
+2016-12-07 09:35:52.202 AM	doWork	Generate HK Report.
+2016-12-09 05:47:22.476 PM	doWork	--------Start----------
+2016-12-09 05:47:22.565 PM	doWork	Generate HK Report.
+2016-12-09 05:52:52.790 PM	doWork	--------End------------
+2016-12-30 09:40:13.603 AM	doWork	--------Start----------
+2016-12-30 09:40:13.674 AM	doWork	Generate HK Report.
+2016-12-30 09:44:12.394 AM	doWork	CookwareSalesReportHK.
+2016-12-30 09:46:27.053 AM	doWork	SDASalesReportHK.
+2016-12-30 09:47:59.101 AM	doWork	AntonioSalesReportHK.
+2016-12-30 10:07:34.427 AM	doWork	--------Start----------
+2016-12-30 10:07:34.453 AM	doWork	Generate HK Report.
+2016-12-30 10:10:14.204 AM	doWork	CookwareSalesReportHK.
+2016-12-30 10:13:13.620 AM	doWork	SDASalesReportHK.
+2016-12-30 10:14:40.673 AM	doWork	AntonioSalesReportHK.
+2016-12-30 10:15:03.684 AM	doWork	CatherineSalesReportHK.
+2016-12-30 10:15:09.309 AM	doWork	FelixSalesReportHK.
+2016-12-30 10:16:56.175 AM	doWork	JoeSalesReportHK.
+2016-12-30 10:16:56.176 AM	doWork	SauYingSalesReportHK.
+2016-12-30 10:16:56.176 AM	doWork	WaiKitSalesReportHK.
+2016-12-30 10:16:56.177 AM	doWork	KilySalesReportHK.
+2016-12-30 10:19:11.834 AM	doWork	MarketingSalesReportHK.
+2016-12-30 10:21:38.643 AM	doWork	--------End------------
+2016-12-30 10:43:08.758 AM	doWork	--------Start----------
+2016-12-30 10:43:08.831 AM	doWork	Generate HK Report.
+2016-12-30 10:45:41.014 AM	doWork	CookwareSalesReportHK.
+2016-12-30 10:47:17.261 AM	doWork	SDASalesReportHK.
+2016-12-30 10:48:44.145 AM	doWork	AntonioSalesReportHK.
+2016-12-30 10:55:25.188 AM	doWork	CookwareSalesReportHK.
+2016-12-30 10:55:40.782 AM	doWork	--------End------------
+2016-12-30 11:19:22.304 AM	doWork	--------Start----------
+2016-12-30 11:19:22.326 AM	doWork	Generate HK Report.
+2016-12-30 11:31:03.616 AM	doWork	SDASalesReportHK.
+2016-12-30 11:33:31.740 AM	doWork	SDASalesReportHK.
+2016-12-30 11:35:33.962 AM	doWork	AntonioSalesReportHK.
+2016-12-30 11:35:53.817 AM	doWork	AntonioSalesReportHK.
+2016-12-30 11:37:54.715 AM	doWork	CatherineSalesReportHK.
+2016-12-30 11:40:17.384 AM	doWork	FelixSalesReportHK.
+2016-12-30 11:41:44.381 AM	doWork	JoeSalesReportHK.
+2016-12-30 11:44:25.985 AM	doWork	SauYingSalesReportHK.
+2016-12-30 11:47:35.135 AM	doWork	WaiKitSalesReportHK.
+2016-12-30 11:50:13.116 AM	doWork	KilySalesReportHK.
+2016-12-30 11:52:20.997 AM	doWork	MarketingSalesReportHK.
+2016-12-30 11:56:30.400 AM	doWork	--------End------------
+2017-01-04 09:35:56.125 AM	doWork	--------Start----------
+2017-01-04 09:35:56.213 AM	doWork	Generate HK Report.
+2017-01-04 09:45:31.107 AM	doWork	CookwareSalesReportHK.
+2017-01-04 09:45:39.439 AM	doWork	--------End------------
+2017-01-04 09:47:39.753 AM	doWork	--------Start----------
+2017-01-04 09:47:52.082 AM	doWork	Generate Taiwan Report.
+2017-01-20 05:53:38.699 PM	doWork	--------End------------
+2017-02-13 11:00:21.373 AM	doWork	--------Start----------
+2017-02-13 11:00:22.573 AM	doWork	Generate HK Report.
+2017-02-13 11:10:28.661 AM	doWork	CookwareSalesReportHK.
+2017-02-13 11:13:03.936 AM	doWork	SDASalesReportHK.
+2017-02-13 11:14:33.787 AM	doWork	AntonioSalesReportHK.
+2017-02-13 11:16:07.674 AM	doWork	CatherineSalesReportHK.
+2017-02-13 11:18:22.952 AM	doWork	FelixSalesReportHK.
+2017-02-13 11:20:31.397 AM	doWork	JoeSalesReportHK.
+2017-02-13 11:23:31.426 AM	doWork	SauYingSalesReportHK.
+2017-02-13 11:25:30.136 AM	doWork	WaiKitSalesReportHK.
+2017-02-13 11:27:30.739 AM	doWork	KilySalesReportHK.
+2017-02-13 11:29:56.222 AM	doWork	MarketingSalesReportHK.
+2017-02-13 11:31:43.020 AM	doWork	Generate Taiwan Report.
+2017-02-13 11:41:25.151 AM	doWork	--------End------------
+2017-02-13 02:36:48.133 PM	doWork	--------Start----------
+2017-02-13 02:38:07.821 PM	doWork	--------Start----------
+2017-02-13 02:51:30.428 PM	doWork	--------Start----------
+2017-02-13 02:51:43.636 PM	doWork	Generate HK Report.
+2017-02-13 02:53:00.400 PM	doWork	--------Start----------
+2017-02-13 02:53:03.788 PM	doWork	Generate HK Report.
+2017-02-13 02:54:12.030 PM	doWork	--------End------------
+2017-02-14 09:38:49.648 AM	doWork	--------Start----------
+2017-02-14 09:39:44.837 AM	doWork	--------End------------
+2017-02-14 09:40:15.016 AM	doWork	--------Start----------
+2017-02-14 09:42:14.793 AM	doWork	--------Start----------
+2017-02-14 09:42:28.092 AM	doWork	Generate HK Report.
+2017-02-14 09:42:42.747 AM	doWork	Generate Taiwan Report.
+2017-02-14 09:54:16.158 AM	doWork	--------End------------
+2017-02-22 09:47:42.532 AM	doWork	--------Start----------
+2017-02-22 09:47:51.375 AM	doWork	Generate HK Report.
+2017-02-22 09:52:30.436 AM	doWork	CookwareSalesReportHK.
+2017-02-22 09:54:13.698 AM	doWork	SDASalesReportHK.
+2017-02-22 09:55:50.435 AM	doWork	AntonioSalesReportHK.
+2017-02-22 09:57:03.453 AM	doWork	CatherineSalesReportHK.
+2017-02-22 09:59:21.579 AM	doWork	FelixSalesReportHK.
+2017-02-22 10:00:37.981 AM	doWork	Cannot access 'FelixSalesReportHK.xlsx'.
+2017-02-22 10:00:38.951 AM	doWork	JoeSalesReportHK.
+2017-02-22 10:02:52.906 AM	doWork	SauYingSalesReportHK.
+2017-02-22 10:05:14.256 AM	doWork	WaiKitSalesReportHK.
+2017-02-22 10:07:57.867 AM	doWork	KilySalesReportHK.
+2017-02-22 10:10:19.738 AM	doWork	MarketingSalesReportHK.
+2017-02-22 10:12:19.237 AM	doWork	Generate Taiwan Report.
+2017-02-22 10:23:08.167 AM	doWork	--------End------------
+2017-02-24 05:51:59.064 PM	doWork	--------Start----------
+2017-02-24 05:52:04.599 PM	doWork	Generate HK Report.
+2017-02-24 05:58:21.376 PM	doWork	--------End------------
+2017-02-27 05:31:51.247 PM	doWork	--------Start----------
+2017-02-27 05:32:35.788 PM	doWork	--------End------------
+2017-02-27 05:45:32.244 PM	doWork	--------Start----------
+2017-02-27 05:45:54.950 PM	doWork	Generate HK Report.
+2017-02-27 05:46:17.589 PM	doWork	--------End------------
+2017-02-27 05:49:01.766 PM	doWork	--------Start----------
+2017-02-27 05:49:12.826 PM	doWork	Generate HK Report.
+2017-02-27 05:49:25.161 PM	doWork	--------End------------
+2017-02-28 02:14:37.715 PM	doWork	--------Start----------
+2017-02-28 02:14:54.803 PM	doWork	Generate HK Report.
+2017-02-28 02:15:18.165 PM	doWork	CookwareSalesReportHK.
+2017-02-28 02:15:40.854 PM	doWork	--------End------------
+2017-02-28 02:32:32.240 PM	doWork	--------Start----------
+2017-02-28 02:32:41.956 PM	doWork	Generate HK Report.
+2017-02-28 02:34:30.775 PM	doWork	--------Start----------
+2017-02-28 02:34:34.422 PM	doWork	Generate HK Report.
+2017-02-28 02:38:20.579 PM	doWork	--------Start----------
+2017-02-28 02:38:24.432 PM	doWork	Generate HK Report.
+2017-02-28 02:46:56.824 PM	doWork	CookwareSalesReportHK.
+2017-02-28 02:53:18.155 PM	doWork	--------Start----------
+2017-02-28 02:53:20.682 PM	doWork	Generate HK Report.
+2017-03-01 09:35:05.590 AM	doWork	--------Start----------
+2017-03-01 09:35:09.374 AM	doWork	Generate HK Report.
+2017-03-30 03:52:58.597 PM	doWork	--------Start----------
+2017-03-30 03:53:09.232 PM	doWork	Generate HK Report.
+2017-03-30 03:56:45.505 PM	doWork	--------Start----------
+2017-03-30 03:57:13.280 PM	doWork	Generate HK Report.
+2017-03-30 04:06:52.796 PM	doWork	CookwareSalesReportHK.
+2017-03-30 04:09:00.985 PM	doWork	SDASalesReportHK.
+2017-03-30 04:10:29.228 PM	doWork	AntonioSalesReportHK.
+2017-03-30 04:12:10.692 PM	doWork	CatherineSalesReportHK.
+2017-03-30 04:14:56.749 PM	doWork	FelixSalesReportHK.
+2017-03-30 04:17:07.642 PM	doWork	Cannot access 'FelixSalesReportHK.xlsx'.
+2017-03-30 04:17:14.279 PM	doWork	JoeSalesReportHK.
+2017-03-30 04:19:39.507 PM	doWork	SauYingSalesReportHK.
+2017-03-30 04:21:54.363 PM	doWork	WaiKitSalesReportHK.
+2017-03-30 04:23:48.857 PM	doWork	KilySalesReportHK.
+2017-03-30 04:26:16.822 PM	doWork	MarketingSalesReportHK.
+2017-03-30 04:28:55.959 PM	doWork	--------End------------
+2017-05-31 11:07:47.376 AM	doWork	--------Start----------
+2017-05-31 11:08:02.731 AM	doWork	Generate HK Report.
+2017-05-31 11:20:06.634 AM	doWork	--------Start----------
+2017-05-31 11:20:14.066 AM	doWork	Generate HK Report.
+2017-05-31 11:27:53.711 AM	doWork	AntonioSalesReportHK.
+2017-05-31 11:28:48.141 AM	doWork	--------Start----------
+2017-05-31 11:28:53.669 AM	doWork	Generate HK Report.
+2017-05-31 11:33:57.914 AM	doWork	AntonioSalesReportHK.
+2017-05-31 11:36:29.635 AM	doWork	CatherineSalesReportHK.
+2017-05-31 11:39:12.162 AM	doWork	FelixSalesReportHK.
+2017-05-31 11:41:11.307 AM	doWork	JoeSalesReportHK.
+2017-05-31 11:43:55.688 AM	doWork	SauYingSalesReportHK.
+2017-05-31 11:47:06.802 AM	doWork	WaiKitSalesReportHK.
+2017-05-31 11:50:05.962 AM	doWork	KilySalesReportHK.
+2017-05-31 11:53:07.558 AM	doWork	MarketingSalesReportHK.
+2017-05-31 11:56:02.918 AM	doWork	
+2017-06-12 11:05:19.463 AM	doWork	--------Start----------
+2017-06-13 12:02:30.559 PM	doWork	--------Start----------
+2017-06-30 11:37:45.950 AM	doWork	--------Start----------
+2017-06-30 11:38:10.366 AM	doWork	Generate HK Report.
+2017-06-30 11:45:34.158 AM	doWork	--------Start----------
+2017-06-30 11:45:40.734 AM	doWork	Generate HK Report.
+2017-06-30 11:54:31.990 AM	doWork	CookwareSalesReportHK.
+2017-06-30 11:58:20.958 AM	doWork	SDASalesReportHK.
+2017-08-14 09:24:23.276 AM	doWork	--------Start----------
+2017-08-14 09:24:30.846 AM	doWork	Generate HK Report.
+2017-08-14 09:31:07.768 AM	doWork	--------End------------
+2017-08-17 11:50:23.222 AM	doWork	--------Start----------
+2017-08-17 11:50:36.325 AM	doWork	Generate HK Report.
+2017-08-17 12:07:27.382 PM	doWork	--------Start----------
+2017-08-17 03:29:00.774 PM	doWork	--------Start----------
+2017-08-25 12:12:09.135 PM	doWork	--------Start----------
+2017-08-25 12:12:15.331 PM	doWork	Generate HK Report.
+2017-08-25 12:12:48.257 PM	doWork	General ODBC Error
+2017-08-25 12:12:57.496 PM	doWork	General ODBC Error
+2017-08-25 12:13:39.152 PM	doWork	--------Start----------
+2017-08-25 12:13:44.932 PM	doWork	Generate HK Report.
+2017-08-25 12:20:28.912 PM	doWork	CookwareSalesReportHK.
+2017-08-25 12:22:44.625 PM	doWork	SDASalesReportHK.
+2017-08-25 12:24:14.176 PM	doWork	AntonioSalesReportHK.
+2017-08-25 12:25:48.017 PM	doWork	CatherineSalesReportHK.
+2017-08-25 12:27:14.840 PM	doWork	FelixSalesReportHK.
+2017-08-25 12:29:15.113 PM	doWork	JoeSalesReportHK.
+2017-08-25 12:32:08.558 PM	doWork	SauYingSalesReportHK.
+2017-08-25 12:33:28.276 PM	doWork	Cannot access 'SauYingSalesReportHK.xlsx'.
+2017-08-25 12:33:28.298 PM	doWork	WaiKitSalesReportHK.
+2017-08-25 12:37:12.777 PM	doWork	KilySalesReportHK.
+2017-08-25 12:38:49.880 PM	doWork	MarketingSalesReportHK.
+2017-08-25 12:40:37.626 PM	doWork	Generate Taiwan Report.
+2017-08-25 12:44:55.995 PM	doWork	Exception from HRESULT: 0x800A03EC
+2017-08-25 12:45:50.549 PM	doWork	Exception from HRESULT: 0x800A03EC
+2017-08-25 12:46:00.402 PM	doWork	--------End------------
+2017-09-28 09:23:23.956 AM	doWork	--------Start----------
+2017-09-28 09:23:30.794 AM	doWork	Generate HK Report.
+2017-09-29 04:28:39.382 PM	doWork	--------Start----------
+2017-09-29 04:28:48.908 PM	doWork	Generate HK Report.
+2017-09-29 04:36:56.468 PM	doWork	Cannot access 'SalesReportHK2016Corrected.xlsx'.
+2017-09-29 04:45:51.355 PM	doWork	--------Start----------
+2017-09-29 05:29:03.290 PM	doWork	--------Start----------
+2017-09-29 05:29:15.038 PM	doWork	Generate HK Report.
+2017-10-13 09:25:15.777 AM	doWork	--------Start----------
+2017-10-13 09:25:23.487 AM	doWork	Generate HK Report.
+2017-10-13 09:32:12.578 AM	doWork	--------Start----------
+2017-10-13 09:32:17.972 AM	doWork	Generate HK Report.
+2017-10-31 12:14:46.507 PM	doWork	--------Start----------
+2017-10-31 12:15:02.908 PM	doWork	Generate HK Report.
+2017-10-31 12:21:31.903 PM	doWork	General ODBC Error
+2017-10-31 12:22:24.251 PM	doWork	General ODBC Error
+2018-01-18 11:21:59.211 AM	doWork	--------Start----------
+2018-01-18 11:22:35.787 AM	doWork	Generate HK Report.
+2018-01-18 11:23:16.406 AM	doWork	FelixSalesReportHK.
+2018-01-18 05:03:09.129 PM	doWork	--------Start----------
+2018-01-18 05:03:28.351 PM	doWork	FelixSalesReportHK.
+2018-01-24 09:13:53.243 AM	doWork	--------Start----------
+2018-01-24 09:14:00.708 AM	doWork	Generate HK Report.
+2018-01-24 09:14:52.996 AM	doWork	--------Start----------
+2018-01-24 09:17:50.773 AM	doWork	General ODBC Error
+2018-01-24 09:20:40.230 AM	doWork	--------Start----------
+2018-01-24 09:21:17.161 AM	doWork	General ODBC Error
+2018-01-24 09:24:01.561 AM	doWork	CookwareSalesReportHK.
+2018-04-06 11:01:41.109 AM	doWork	--------Start----------
+2018-04-11 05:05:57.582 PM	doWork	--------Start----------
+2018-04-11 05:06:33.383 PM	doWork	Generate Taiwan Report.
+2018-04-11 05:08:51.895 PM	doWork	--------Start----------
+2018-04-11 05:09:20.316 PM	doWork	Generate Taiwan Report.
+2018-04-11 05:10:58.511 PM	doWork	--------Start----------
+2018-04-11 05:11:20.089 PM	doWork	Generate Taiwan Report.
+2018-04-13 03:50:54.138 PM	doWork	--------Start----------
+2018-05-02 12:20:04.495 PM	doWork	--------Start----------
+2018-05-14 02:59:04.103 PM	doWork	--------Start----------
+2018-05-15 09:23:37.654 AM	doWork	--------Start----------
+2018-05-15 09:24:40.482 AM	doWork	Generate HK Report.
+2018-05-15 10:01:13.377 AM	doWork	--------Start----------
+2018-05-15 10:01:24.732 AM	doWork	Generate HK Report.
+2018-05-15 10:11:19.441 AM	doWork	--------Start----------
+2018-05-15 10:11:24.520 AM	doWork	Generate HK Report.
+2018-05-15 10:12:46.273 AM	doWork	--------Start----------
+2018-05-15 10:13:42.486 AM	doWork	--------Start----------
+2018-05-15 10:13:49.258 AM	doWork	Generate HK Report.
+2018-05-15 10:20:50.394 AM	doWork	Unable to get the PivotFields property of the PivotTable class
+2018-05-23 11:47:27.483 AM	doWork	--------Start----------
+2018-05-29 05:09:32.138 PM	doWork	--------Start----------
+2018-05-29 05:09:37.772 PM	doWork	Generate HK Report.
+2018-06-01 02:04:24.271 PM	doWork	--------Start----------
+2018-06-01 02:04:30.332 PM	doWork	Generate HK Report.
+2018-06-14 09:49:11.059 AM	doWork	--------Start----------
+2018-06-14 09:49:14.628 AM	doWork	Generate HK Report.
+2018-06-14 10:02:13.466 AM	doWork	--------Start----------
+2018-06-14 10:02:19.256 AM	doWork	Generate HK Report.
+2018-12-06 01:59:56.698 PM	doWork	--------Start----------
+2018-12-06 01:59:57.154 PM	doWork	Generate HK Report.
+2018-12-06 01:59:57.156 PM	doWork	SalesExtract
+2018-12-06 02:03:58.038 PM	doWork	--------Start----------
+2018-12-06 02:04:04.408 PM	doWork	Generate HK Report.
+2018-12-06 02:04:04.423 PM	doWork	SalesExtract
+2018-12-06 02:04:05.046 PM	doWork	SalesReportHK
+2018-12-06 02:10:37.957 PM	doWork	--------Start----------
+2018-12-06 02:10:43.619 PM	doWork	Generate HK Report.
+2018-12-06 02:10:43.624 PM	doWork	SalesExtract
+2018-12-06 02:10:47.492 PM	doWork	SalesReportHK
+2018-12-06 02:10:47.495 PM	GenerateReport	SalesReportHK - GenerateReport
+2018-12-06 02:10:47.496 PM	GenerateReport	SalesReportHK - After MySettings
+2018-12-06 02:10:47.496 PM	GenerateReport	SalesReportHK - Try
+2018-12-07 02:10:53.109 PM	doWork	--------Start----------
+2018-12-07 02:11:02.431 PM	doWork	Generate HK Report.
+2018-12-07 02:11:02.647 PM	doWork	SalesExtract
+2018-12-07 02:11:11.767 PM	doWork	SalesReportHK
+2018-12-07 02:11:11.947 PM	GenerateReport	SalesReportHK - GenerateReport
+2018-12-07 02:11:11.947 PM	GenerateReport	SalesReportHK - After MySettings
+2018-12-07 02:11:11.948 PM	GenerateReport	SalesReportHK - Try
+2018-12-10 02:10:34.725 PM	doWork	--------Start----------
+2018-12-10 02:10:38.675 PM	doWork	Generate HK Report.
+2018-12-10 02:10:38.702 PM	doWork	SalesExtract
+2018-12-10 02:10:43.047 PM	doWork	SalesReportHK
+2018-12-10 02:10:43.057 PM	GenerateReport	SalesReportHK - GenerateReport
+2018-12-10 02:10:43.058 PM	GenerateReport	SalesReportHK - After MySettings
+2018-12-10 02:10:43.060 PM	GenerateReport	SalesReportHK - Try
