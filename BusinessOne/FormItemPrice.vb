@@ -10,7 +10,7 @@ Public Class FormItemPrice
 
     Private docnum As Long
     Private ItemPriceDS As DataSet
-
+    Private ItemPriceFullPath As String
     Public Sub New()
 
         ' This call is required by the designer.
@@ -113,7 +113,7 @@ Public Class FormItemPrice
                     '****Upload ItemPrice to E-Staff
                     ToolStripStatusLabel1.Text = "Upload data..."
                     'Delete ItemPrice
-                    myAdapter.DeleteItemPrice()
+                    myAdapter.DeleteItemPrice(ItemPriceFullPath)
                     'Set RowState Added for Record with instore
 
                     'Remove filter first
@@ -181,7 +181,16 @@ Public Class FormItemPrice
     Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
         If MessageBox.Show("Do you want to upload to E-Staff Database?", "Upload Data", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
             If Me.validate Then
-                uploaddata()
+                'get folderlocation for existing data
+                Dim mysavefiledialog As New SaveFileDialog
+                mysavefiledialog.FileName = String.Format("ItemPriceBCK{0:yyyyMMddHHmmss}.txt", Date.Now)
+                If mysavefiledialog.ShowDialog = Windows.Forms.DialogResult.OK Then
+                    ItemPriceFullPath = mysavefiledialog.FileName
+                    uploaddata()
+                End If
+
+
+
             Else
                 ProgressReport(1, "Upload failed. Please fix the error(s).")
             End If

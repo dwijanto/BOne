@@ -1,5 +1,7 @@
 ﻿Imports Npgsql
 Imports System.Text
+Imports System.IO
+
 Public Class ItemPriceTMPModel
     Implements IModel
 
@@ -76,7 +78,19 @@ Public Class ItemPriceTMPModel
         Return myAdapter.ExecuteNonQuery(sqlstr)
     End Function
 
-    Public Function DeleteItemPrice() As Boolean
+    Public Function DeleteItemPrice(ByVal filename As String) As Boolean
+        'Export shop.itemprice to textfile first
+        Dim myds As New DataSet
+        If myAdapter.GetDataset("select * from shop.itemprice;", myds) Then
+            Dim mysb As New StringBuilder
+            mysb.Append("itempriceid" & vbTab & "retailprice" & vbTab & "staffprice" & vbTab & "promotionprice" & vbTab & "promotionstartdate" & vbTab & "promotionenddate" & vbCrLf)
+            For Each dr As DataRow In myds.Tables(0).Rows
+                mysb.Append(dr.Item(0) & vbTab & dr.Item(1) & vbTab & dr.Item(2) & vbTab & dr.Item(3) & vbTab & dr.Item(4) & vbTab & dr.Item(5) & vbCrLf)
+            Next
+            Using mystream As New StreamWriter(filename)
+                mystream.Write(mysb.ToString)
+            End Using
+        End If
         Dim sqlstr = String.Format("delete from shop.itempricebck;insert into shop.itempricebck select * from {0};  delete from {0};", "shop.itemprice")
         Return myAdapter.ExecuteNonQuery(sqlstr)
     End Function

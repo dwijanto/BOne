@@ -36,8 +36,8 @@
         Return Model.DeleteAll()
     End Function
 
-    Public Function DeleteItemPrice() As Boolean
-        Return Model.DeleteItemPrice
+    Public Function DeleteItemPrice(ByVal filename As String) As Boolean
+        Return Model.DeleteItemPrice(filename)
     End Function
 
     Public Function save(ds As DataSet) As Boolean

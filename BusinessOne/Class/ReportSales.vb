@@ -370,7 +370,7 @@ Public Class ReportSales
         osheet.Name = "YTD"
 
         For Each PV As Excel.PivotItem In osheet.PivotTables("PivotTable1").PivotFields("salesman").PivotItems
-            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Then
+            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
                 PV.Visible = False
             End If
         Next
@@ -411,7 +411,7 @@ Public Class ReportSales
         osheet.PivotTables("PivotTable1").pivotfields("invdate").orientation = Excel.XlPivotFieldOrientation.xlPageField
         osheet.PivotTables("PivotTable1").pivotfields("invdate").currentpage = Format(mydate, "MMM")
         For Each PV As Excel.PivotItem In osheet.PivotTables("PivotTable1").PivotFields("salesman").PivotItems
-            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Then
+            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
                 PV.Visible = False
             End If
         Next
@@ -526,7 +526,7 @@ Public Class ReportSales
         osheet.PivotTables("PivotTable1").pivotfields("years").currentpage = Format(mydate, "yyyy")
 
         For Each PV As Excel.PivotItem In osheet.PivotTables("PivotTable1").PivotFields("salesman").PivotItems
-            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Then
+            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
                 PV.Visible = False
             End If
         Next
@@ -609,7 +609,7 @@ Public Class ReportSales
         osheet.PivotTables("PivotTable1").PivotFields(" %Margin " & mydate.Year).numberformat = "0.00%"
 
         For Each PV As Excel.PivotItem In osheet.PivotTables("PivotTable1").PivotFields("salesman").PivotItems
-            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Then
+            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
                 PV.Visible = False
             End If
         Next
@@ -640,7 +640,7 @@ Public Class ReportSales
         osheet.PivotTables("PivotTable1").pivotfields("Years2").Caption = "Filter Years"
 
         For Each PV As Excel.PivotItem In osheet.PivotTables("PivotTable1").PivotFields("salesman").PivotItems
-            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Then
+            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
                 PV.Visible = False
             End If
         Next
@@ -716,7 +716,7 @@ Public Class ReportSales
         osheet.PivotTables("PivotTable1").pivotfields("Years2").Caption = "Filter Years"
 
         For Each PV As Excel.PivotItem In osheet.PivotTables("PivotTable1").PivotFields("salesman").PivotItems
-            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Then
+            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
                 PV.Visible = False
             End If
         Next
