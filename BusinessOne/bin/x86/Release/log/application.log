@@ -626,3 +626,9 @@
 2018-12-10 02:10:43.057 PM	GenerateReport	SalesReportHK - GenerateReport
 2018-12-10 02:10:43.058 PM	GenerateReport	SalesReportHK - After MySettings
 2018-12-10 02:10:43.060 PM	GenerateReport	SalesReportHK - Try
+2019-04-15 11:51:35.374 AM	doWork	--------Start----------
+2019-04-15 11:52:23.488 AM	doWork	Generate HK Report.
+2019-04-15 11:52:36.608 AM	doWork	SalesExtract
+2019-04-15 11:54:28.443 AM	doWork	--------Start----------
+2019-04-15 11:54:32.013 AM	doWork	Generate HK Report.
+2019-04-15 11:54:36.116 AM	doWork	SalesExtract

@@ -9,12 +9,28 @@ Public Class ReportSales
 
     Public Property errmsg As String
 
+    Private Criteria As String = String.Empty
+    'Private mypath As String = String.Empty
+    'Private filename As String = String.Empty
+    Private SDPct As Boolean = False
+    Dim mypath As String = My.Settings.HKAutoReport
+    'Logger.log("SalesReportHK - After MySettings")
+    Dim filename As String = String.Empty
+
+    Public Sub New(Optional ByVal filename As String = "SalesReportHK.xlsx", Optional ByVal sdpct As Boolean = False)
+        Me.Criteria = Criteria
+        Me.mypath = mypath
+        Me.filename = filename
+        Me.SDPct = sdpct
+    End Sub
+
+
     Public Function GenerateReport() As Boolean
         Logger.log("SalesReportHK - GenerateReport")
         Dim myret As Boolean = False
-        Dim mypath As String = My.Settings.HKAutoReport
-        Logger.log("SalesReportHK - After MySettings")
-        Dim filename As String = "SalesReportHK.xlsx"
+        'Dim mypath As String = My.Settings.HKAutoReport
+        'Logger.log("SalesReportHK - After MySettings")
+        'Dim filename As String = "SalesReportHK.xlsx"
         Dim oXl As Excel.Application = Nothing
         Dim oWb As Excel.Workbook = Nothing
         Dim oSheet As Excel.Worksheet = Nothing
@@ -152,7 +168,59 @@ Public Class ReportSales
             '         " left join sales.custtype ct on ct.custid = tx.customerid" &
             '         " left join cmmftxdate ctd on ctd.cmmf = tx.cmmf " &
             '       " where invdate >= '{2:yyyy-MM-dd}' and invdate <= '{3:yyyy-MM-dd}' order by invdate)", CDate(enddate.Year - 1 & "-01-01"), CDate(enddate.Year - 1 & "-12-31"), CDate(enddate.Year & "-1-1"), enddate)
-            sqlstr = String.Format("with cmmf as (" &
+            If SDPct Then
+                sqlstr = String.Format("with cmmf as (" &
+                  " select distinct cmmf,first_value(materialdesc) over (partition by cmmf order by invdate desc,cmmf,materialdesc  )as materialdesc  from sales.tx) " &
+                  ", family as (select distinct cmmf,first_value(productfamily) over (partition by cmmf order by invdate desc,cmmf,productfamily  )as productfamily from sales.tx ) " &
+                  " , cmmftxdate as (select distinct cmmf,first_value(invdate) over (partition by cmmf order by invdate asc)as firsttxdate  from sales.tx where invdate >= '{0:yyyy-MM-dd}')  " &
+                  " (select invid,invdate,firsttxdate,orderno,tx.customerid,c.customername,reportcode,saleforce,country,custtype,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then cp.ckw else cp.sda end as salesman,shipto,productid,tx.cmmf,sbu,family.productfamily,brand,cmmf.materialdesc,supplierid,qty as qty" & enddate.Year - 1 & ",totalsales as totalsales" & enddate.Year - 1 & ",totalcost as totalcost" & enddate.Year - 1 & ",null::integer as qty" & enddate.Year & ",null::numeric(13,2) as totalsales" & enddate.Year & ",null::numeric(15,5) as totalcost" & enddate.Year & ",qty as totalqty ,totalsales as totalsales,totalcost as totalcost,region,location,invdate as filterdate1,invdate as filterdate2" &
+                  ",rp.retailprice,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then  null else (1 - (totalsales/qty) / rp.retailprice)  end as sda,case brand when 'LAGOSTINA' then (1 - (totalsales/qty) / rp.retailprice)  when ('LAGOSTINA CASA')  then (1 - (totalsales/qty) / rp.retailprice)  end as lagocookware ,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice * 0.7))) end )end as tefalcookwaretradediscount,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice ))) end )end as tefalcookwaredirectdiscount" &
+                  " ,cm.series,cm.range,cm.inductionproperty,cm.type,cm.size,cm.extmaterial,cm.intmaterial,ct.type as channel" &
+                  ",date_part('week',tx.invdate) as week,sales.dow(date_part('ISODOW',tx.invdate)::integer) as dow,sales.weekofmonth(tx.invdate) as wof,os.trafficios,os.storevisitor,os.cash,os.creditcard,os.storevisitor/os.trafficios as catchmentrate,ck.typekey as keychannel" &
+                  " ,case when sales.get_sd_type(tx.sbu,tx.brand) = 1 then totalsales * (1-coalesce(sd.amount,sd1.amount))::numeric end as sdanet" & enddate.Year - 1 & "," &
+                  " case when sales.get_sd_type(tx.sbu,tx.brand) = 2 then totalsales * (1-coalesce(sd.amount,sd1.amount))::numeric end as tefalckwnet" & enddate.Year - 1 & "," &
+                  " case when sales.get_sd_type(tx.sbu,tx.brand) = 3 then totalsales * (1-coalesce(sd.amount,sd1.amount))::numeric end as lagockwnet" & enddate.Year - 1 & "," &
+                  " case when sales.get_sd_type(tx.sbu,tx.brand) = 4 then totalsales * (1-coalesce(sd.amount,sd1.amount))::numeric end as wmfckwnet" & enddate.Year - 1 & "," &
+                  " null::numeric as sdanet" & enddate.Year & ",null::numeric as tefalckwnet" & enddate.Year & ",null::numeric as lagockwnet" & enddate.Year & ",null::numeric as wmfckwnet" & enddate.Year &
+                  " from sales.tx " &
+                  " left join sales.customer c on c.customerid = tx.customerid " &
+                  " left join sales.custprodkam cp on cp.customerid = tx.customerid" &
+                  " left join cmmf on cmmf.cmmf = tx.cmmf " &
+                  " left join family on family.cmmf = tx.cmmf" &
+                  " left join sales.cmmfinfo cm on cm.cmmf = tx.cmmf" &
+                  " left join sales.hkretailprice rp on rp.cmmf = tx.cmmf " &
+                  " left join sales.custtype ct on ct.custid = tx.customerid" &
+                  " left join sales.custtypekey ck on ck.custid = tx.customerid" &
+                  " left join cmmftxdate ctd on ctd.cmmf = tx.cmmf" &
+                  " left join sales.ownshop os on os.customercode = tx.customerid and os.txdate = tx.invdate" &
+                  " left join sales.customersdpct sd on sd.customer = tx.customerid and sd.year = date_part('year',tx.invdate) and sd.type = sales.get_sd_type(tx.sbu,tx.brand)" &
+                  " left join sales.customersdpct sd1 on sd1.customer = 'Others' and sd1.year = date_part('year',tx.invdate) and sd1.type = sales.get_sd_type(tx.sbu,tx.brand)" &
+                  " where invdate >= '{0:yyyy-MM-dd}' and invdate <= '{1:yyyy-MM-dd}' and tx.qty <> 0 order by invdate) union all " &
+                  "(select invid,invdate,firsttxdate,orderno,tx.customerid,c.customername,reportcode,saleforce,country,custtype,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then cp.ckw else cp.sda end as salesman,shipto,productid,tx.cmmf,sbu,family.productfamily,brand,cmmf.materialdesc,supplierid,null::integer,null::numeric(13,2),null::numeric(15,5),qty,totalsales ,totalcost,qty as totalqty ,totalsales as totalsales,totalcost as totalcost,region,location,invdate as filterdate1,invdate as filterdate2" &
+                  ",rp.retailprice,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then  null else (1 - (totalsales/qty) / rp.retailprice)  end as sda,case brand when 'LAGOSTINA' then (1 - (totalsales/qty) / rp.retailprice)  when ('LAGOSTINA CASA')  then (1 - (totalsales/qty) / rp.retailprice)  end as lagocookware ,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice * 0.7))) end )end as tefalcookwaretradediscount,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice ))) end )end as tefalcookwaredirectdiscount" &
+                  " ,cm.series,cm.range,cm.inductionproperty,cm.type,cm.size,cm.extmaterial,cm.intmaterial,ct.type as channel" &
+                  " ,date_part('week',tx.invdate) as week,sales.dow(date_part('ISODOW',tx.invdate)::integer) as dow,sales.weekofmonth(tx.invdate) as wof,os.trafficios,os.storevisitor,os.cash,os.creditcard,os.storevisitor/os.trafficios as catchmentrate,ck.typekey" &
+                  " ,null::numeric as sdanet,null::numeric as tefalckwnet,null::numeric as lagockwnet,null::numeric as wmfckwnet," &
+                  " case when sales.get_sd_type(tx.sbu,tx.brand) = 1 then totalsales * (1-coalesce(sd.amount,sd1.amount))::numeric end as sdanet," &
+                  " case when sales.get_sd_type(tx.sbu,tx.brand) = 2 then totalsales * (1-coalesce(sd.amount,sd1.amount))::numeric end as tefalckwnet," &
+                  " case when sales.get_sd_type(tx.sbu,tx.brand) = 3 then totalsales * (1-coalesce(sd.amount,sd1.amount))::numeric end as lagockwnet," &
+                  " case when sales.get_sd_type(tx.sbu,tx.brand) = 4 then totalsales * (1-coalesce(sd.amount,sd1.amount))::numeric end as wmfckwnet" &
+                  " from sales.tx " &
+                   " left join sales.customer c on c.customerid = tx.customerid " &
+                   " left join sales.custprodkam cp on cp.customerid = tx.customerid" &
+                   " left join cmmf on cmmf.cmmf = tx.cmmf " &
+                   " left join family on family.cmmf = tx.cmmf" &
+                   " left join sales.cmmfinfo cm on cm.cmmf = tx.cmmf" &
+                    " left join sales.hkretailprice rp on rp.cmmf = tx.cmmf  " &
+                    " left join sales.custtype ct on ct.custid = tx.customerid" &
+                    " left join sales.custtypekey ck on ck.custid = tx.customerid" &
+                    " left join cmmftxdate ctd on ctd.cmmf = tx.cmmf " &
+                    " left join sales.ownshop os on os.customercode = tx.customerid and os.txdate = tx.invdate" &
+                    " left join sales.customersdpct sd on sd.customer = tx.customerid and sd.year = date_part('year',tx.invdate) and sd.type = sales.get_sd_type(tx.sbu,tx.brand)" &
+                  " left join sales.customersdpct sd1 on sd1.customer = 'Others' and sd1.year = date_part('year',tx.invdate) and sd1.type = sales.get_sd_type(tx.sbu,tx.brand)" &
+                  " where invdate >= '{2:yyyy-MM-dd}' and invdate <= '{3:yyyy-MM-dd}' and tx.qty <> 0 order by invdate)", CDate(enddate.Year - 1 & "-01-01"), CDate(enddate.Year - 1 & "-12-31"), CDate(enddate.Year & "-1-1"), enddate)
+            Else
+                sqlstr = String.Format("with cmmf as (" &
                    " select distinct cmmf,first_value(materialdesc) over (partition by cmmf order by invdate desc,cmmf,materialdesc  )as materialdesc  from sales.tx) " &
                    ", family as (select distinct cmmf,first_value(productfamily) over (partition by cmmf order by invdate desc,cmmf,productfamily  )as productfamily from sales.tx ) " &
                    " , cmmftxdate as (select distinct cmmf,first_value(invdate) over (partition by cmmf order by invdate asc)as firsttxdate  from sales.tx where invdate >= '{0:yyyy-MM-dd}')  " &
@@ -188,8 +256,8 @@ Public Class ReportSales
                      " left join cmmftxdate ctd on ctd.cmmf = tx.cmmf " &
                      " left join sales.ownshop os on os.customercode = tx.customerid and os.txdate = tx.invdate" &
                    " where invdate >= '{2:yyyy-MM-dd}' and invdate <= '{3:yyyy-MM-dd}' and tx.qty <> 0 order by invdate)", CDate(enddate.Year - 1 & "-01-01"), CDate(enddate.Year - 1 & "-12-31"), CDate(enddate.Year & "-1-1"), enddate)
-
-
+            End If
+           
             oSheet.Name = "DATA"
 
             FillWorksheet(oSheet, sqlstr, dbAdapter1)

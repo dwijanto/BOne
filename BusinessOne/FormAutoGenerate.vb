@@ -56,11 +56,17 @@ Public Class FormAutoGenerate
         '    Logger.log(mySalesReportHKCorrected.errmsg)
         'End If
 
+        Logger.log("SalesReportHK001")
+        Dim mySalesReportHK = New ReportSales("SalesReportHK001.xlsx", True)
+        If Not mySalesReportHK.GenerateReport Then
+            Logger.log(mySalesReportHK.errmsg)
+        End If
+
 
         ProgressReport(6, "Start")
         ProgressReport(2, "2B/15")
         Logger.log("SalesReportHK")
-        Dim mySalesReportHK = New ReportSales
+        mySalesReportHK = New ReportSales
         If Not mySalesReportHK.GenerateReport Then
             Logger.log(mySalesReportHK.errmsg)
         End If

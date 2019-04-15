@@ -140,7 +140,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("SW04R149")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("HON19NT")>  _
         Public Property host() As String
             Get
                 Return CType(Me("host"),String)
@@ -164,7 +164,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("SB04eVer")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("SB19eVer")>  _
         Public Property pwd() As String
             Get
                 Return CType(Me("pwd"),String)
@@ -174,122 +174,122 @@ Namespace My
             End Set
         End Property
         
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("b1ifce")> _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("b1ifce")>  _
         Public Property userinterface() As String
             Get
-                Return CType(Me("userinterface"), String)
+                Return CType(Me("userinterface"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("userinterface") = value
             End Set
         End Property
-
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("B104int")> _
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("B104int")>  _
         Public Property pwdinterface() As String
             Get
-                Return CType(Me("pwdinterface"), String)
+                Return CType(Me("pwdinterface"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("pwdinterface") = value
             End Set
         End Property
-
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("HON19NT")> _
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("HON19NT")>  _
         Public Property hostold() As String
             Get
-                Return CType(Me("hostold"), String)
+                Return CType(Me("hostold"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("hostold") = value
             End Set
         End Property
-
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("sa")> _
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("sa")>  _
         Public Property userold() As String
             Get
-                Return CType(Me("userold"), String)
+                Return CType(Me("userold"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("userold") = value
             End Set
         End Property
-
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("SB19eVer")> _
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("SB19eVer")>  _
         Public Property pwdold() As String
             Get
-                Return CType(Me("pwdold"), String)
+                Return CType(Me("pwdold"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("pwdold") = value
             End Set
         End Property
-
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("SW04R149")> _
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("SW04R149")>  _
         Public Property hostnew() As String
             Get
-                Return CType(Me("hostnew"), String)
+                Return CType(Me("hostnew"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("hostnew") = value
             End Set
         End Property
-
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("sa")> _
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("sa")>  _
         Public Property usernew() As String
             Get
-                Return CType(Me("usernew"), String)
+                Return CType(Me("usernew"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("usernew") = value
             End Set
         End Property
-
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("SB04eVer")> _
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("SB04eVer")>  _
         Public Property pwdnew() As String
             Get
-                Return CType(Me("pwdnew"), String)
+                Return CType(Me("pwdnew"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("pwdnew") = value
             End Set
         End Property
-
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("b1ifce")> _
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("b1ifce")>  _
         Public Property userinterfacenew() As String
             Get
-                Return CType(Me("userinterfacenew"), String)
+                Return CType(Me("userinterfacenew"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("userinterfacenew") = value
             End Set
         End Property
-
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("B104int")> _
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("B104int")>  _
         Public Property pwdinterfacenew() As String
             Get
-                Return CType(Me("pwdinterfacenew"), String)
+                Return CType(Me("pwdinterfacenew"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("pwdinterfacenew") = value
             End Set
         End Property
