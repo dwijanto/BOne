@@ -12,10 +12,10 @@ Public Class ReportSalesCr
     Dim mypath As String = My.Settings.HKAutoReport
     Dim filename As String = "SalesReportHK.xlsx"
 
-    Public Sub New(ByVal criteria As String, ByVal myPath As String, ByVal FileName As String)
+    Public Sub New(ByVal criteria As String, ByVal myPath As String, ByVal filename As String)
         Me.criteria = criteria
         Me.mypath = myPath
-        Me.filename = FileName
+        Me.filename = filename
     End Sub
 
     Public Function GenerateReport() As Boolean
@@ -98,33 +98,32 @@ Public Class ReportSalesCr
             '        " left join sales.cmmfinfo cm on cm.cmmf = tx.cmmf" &
             '         " left join sales.hkretailprice rp on rp.cmmf = tx.cmmf  " &
             '       " where invdate >= '{2:yyyy-MM-dd}' and invdate <= '{3:yyyy-MM-dd}' {4} order by invdate)", CDate(enddate.Year - 1 & "-01-01"), CDate(enddate.Year - 1 & "-12-31"), CDate(enddate.Year & "-1-1"), enddate, criteria)
-
+           
             sqlstr = String.Format("with cmmf as (" &
-                   " select distinct cmmf,first_value(materialdesc) over (partition by cmmf order by invdate desc,cmmf,materialdesc  )as materialdesc  from sales.tx) " &
-                   ", family as (select distinct cmmf,first_value(productfamily) over (partition by cmmf order by invdate desc,cmmf,productfamily  )as productfamily from sales.tx ) " &
-                   " (select invid,invdate,orderno,tx.customerid,c.customername,reportcode,saleforce,country,custtype,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then cp.ckw else cp.sda end as salesman,shipto,productid,tx.cmmf,sbu,family.productfamily,brand,cmmf.materialdesc,supplierid,qty as qty" & enddate.Year - 1 & ",totalsales as totalsales" & enddate.Year - 1 & ",null::numeric as totalcost" & enddate.Year - 1 & ",null::integer as qty" & enddate.Year & ",null::numeric(13,2) as totalsales" & enddate.Year & ",null::numeric(15,5) as totalcost" & enddate.Year & ",qty as totalqty ,totalsales as totalsales,null::numeric as totalcost,region,location,invdate as filterdate1,invdate as filterdate2" &
-                   ",rp.retailprice,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then  null else (1 - (totalsales/qty) / rp.retailprice)  end as sda,case brand when 'LAGOSTINA' then (1 - (totalsales/qty) / rp.retailprice)  when ('LAGOSTINA CASA')  then (1 - (totalsales/qty) / rp.retailprice)  end as lagocookware ,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice * 0.7))) end )end as tefalcookwaretradediscount,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice ))) end )end as tefalcookwaredirectdiscount" &
-                   " ,cm.series,cm.range,cm.inductionproperty,cm.type,cm.size,cm.extmaterial,cm.intmaterial" &
-                   " from sales.tx " &
+                  " select distinct cmmf,first_value(materialdesc) over (partition by cmmf order by invdate desc,cmmf,materialdesc  )as materialdesc  from sales.tx) " &
+                  ", family as (select distinct cmmf,first_value(productfamily) over (partition by cmmf order by invdate desc,cmmf,productfamily  )as productfamily from sales.tx ) " &
+                  " (select invid,invdate,orderno,tx.customerid,c.customername,reportcode,saleforce,country,custtype,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then cp.ckw else cp.sda end as salesman,shipto,productid,tx.cmmf,sbu,family.productfamily,brand,cmmf.materialdesc,supplierid,qty as qty" & enddate.Year - 1 & ",totalsales as totalsales" & enddate.Year - 1 & ",null::numeric as totalcost" & enddate.Year - 1 & ",null::integer as qty" & enddate.Year & ",null::numeric(13,2) as totalsales" & enddate.Year & ",null::numeric(15,5) as totalcost" & enddate.Year & ",qty as totalqty ,totalsales as totalsales,null::numeric as totalcost,region,location,invdate as filterdate1,invdate as filterdate2" &
+                  ",rp.retailprice,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then  null else (1 - (totalsales/qty) / rp.retailprice)  end as sda,case brand when 'LAGOSTINA' then (1 - (totalsales/qty) / rp.retailprice)  when ('LAGOSTINA CASA')  then (1 - (totalsales/qty) / rp.retailprice)  end as lagocookware ,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice * 0.7))) end )end as tefalcookwaretradediscount,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice ))) end )end as tefalcookwaredirectdiscount" &
+                  " ,cm.series,cm.range,cm.inductionproperty,cm.type,cm.size,cm.extmaterial,cm.intmaterial" &
+                  " from sales.tx " &
+                  " left join sales.customer c on c.customerid = tx.customerid " &
+                  " left join sales.custprodkam cp on cp.customerid = tx.customerid" &
+                  " left join cmmf on cmmf.cmmf = tx.cmmf " &
+                  " left join family on family.cmmf = tx.cmmf" &
+                  " left join sales.cmmfinfo cm on cm.cmmf = tx.cmmf" &
+                  " left join sales.hkretailprice rp on rp.cmmf = tx.cmmf " &
+                  " where invdate >= '{0:yyyy-MM-dd}' and invdate <= '{1:yyyy-MM-dd}' and tx.qty <> 0 {4} order by invdate) union all " &
+                  "(select invid,invdate,orderno,tx.customerid,c.customername,reportcode,saleforce,country,custtype,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then cp.ckw else cp.sda end as salesman,shipto,productid,tx.cmmf,sbu,family.productfamily,brand,cmmf.materialdesc,supplierid,null::integer,null::numeric(13,2),null::numeric(15,5),qty,totalsales ,null::numeric as totalcost,qty as totalqty ,totalsales as totalsales,null::numeric as totalcost,region,location,invdate as filterdate1,invdate as filterdate2" &
+                  ",rp.retailprice,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then  null else (1 - (totalsales/qty) / rp.retailprice)  end as sda,case brand when 'LAGOSTINA' then (1 - (totalsales/qty) / rp.retailprice)  when ('LAGOSTINA CASA')  then (1 - (totalsales/qty) / rp.retailprice)  end as lagocookware ,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice * 0.7))) end )end as tefalcookwaretradediscount,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice ))) end )end as tefalcookwaredirectdiscount" &
+                  " ,cm.series,cm.range,cm.inductionproperty,cm.type,cm.size,cm.extmaterial,cm.intmaterial" &
+                  " from sales.tx " &
                    " left join sales.customer c on c.customerid = tx.customerid " &
                    " left join sales.custprodkam cp on cp.customerid = tx.customerid" &
                    " left join cmmf on cmmf.cmmf = tx.cmmf " &
                    " left join family on family.cmmf = tx.cmmf" &
                    " left join sales.cmmfinfo cm on cm.cmmf = tx.cmmf" &
-                   " left join sales.hkretailprice rp on rp.cmmf = tx.cmmf " &
-                   " where invdate >= '{0:yyyy-MM-dd}' and invdate <= '{1:yyyy-MM-dd}' and tx.qty <> 0 {4} order by invdate) union all " &
-                   "(select invid,invdate,orderno,tx.customerid,c.customername,reportcode,saleforce,country,custtype,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then cp.ckw else cp.sda end as salesman,shipto,productid,tx.cmmf,sbu,family.productfamily,brand,cmmf.materialdesc,supplierid,null::integer,null::numeric(13,2),null::numeric(15,5),qty,totalsales ,null::numeric as totalcost,qty as totalqty ,totalsales as totalsales,null::numeric as totalcost,region,location,invdate as filterdate1,invdate as filterdate2" &
-                   ",rp.retailprice,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then  null else (1 - (totalsales/qty) / rp.retailprice)  end as sda,case brand when 'LAGOSTINA' then (1 - (totalsales/qty) / rp.retailprice)  when ('LAGOSTINA CASA')  then (1 - (totalsales/qty) / rp.retailprice)  end as lagocookware ,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice * 0.7))) end )end as tefalcookwaretradediscount,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice ))) end )end as tefalcookwaredirectdiscount" &
-                   " ,cm.series,cm.range,cm.inductionproperty,cm.type,cm.size,cm.extmaterial,cm.intmaterial" &
-                   " from sales.tx " &
-                    " left join sales.customer c on c.customerid = tx.customerid " &
-                    " left join sales.custprodkam cp on cp.customerid = tx.customerid" &
-                    " left join cmmf on cmmf.cmmf = tx.cmmf " &
-                    " left join family on family.cmmf = tx.cmmf" &
-                    " left join sales.cmmfinfo cm on cm.cmmf = tx.cmmf" &
-                     " left join sales.hkretailprice rp on rp.cmmf = tx.cmmf  " &
-                   " where invdate >= '{2:yyyy-MM-dd}' and invdate <= '{3:yyyy-MM-dd}' and tx.qty <> 0 {4} order by invdate)", CDate(enddate.Year - 1 & "-01-01"), CDate(enddate.Year - 1 & "-12-31"), CDate(enddate.Year & "-1-1"), enddate, criteria)
-
+                    " left join sales.hkretailprice rp on rp.cmmf = tx.cmmf  " &
+                  " where invdate >= '{2:yyyy-MM-dd}' and invdate <= '{3:yyyy-MM-dd}' and tx.qty <> 0 {4} order by invdate)", CDate(enddate.Year - 1 & "-01-01"), CDate(enddate.Year - 1 & "-12-31"), CDate(enddate.Year & "-1-1"), enddate, criteria)
 
             oSheet.Name = "DATA"
 
