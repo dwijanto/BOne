@@ -27,7 +27,12 @@ Public Class DbAdapter
         '_connectionstring = "Database=GSATaiwan;server=HON19NT;user id =sa;Password=SB19eVer;"
         '_connectionstring = "Database=GSATaiwan_Test;server=HON19NT;user id =sa;Password=SB19eVer;"
         '_connectionstring = "Database=GSAHongkong_OB;server=HON19NT;user id =sa;Password=SB19eVer;"
-        _connectionstring = "Database=GSAHongkong;server=HON19NT;user id =sa;Password=SB19eVer;"
+
+        'Old Server
+        '_connectionstring = "Database=GSAHongkong;server=HON19NT;user id =sa;Password=SB19eVer;"
+
+        'New server
+        _connectionstring = String.Format("Database=GSAHongkong;server={0};user id ={1};Password={2};", My.Settings.host, My.Settings.user, My.Settings.pwd)
     End Sub
     Public Property ConnectionString As String
         Get

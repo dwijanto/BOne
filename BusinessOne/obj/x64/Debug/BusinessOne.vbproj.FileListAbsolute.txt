@@ -28,3 +28,8 @@ C:\Work\vb2013\BOne\BusinessOne\BusinessOne\obj\x64\Debug\BusinessOne.exe
 C:\Work\vb2013\BOne\BusinessOne\BusinessOne\obj\x64\Debug\BusinessOne.xml
 C:\Work\vb2013\BOne\BusinessOne\BusinessOne\obj\x64\Debug\BusinessOne.pdb
 C:\Work\vb2013\BOne\BusinessOne\BusinessOne\obj\x64\Debug\BusinessOne.FormPOInvormationV2.resources
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x64\Debug\BusinessOne.exe.config
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x64\Debug\BusinessOne.vbproj.ResolveComReference.cache
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x64\Debug\BusinessOne.exe
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x64\Debug\BusinessOne.xml
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x64\Debug\BusinessOne.pdb

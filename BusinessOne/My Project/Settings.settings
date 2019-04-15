@@ -38,5 +38,44 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">host=hon14nt;port=5432;database=LogisticDb;CommandTimeout=1000;TimeOut=1000;</Value>
     </Setting>
+    <Setting Name="host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SW04R149</Value>
+    </Setting>
+    <Setting Name="user" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="pwd" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SB04eVer</Value>
+    </Setting>
+    <Setting Name="userinterface" Type="System.String" Scope="User">
+      <Value Profile="(Default)">b1ifce</Value>
+    </Setting>
+    <Setting Name="pwdinterface" Type="System.String" Scope="User">
+      <Value Profile="(Default)">B104int</Value>
+    </Setting>
+    <Setting Name="hostold" Type="System.String" Scope="User">
+      <Value Profile="(Default)">HON19NT</Value>
+    </Setting>
+    <Setting Name="userold" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="pwdold" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SB19eVer</Value>
+    </Setting>
+    <Setting Name="hostnew" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SW04R149</Value>
+    </Setting>
+    <Setting Name="usernew" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="pwdnew" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SB04eVer</Value>
+    </Setting>
+    <Setting Name="userinterfacenew" Type="System.String" Scope="User">
+      <Value Profile="(Default)">b1ifce</Value>
+    </Setting>
+    <Setting Name="pwdinterfacenew" Type="System.String" Scope="User">
+      <Value Profile="(Default)">B104int</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

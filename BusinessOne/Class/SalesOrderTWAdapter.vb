@@ -248,6 +248,6 @@
                  " AND (T0.DocDate >= '{0:yyyy-MM-dd}' ) AND (T0.DocDate <= '{1:yyyy-MM-dd}' )" &
                  " and T5.qryGroup2 = 'N'", startdate, enddate)
         Return Me.load
-        Return Me.load
+        'Return Me.load
     End Function
 End Class
