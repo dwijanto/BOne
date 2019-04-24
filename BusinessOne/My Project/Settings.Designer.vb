@@ -140,7 +140,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("HON19NT")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("SW04R149")>  _
         Public Property host() As String
             Get
                 Return CType(Me("host"),String)
@@ -164,7 +164,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("SB19eVer")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("SB04eVer")>  _
         Public Property pwd() As String
             Get
                 Return CType(Me("pwd"),String)

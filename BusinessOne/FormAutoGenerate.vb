@@ -16,6 +16,7 @@ Public Class FormAutoGenerate
     End Sub
 
     Private Sub LoadMe()
+        Label1.Text = String.Format("Server = {0};", My.Settings.host)
         If Not myThread.IsAlive Then
             Try
                 ToolStripStatusLabel1.Text = ""
