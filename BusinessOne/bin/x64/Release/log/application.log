@@ -17,3 +17,18 @@
 2018-08-14 03:16:45.187 PM	doWork	Generate HK Report.
 2018-09-06 02:10:32.140 PM	doWork	--------Start----------
 2018-09-06 02:10:38.280 PM	doWork	Generate HK Report.
+2019-05-08 11:08:30.922 AM	doWork	--------Start----------
+2019-05-08 11:08:34.307 AM	doWork	Generate HK Report.
+2019-05-08 11:08:42.082 AM	doWork	SalesReportHK001
+2019-05-08 11:08:45.697 AM	GenerateReport	SalesReportHK - GenerateReport
+2019-05-08 11:08:46.723 AM	GenerateReport	SalesReportHK - Try
+2019-05-08 11:08:47.994 AM	GenerateReport	SalesReportHK - After Create Object
+2019-05-08 11:08:47.995 AM	GenerateReport	User :AS\dlie
+2019-05-08 11:08:48.000 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x64\Release\templates\ExcelTemplateNew.xltx False
+2019-05-08 11:08:48.258 AM	doWork	Sorry, we couldn't find C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x64\Release\templates\ExcelTemplateNew.xltx. Is it possible it was moved, renamed or deleted?
+2019-05-08 11:09:20.787 AM	GenerateReport	SalesReportHK - GenerateReport
+2019-05-08 11:09:24.868 AM	GenerateReport	SalesReportHK - Try
+2019-05-08 11:09:26.047 AM	GenerateReport	SalesReportHK - After Create Object
+2019-05-08 11:09:26.048 AM	GenerateReport	User :AS\dlie
+2019-05-08 11:09:26.050 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x64\Release\templates\ExcelTemplateNew.xltx False
+2019-05-08 11:09:26.290 AM	doWork	Sorry, we couldn't find C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x64\Release\templates\ExcelTemplateNew.xltx. Is it possible it was moved, renamed or deleted?

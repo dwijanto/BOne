@@ -21,4 +21,27 @@
                                " WHERE (T0.DocDate BETWEEN '{0:yyyy-MM-dd}' AND '{1:yyyy-MM-dd}') AND T0.CardCode > 99000000 ORDER BY T0.DocEntry, T1.LineNum", startdate, enddate)
         Return MyBase.load
     End Function
+
+    Public Function loadDataTaxInvoice(ByVal startdate As Date, ByVal enddate As Date)
+        'sqlstr = String.Format("SELECT T1.cardcode, 'M' as header,T0.U_SEBGUI as [Invoice No],T0.TAXDATE as [Invoice Date],'07' as [Invoice Types],T0.LicTradNum as [Invoice BAN],T1.cardname as [Invoice Name],T2.StreetNo as [Address],'1' as [VAT Type],'5' as [VAT], T0.doctotalsy - T0.vatsumsy as [Sales Amount] ,T0.vatsumsy as [VAT], T0.doctotalsy as [Total],T3.quantity,T3.price,T3.quantity * T3.price as [Amount],T4.suppcatnum as [articlecode],T3.dscription as [description],T0.numatcard as [custref]" &
+        '                       " FROM OINV T0 " &
+        '                       " INNER JOIN OCRD T1 ON T0.[CardCode] = T1.[CardCode] " &
+        '                       " INNER JOIN CRD1 T2 ON T1.[CardCode] = T2.[CardCode] and T2.AdresType='B' and T2.address = '1'" &
+        '                       " INNER JOIN INV1 T3	ON T0.[DocEntry] = T3.[DocEntry]" &
+        '                       " INNER JOIN OITM T4 ON T3.[ItemCode] = T4.[ItemCode]" &
+        '                       " WHERE T0.TAXDATE >= '{0:yyyy-MM-dd}' and T0.TAXDATE <= '{1:yyyy-MM-dd}'  " &
+        '                       " and T0.U_SEBGUI  <> '' " &
+        '                       " order by T0.U_SEBGUI", startdate, enddate)
+        sqlstr = String.Format("SELECT t1.cardcode as [Customer Code], 'M' as [Header],T0.U_SEBGUI as [Invoice No],T0.TAXDATE as [Invoice Date],'07' as [Invoice Types],T0.LicTradNum as [Invoice BAN],T1.cardname as [Invoice Name],T2.StreetNo as [Address],'1' as [VAT Type],'5' as [VAT], T0.doctotalsy - T0.vatsumsy as [Sales Amount] ,T0.vatsumsy as [VATamount], T0.doctotalsy as [Total],T3.quantity,T3.price,T3.quantity * T3.price as [Amount],T4.suppcatnum as [articlecode],T3.dscription as [description],T0.numatcard as [custref]" &
+                               " FROM OINV T0 " &
+                               " INNER JOIN OCRD T1 ON T0.[CardCode] = T1.[CardCode] " &
+                               " INNER JOIN CRD1 T2 ON T1.[CardCode] = T2.[CardCode] and T2.AdresType='B' and T2.address = T1.billtodef" &
+                               " INNER JOIN INV1 T3	ON T0.[DocEntry] = T3.[DocEntry]" &
+                               " INNER JOIN OITM T4 ON T3.[ItemCode] = T4.[ItemCode]" &
+                               " WHERE T0.TAXDATE >= '{0:yyyy-MM-dd}' and T0.TAXDATE <= '{1:yyyy-MM-dd}'  " &
+                               " and T0.U_SEBGUI  <> ''" &
+                               " and not(T1.cardcode like ('C002%') or T1.cardcode like ('C003%') or T1.cardcode like ('C004%') or T1.cardcode like ('C005%') or T1.cardcode like ('C006%'))" &
+                               " order by T0.U_SEBGUI;SELECT T0.[CompnyName], T0.[CompnyAddr], T0.[Phone1] FROM OADM T0;", startdate, enddate)
+        Return MyBase.load
+    End Function
 End Class

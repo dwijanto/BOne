@@ -58,3 +58,4 @@ C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.FormUs
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.Resources.resources
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.FormImportPOS.resources
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.vbproj.GenerateResource.Cache
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.FormTaxInvoice.resources

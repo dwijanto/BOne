@@ -307,6 +307,12 @@
     <Compile Include="view\FormImportPOS.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="view\FormTaxInvoice.Designer.vb">
+      <DependentUpon>FormTaxInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormTaxInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DialogDateRange.resx">
@@ -371,6 +377,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormImportPOS.resx">
       <DependentUpon>FormImportPOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormTaxInvoice.resx">
+      <DependentUpon>FormTaxInvoice.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

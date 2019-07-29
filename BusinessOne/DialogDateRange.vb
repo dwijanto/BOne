@@ -23,5 +23,4 @@ Public Class DialogDateRange
         Me.Close()
     End Sub
 
-
 End Class

@@ -40,9 +40,10 @@ Partial Class FormMenu
         Me.ItemPriceMasterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogisticsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.POInformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.POInformationV2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.POInformationV2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TWInvoiceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -84,7 +85,7 @@ Partial Class FormMenu
         '
         'QueryTaiwanToolStripMenuItem
         '
-        Me.QueryTaiwanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TWSalesExtractToolStripMenuItem})
+        Me.QueryTaiwanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TWSalesExtractToolStripMenuItem, Me.TWInvoiceToolStripMenuItem})
         Me.QueryTaiwanToolStripMenuItem.Name = "QueryTaiwanToolStripMenuItem"
         Me.QueryTaiwanToolStripMenuItem.Size = New System.Drawing.Size(92, 20)
         Me.QueryTaiwanToolStripMenuItem.Text = "Query Taiwan"
@@ -159,6 +160,12 @@ Partial Class FormMenu
         Me.POInformationToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
         Me.POInformationToolStripMenuItem.Text = "PO Information"
         '
+        'POInformationV2ToolStripMenuItem
+        '
+        Me.POInformationV2ToolStripMenuItem.Name = "POInformationV2ToolStripMenuItem"
+        Me.POInformationV2ToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
+        Me.POInformationV2ToolStripMenuItem.Text = "PO Information V2"
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -176,11 +183,11 @@ Partial Class FormMenu
         Me.Label2.Size = New System.Drawing.Size(0, 13)
         Me.Label2.TabIndex = 6
         '
-        'POInformationV2ToolStripMenuItem
+        'TWInvoiceToolStripMenuItem
         '
-        Me.POInformationV2ToolStripMenuItem.Name = "POInformationV2ToolStripMenuItem"
-        Me.POInformationV2ToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
-        Me.POInformationV2ToolStripMenuItem.Text = "PO Information V2"
+        Me.TWInvoiceToolStripMenuItem.Name = "TWInvoiceToolStripMenuItem"
+        Me.TWInvoiceToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
+        Me.TWInvoiceToolStripMenuItem.Text = "TW - Tax Invoice"
         '
         'FormMenu
         '
@@ -221,4 +228,5 @@ Partial Class FormMenu
     Friend WithEvents LogisticsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents POInformationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents POInformationV2ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TWInvoiceToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -58,7 +58,7 @@ Public Class FormAutoGenerate
         'End If
 
         Logger.log("SalesReportHK001")
-        Dim mySalesReportHK = New ReportSales("SalesReportHK001.xlsx", True)
+        Dim mySalesReportHK = New ReportSales(String.Format("zTesting.xlsx", Today.Date), True)
         If Not mySalesReportHK.GenerateReport Then
             Logger.log(mySalesReportHK.errmsg)
         End If

@@ -21,4 +21,6 @@
                                " WHERE (T0.DocDate BETWEEN '{0:yyyy-MM-dd}' AND '{1:yyyy-MM-dd}') AND T0.CardCode > 99000000 ORDER BY T0.DocEntry, T1.LineNum", startdate, enddate)
         Return MyBase.load
     End Function
+
+
 End Class

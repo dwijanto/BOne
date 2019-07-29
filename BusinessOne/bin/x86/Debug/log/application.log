@@ -294,3 +294,58 @@
 2019-04-15 11:46:55.047 AM	GenerateReport	SalesReportHK - GenerateReport
 2019-04-15 11:47:30.337 AM	doWork	
 2019-04-15 11:47:34.163 AM	doWork	SalesReportHK
+2019-05-07 02:18:14.333 PM	doWork	--------Start----------
+2019-05-07 02:18:52.902 PM	doWork	--------Start----------
+2019-05-07 02:18:58.818 PM	doWork	Generate HK Report.
+2019-05-07 02:19:10.788 PM	doWork	SalesReportHK001
+2019-05-07 02:19:18.957 PM	GenerateReport	SalesReportHK - GenerateReport
+2019-05-07 02:19:25.735 PM	GenerateReport	SalesReportHK - Try
+2019-05-07 02:19:27.336 PM	GenerateReport	SalesReportHK - After Create Object
+2019-05-07 02:19:27.337 PM	GenerateReport	User :AS\dlie
+2019-05-07 02:19:27.344 PM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2019-05-07 02:19:27.663 PM	GenerateReport	Can Open
+2019-05-07 02:23:56.231 PM	doWork	Unable to get the PivotFields property of the PivotTable class
+2019-05-07 02:23:57.800 PM	doWork	SalesReportHK
+2019-05-07 02:27:10.418 PM	doWork	--------Start----------
+2019-05-07 02:27:26.975 PM	doWork	SalesReportHK001
+2019-05-07 02:27:32.649 PM	GenerateReport	SalesReportHK - GenerateReport
+2019-05-07 02:27:33.813 PM	GenerateReport	SalesReportHK - Try
+2019-05-07 02:27:35.410 PM	GenerateReport	SalesReportHK - After Create Object
+2019-05-07 02:27:35.413 PM	GenerateReport	User :AS\dlie
+2019-05-07 02:27:35.416 PM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2019-05-07 02:27:35.606 PM	GenerateReport	Can Open
+2019-05-07 02:31:39.660 PM	doWork	Unable to get the PivotFields property of the PivotTable class
+2019-05-07 02:31:40.072 PM	doWork	SalesReportHK
+2019-05-08 11:09:51.517 AM	doWork	--------Start----------
+2019-05-08 11:10:01.626 AM	GenerateReport	SalesReportHK - GenerateReport
+2019-05-08 11:10:02.426 AM	GenerateReport	SalesReportHK - Try
+2019-05-08 11:10:03.558 AM	GenerateReport	SalesReportHK - After Create Object
+2019-05-08 11:10:03.559 AM	GenerateReport	User :AS\dlie
+2019-05-08 11:10:03.565 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2019-05-08 11:10:03.823 AM	GenerateReport	Can Open
+2019-05-08 11:16:13.038 AM	doWork	--------Start----------
+2019-05-08 11:16:16.201 AM	doWork	Generate HK Report.
+2019-05-08 11:16:23.540 AM	doWork	SalesReportHK001
+2019-05-08 11:16:24.335 AM	GenerateReport	SalesReportHK - GenerateReport
+2019-05-08 11:16:25.116 AM	GenerateReport	SalesReportHK - Try
+2019-05-08 11:16:26.247 AM	GenerateReport	SalesReportHK - After Create Object
+2019-05-08 11:16:26.248 AM	GenerateReport	User :AS\dlie
+2019-05-08 11:16:26.251 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2019-05-08 11:16:26.495 AM	GenerateReport	Can Open
+2019-05-08 11:19:53.055 AM	doWork	Unable to get the PivotFields property of the PivotTable class
+2019-05-08 11:19:59.764 AM	doWork	SalesReportHK001
+2019-05-08 11:20:00.460 AM	GenerateReport	SalesReportHK - GenerateReport
+2019-05-08 11:20:00.915 AM	GenerateReport	SalesReportHK - Try
+2019-05-08 11:20:02.121 AM	GenerateReport	SalesReportHK - After Create Object
+2019-05-08 11:20:02.123 AM	GenerateReport	User :AS\dlie
+2019-05-08 11:20:02.126 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2019-05-08 11:20:02.375 AM	GenerateReport	Can Open
+2019-05-08 11:42:54.578 AM	doWork	--------Start----------
+2019-05-08 11:43:04.337 AM	doWork	SalesReportHK001
+2019-05-08 11:43:05.365 AM	GenerateReport	SalesReportHK - GenerateReport
+2019-05-08 11:43:05.860 AM	GenerateReport	SalesReportHK - Try
+2019-05-08 11:43:06.979 AM	GenerateReport	SalesReportHK - After Create Object
+2019-05-08 11:43:06.981 AM	GenerateReport	User :AS\dlie
+2019-05-08 11:43:06.985 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2019-05-08 11:43:07.163 AM	GenerateReport	Can Open
+2019-05-08 11:52:33.342 AM	doWork	--------Start----------

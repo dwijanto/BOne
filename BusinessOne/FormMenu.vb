@@ -116,4 +116,9 @@
         Dim myform = New FormPOInvormationV2
         myform.ShowDialog()
     End Sub
+
+    Private Sub TWInvoiceToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TWInvoiceToolStripMenuItem.Click
+        Dim myform = FormTaxInvoice
+        myform.ShowDialog()
+    End Sub
 End Class

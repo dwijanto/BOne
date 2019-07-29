@@ -352,6 +352,17 @@ Public Class ReportSales
         osheet.PivotTables("PivotTable1").calculatedfields.add("margin" & mydate.Year - 1 & "pct", "=(totalsales" & mydate.Year - 1 & " - totalcost" & mydate.Year - 1 & ")/ totalsales" & mydate.Year - 1, True)
         osheet.PivotTables("PivotTable1").calculatedfields.add("margin" & mydate.Year & "pct", "=(totalsales" & mydate.Year & " - totalcost" & mydate.Year & ")/ totalsales" & mydate.Year, True)
 
+        If SDPct Then
+            osheet.PivotTables("PivotTable1").calculatedfields.add("Tot Net" & mydate.Year - 1, "=sdanet" & mydate.Year - 1 & " + tefalckwnet" & mydate.Year - 1 & "+ lagockwnet" & mydate.Year - 1 & "+ wmfckwnet" & mydate.Year - 1, True)
+            osheet.PivotTables("PivotTable1").calculatedfields.add("Tot Net" & mydate.Year, "=sdanet" & mydate.Year & " + tefalckwnet" & mydate.Year & "+ lagockwnet" & mydate.Year & "+ wmfckwnet" & mydate.Year, True)
+            osheet.PivotTables("PivotTable1").calculatedfields.add("Net pct " & mydate.Year & " vs " & mydate.Year - 1, "='Tot Net" & mydate.Year & "'/ 'Tot Net" & mydate.Year - 1 & "' - 1", True)
+            osheet.PivotTables("PivotTable1").calculatedfields.add(mydate.Year - 1 & " SD", "=1 -('Tot Net" & mydate.Year - 1 & "' / totalsales" & mydate.Year - 1 & ")", True)
+            osheet.PivotTables("PivotTable1").calculatedfields.add(mydate.Year & " SD", "=1 -('Tot Net" & mydate.Year & "' / totalsales" & mydate.Year & ")", True)
+            osheet.PivotTables("PivotTable1").calculatedfields.add("Tot Net in K " & mydate.Year - 1, "='Tot Net" & mydate.Year - 1 & "' / 1000", True)
+            osheet.PivotTables("PivotTable1").calculatedfields.add("Tot Net in K " & mydate.Year, "='Tot Net" & mydate.Year & "' / 1000", True)
+        End If
+
+
         osheet.PivotTables("PivotTable1").Pivotfields("invdate").orientation = Excel.XlPivotFieldOrientation.xlRowField
         osheet.Range("A8").Group(True, True, Periods:={False, False, False, False, True, False, True})
         osheet.PivotTables("PivotTable1").pivotfields("Years").orientation = Excel.XlPivotFieldOrientation.xlHidden
@@ -370,70 +381,108 @@ Public Class ReportSales
         osheet.PivotTables("PivotTable1").pivotfields("firsttxdate").orientation = Excel.XlPivotFieldOrientation.xlPageField
         osheet.PivotTables("PivotTable1").pivotfields("firsttxdate").Caption = "FirstTx Month"
 
-        osheet.PivotTables("PivotTable1").Pivotfields("productid").orientation = Excel.XlPivotFieldOrientation.xlPageField
-        osheet.PivotTables("PivotTable1").Pivotfields("materialdesc").orientation = Excel.XlPivotFieldOrientation.xlPageField
-        osheet.PivotTables("PivotTable1").Pivotfields("brand").orientation = Excel.XlPivotFieldOrientation.xlPageField
-        osheet.PivotTables("PivotTable1").Pivotfields("filterdate2").orientation = Excel.XlPivotFieldOrientation.xlPageField
-        osheet.PivotTables("PivotTable1").Pivotfields("productfamily").orientation = Excel.XlPivotFieldOrientation.xlPageField
-        'osheet.PivotTables("PivotTable1").Pivotfields("customername").orientation = Excel.XlPivotFieldOrientation.xlPageField
-        osheet.PivotTables("PivotTable1").Pivotfields("salesman").orientation = Excel.XlPivotFieldOrientation.xlPageField
-        osheet.PivotTables("PivotTable1").Pivotfields("invdate").orientation = Excel.XlPivotFieldOrientation.xlPageField
-        osheet.PivotTables("PivotTable1").pivotfields("invdate").currentpage = Format(mydate, "MMM")
+        If SDPct Then
+            osheet.PivotTables("PivotTable1").Pivotfields("salesman").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("sbu").orientation = Excel.XlPivotFieldOrientation.xlRowField
+            osheet.PivotTables("PivotTable1").Pivotfields("productfamily").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("customerid").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("productid").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("type").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("materialdesc").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("brand").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("filterdate2").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("invdate").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").pivotfields("invdate").currentpage = Format(mydate, "MMM")
 
-        'osheet.PivotTables("PivotTable1").Pivotfields("sbu").orientation = Excel.XlPivotFieldOrientation.xlRowField
-        'osheet.PivotTables("PivotTable1").Pivotfields("productid").orientation = Excel.XlPivotFieldOrientation.xlRowField
-        osheet.PivotTables("PivotTable1").Pivotfields("customerid").orientation = Excel.XlPivotFieldOrientation.xlRowField
-        osheet.PivotTables("PivotTable1").Pivotfields("customername").orientation = Excel.XlPivotFieldOrientation.xlRowField
+            osheet.PivotTables("PivotTable1").Pivotfields("customername").orientation = Excel.XlPivotFieldOrientation.xlRowField
+            osheet.PivotTables("PivotTable1").PivotFields("customername").Subtotals = {False, False, False, False, False, False, False, False, False, False, False, False}
 
-        osheet.PivotTables("PivotTable1").PivotFields("customerid").Subtotals = {False, False, False, False, False, False, False, False, False, False, False, False}
+            osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("qty" & mydate.Year - 1), " Qty " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
+            osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("qty" & mydate.Year), " Qty " & mydate.Year, Excel.XlConsolidationFunction.xlSum)
 
-        'osheet.PivotTables("PivotTable1").Pivotfields("sda").orientation = Excel.XlPivotFieldOrientation.xlRowField
-        'osheet.PivotTables("PivotTable1").PivotFields("sda").Subtotals = {False, False, False, False, False, False, False, False, False, False, False, False}
-        'osheet.PivotTables("PivotTable1").Pivotfields("lagocookware").orientation = Excel.XlPivotFieldOrientation.xlRowField
-        'osheet.PivotTables("PivotTable1").PivotFields("lagocookware").Subtotals = {False, False, False, False, False, False, False, False, False, False, False, False}
-        'osheet.PivotTables("PivotTable1").Pivotfields("tefalcookwaretradediscount").orientation = Excel.XlPivotFieldOrientation.xlRowField
-        'osheet.PivotTables("PivotTable1").PivotFields("tefalcookwaretradediscount").Subtotals = {False, False, False, False, False, False, False, False, False, False, False, False}
-        'osheet.PivotTables("PivotTable1").Pivotfields("tefalcookwaredirectdiscount").orientation = Excel.XlPivotFieldOrientation.xlRowField
-        'osheet.PivotTables("PivotTable1").PivotFields("tefalcookwaredirectdiscount").Subtotals = {False, False, False, False, False, False, False, False, False, False, False, False}
+            osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("Tot Net in K " & mydate.Year - 1), "Sum of Total Net in K " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
+            osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("Tot Net in K " & mydate.Year), "Sum of Total Net in K " & mydate.Year, Excel.XlConsolidationFunction.xlSum)
+            osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("Net pct " & mydate.Year & " vs " & mydate.Year - 1), "Sum Net pct " & mydate.Year & " vs " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
 
-        osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("retailprice"), " RSP", Excel.XlConsolidationFunction.xlAverage)
-        osheet.PivotTables("PivotTable1").PivotFields(" RSP").NumberFormat = "#,##0"
-        'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("sda"), " SDA", Excel.XlConsolidationFunction.xlAverage)
-        'osheet.PivotTables("PivotTable1").PivotFields(" SDA").NumberFormat = "0.0%"
-        'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("lagocookware"), " D. Disc (Lago)", Excel.XlConsolidationFunction.xlAverage)
-        'osheet.PivotTables("PivotTable1").PivotFields(" D. Disc (Lago)").NumberFormat = "0.0%"
-        'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("tefalcookwaretradediscount"), " T Ckw T.Disc", Excel.XlConsolidationFunction.xlAverage)
-        'osheet.PivotTables("PivotTable1").PivotFields(" T Ckw T.Disc").NumberFormat = "0.0%"
-        'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("tefalcookwaredirectdiscount"), " T Ckw D. Disc", Excel.XlConsolidationFunction.xlAverage)
-        'osheet.PivotTables("PivotTable1").PivotFields(" T Ckw D. Disc").NumberFormat = "0.0%"
+            osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields(mydate.Year - 1 & " SD"), "Sum " & mydate.Year - 1 & " SD", Excel.XlConsolidationFunction.xlSum)
+            osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields(mydate.Year & " SD"), "Sum " & mydate.Year & " SD", Excel.XlConsolidationFunction.xlSum)
 
-        osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("qty" & mydate.Year - 1), " Qty " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
-        osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("totalsales" & mydate.Year - 1), " Total Sales " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
-        osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("qty" & mydate.Year), " Qty " & mydate.Year, Excel.XlConsolidationFunction.xlSum)
-        osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("totalsales" & mydate.Year), " Totals Sales " & mydate.Year, Excel.XlConsolidationFunction.xlSum)
-        osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("amountdifpct"), " amountdifpct", Excel.XlConsolidationFunction.xlSum)
+            osheet.PivotTables("PivotTable1").PivotFields(" Qty " & mydate.Year - 1).NumberFormat = "#,##0"
+            osheet.PivotTables("PivotTable1").PivotFields(" Qty " & mydate.Year).numberformat = "#,##0"
 
-        'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("qtydif"), " Qty Diff " & mydate.Year & " VS " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
-        'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("qtydifpct"), " %Qty Diff " & mydate.Year & " VS " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
-        'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("amountdif"), " Amt Diff " & mydate.Year & " VS " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
-        'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("amountdifpct"), "%Amt Diff " & mydate.Year & " VS " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
-        'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("margin" & mydate.Year - 1 & "pct"), " %Margin " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
-        'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("margin" & mydate.Year & "pct"), " %Margin " & mydate.Year, Excel.XlConsolidationFunction.xlSum)
+            osheet.PivotTables("PivotTable1").PivotFields("Sum of Total Net in K " & mydate.Year - 1).numberformat = "#,##0.00"
+            osheet.PivotTables("PivotTable1").PivotFields("Sum of Total Net in K " & mydate.Year).numberformat = "#,##0.00"
+            osheet.PivotTables("PivotTable1").pivotfields("Sum Net pct " & mydate.Year & " vs " & mydate.Year - 1).numberformat = "0%"
+            osheet.PivotTables("PivotTable1").PivotFields("Sum " & mydate.Year - 1 & " SD").numberformat = "0%"
+            osheet.PivotTables("PivotTable1").PivotFields("Sum " & mydate.Year & " SD").numberformat = "0%"
 
-        osheet.PivotTables("PivotTable1").PivotFields(" Qty " & mydate.Year - 1).NumberFormat = "#,##0"
-        osheet.PivotTables("PivotTable1").PivotFields(" Total Sales " & mydate.Year - 1).numberformat = "#,##0.00"
-        osheet.PivotTables("PivotTable1").PivotFields(" Qty " & mydate.Year).numberformat = "#,##0"
-        osheet.PivotTables("PivotTable1").PivotFields(" Totals Sales " & mydate.Year).numberformat = "#,##0.00"
-        osheet.PivotTables("PivotTable1").PivotFields(" amountdifpct").numberformat = "0%"
+            osheet.Columns("C:H").HorizontalAlignment = Excel.Constants.xlRight
+        Else
+            osheet.PivotTables("PivotTable1").Pivotfields("productid").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("materialdesc").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("brand").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("filterdate2").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("productfamily").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            'osheet.PivotTables("PivotTable1").Pivotfields("customername").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("salesman").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").Pivotfields("invdate").orientation = Excel.XlPivotFieldOrientation.xlPageField
+            osheet.PivotTables("PivotTable1").pivotfields("invdate").currentpage = Format(mydate, "MMM")
 
-        'osheet.PivotTables("PivotTable1").PivotFields(" Qty Diff " & mydate.Year & " VS " & mydate.Year - 1).NumberFormat = "#,##0"
-        'osheet.PivotTables("PivotTable1").PivotFields(" %Qty Diff " & mydate.Year & " VS " & mydate.Year - 1).numberformat = "0.00%"
-        'osheet.PivotTables("PivotTable1").PivotFields(" Amt Diff " & mydate.Year & " VS " & mydate.Year - 1).numberformat = "#,##0.00"
-        'osheet.PivotTables("PivotTable1").PivotFields("%Amt Diff " & mydate.Year & " VS " & mydate.Year - 1).numberformat = "0.00%"
-        'osheet.PivotTables("PivotTable1").PivotFields(" %Margin " & mydate.Year - 1).numberformat = "0.00%"
-        'osheet.PivotTables("PivotTable1").PivotFields(" %Margin " & mydate.Year).numberformat = "0.00%"
-        'osheet.Columns("C:F").NumberFormat = "0.0%"
-        osheet.Columns("C:G").HorizontalAlignment = Excel.Constants.xlRight
+            'osheet.PivotTables("PivotTable1").Pivotfields("sbu").orientation = Excel.XlPivotFieldOrientation.xlRowField
+            'osheet.PivotTables("PivotTable1").Pivotfields("productid").orientation = Excel.XlPivotFieldOrientation.xlRowField
+            osheet.PivotTables("PivotTable1").Pivotfields("customerid").orientation = Excel.XlPivotFieldOrientation.xlRowField
+            osheet.PivotTables("PivotTable1").Pivotfields("customername").orientation = Excel.XlPivotFieldOrientation.xlRowField
+
+            osheet.PivotTables("PivotTable1").PivotFields("customerid").Subtotals = {False, False, False, False, False, False, False, False, False, False, False, False}
+
+            'osheet.PivotTables("PivotTable1").Pivotfields("sda").orientation = Excel.XlPivotFieldOrientation.xlRowField
+            'osheet.PivotTables("PivotTable1").PivotFields("sda").Subtotals = {False, False, False, False, False, False, False, False, False, False, False, False}
+            'osheet.PivotTables("PivotTable1").Pivotfields("lagocookware").orientation = Excel.XlPivotFieldOrientation.xlRowField
+            'osheet.PivotTables("PivotTable1").PivotFields("lagocookware").Subtotals = {False, False, False, False, False, False, False, False, False, False, False, False}
+            'osheet.PivotTables("PivotTable1").Pivotfields("tefalcookwaretradediscount").orientation = Excel.XlPivotFieldOrientation.xlRowField
+            'osheet.PivotTables("PivotTable1").PivotFields("tefalcookwaretradediscount").Subtotals = {False, False, False, False, False, False, False, False, False, False, False, False}
+            'osheet.PivotTables("PivotTable1").Pivotfields("tefalcookwaredirectdiscount").orientation = Excel.XlPivotFieldOrientation.xlRowField
+            'osheet.PivotTables("PivotTable1").PivotFields("tefalcookwaredirectdiscount").Subtotals = {False, False, False, False, False, False, False, False, False, False, False, False}
+
+            osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("retailprice"), " RSP", Excel.XlConsolidationFunction.xlAverage)
+            osheet.PivotTables("PivotTable1").PivotFields(" RSP").NumberFormat = "#,##0"
+            'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("sda"), " SDA", Excel.XlConsolidationFunction.xlAverage)
+            'osheet.PivotTables("PivotTable1").PivotFields(" SDA").NumberFormat = "0.0%"
+            'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("lagocookware"), " D. Disc (Lago)", Excel.XlConsolidationFunction.xlAverage)
+            'osheet.PivotTables("PivotTable1").PivotFields(" D. Disc (Lago)").NumberFormat = "0.0%"
+            'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("tefalcookwaretradediscount"), " T Ckw T.Disc", Excel.XlConsolidationFunction.xlAverage)
+            'osheet.PivotTables("PivotTable1").PivotFields(" T Ckw T.Disc").NumberFormat = "0.0%"
+            'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("tefalcookwaredirectdiscount"), " T Ckw D. Disc", Excel.XlConsolidationFunction.xlAverage)
+            'osheet.PivotTables("PivotTable1").PivotFields(" T Ckw D. Disc").NumberFormat = "0.0%"
+
+            osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("qty" & mydate.Year - 1), " Qty " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
+            osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("totalsales" & mydate.Year - 1), " Total Sales " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
+            osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("qty" & mydate.Year), " Qty " & mydate.Year, Excel.XlConsolidationFunction.xlSum)
+            osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("totalsales" & mydate.Year), " Totals Sales " & mydate.Year, Excel.XlConsolidationFunction.xlSum)
+            osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("amountdifpct"), " amountdifpct", Excel.XlConsolidationFunction.xlSum)
+
+            'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("qtydif"), " Qty Diff " & mydate.Year & " VS " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
+            'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("qtydifpct"), " %Qty Diff " & mydate.Year & " VS " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
+            'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("amountdif"), " Amt Diff " & mydate.Year & " VS " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
+            'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("amountdifpct"), "%Amt Diff " & mydate.Year & " VS " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
+            'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("margin" & mydate.Year - 1 & "pct"), " %Margin " & mydate.Year - 1, Excel.XlConsolidationFunction.xlSum)
+            'osheet.PivotTables("PivotTable1").AddDataField(osheet.PivotTables("PivotTable1").PivotFields("margin" & mydate.Year & "pct"), " %Margin " & mydate.Year, Excel.XlConsolidationFunction.xlSum)
+
+            osheet.PivotTables("PivotTable1").PivotFields(" Qty " & mydate.Year - 1).NumberFormat = "#,##0"
+            osheet.PivotTables("PivotTable1").PivotFields(" Total Sales " & mydate.Year - 1).numberformat = "#,##0.00"
+            osheet.PivotTables("PivotTable1").PivotFields(" Qty " & mydate.Year).numberformat = "#,##0"
+            osheet.PivotTables("PivotTable1").PivotFields(" Totals Sales " & mydate.Year).numberformat = "#,##0.00"
+            osheet.PivotTables("PivotTable1").PivotFields(" amountdifpct").numberformat = "0%"
+
+            'osheet.PivotTables("PivotTable1").PivotFields(" Qty Diff " & mydate.Year & " VS " & mydate.Year - 1).NumberFormat = "#,##0"
+            'osheet.PivotTables("PivotTable1").PivotFields(" %Qty Diff " & mydate.Year & " VS " & mydate.Year - 1).numberformat = "0.00%"
+            'osheet.PivotTables("PivotTable1").PivotFields(" Amt Diff " & mydate.Year & " VS " & mydate.Year - 1).numberformat = "#,##0.00"
+            'osheet.PivotTables("PivotTable1").PivotFields("%Amt Diff " & mydate.Year & " VS " & mydate.Year - 1).numberformat = "0.00%"
+            'osheet.PivotTables("PivotTable1").PivotFields(" %Margin " & mydate.Year - 1).numberformat = "0.00%"
+            'osheet.PivotTables("PivotTable1").PivotFields(" %Margin " & mydate.Year).numberformat = "0.00%"
+            'osheet.Columns("C:F").NumberFormat = "0.0%"
+            osheet.Columns("C:G").HorizontalAlignment = Excel.Constants.xlRight
+        End If
 
         osheet.Name = "YTD"
 

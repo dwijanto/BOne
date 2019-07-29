@@ -58,7 +58,7 @@ Partial Class FormPOInvormationV2
         'ToolStripStatusLabel2
         '
         Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
-        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(827, 17)
+        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(796, 17)
         Me.ToolStripStatusLabel2.Spring = True
         '
         'ToolStripProgressBar1
