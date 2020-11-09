@@ -15,7 +15,7 @@ Public Class ReportTWSalesReport
     Public Function GenerateReport() As Boolean
         'Dim myCriteria As String = String.Empty
         startdate = CDate(Today.Date.Year & "-1-1")
-        enddate = CDate(Today.Date.AddDays(-1))
+        enddate = CDate(Today.Date.AddDays(0))
 
         Dim result As Boolean = False
         Dim hwnd As System.IntPtr

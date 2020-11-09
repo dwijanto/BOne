@@ -195,7 +195,7 @@ Public Class FormSalesReportTW
                 End Select
             End If
 
-            'change Saleman
+            'change Customer Name
             If Not IsDBNull(dr.Item("Customer Name")) Then
                 Select Case dr.Item("Customer Name")
                     Case "CARREFOUR"

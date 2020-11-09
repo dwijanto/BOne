@@ -23,12 +23,12 @@ Partial Class FormSalesReport
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormSalesReport))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
@@ -128,9 +128,9 @@ Partial Class FormSalesReport
         'Column2
         '
         Me.Column2.DataPropertyName = "inv_date"
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle1.Format = "dd-MMM-yyyy"
-        Me.Column2.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle7.Format = "dd-MMM-yyyy"
+        Me.Column2.DefaultCellStyle = DataGridViewCellStyle7
         Me.Column2.HeaderText = "inv_date"
         Me.Column2.Name = "Column2"
         Me.Column2.ReadOnly = True
@@ -254,9 +254,9 @@ Partial Class FormSalesReport
         'Column19
         '
         Me.Column19.DataPropertyName = "quantity"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle2.Format = "#,##0"
-        Me.Column19.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle8.Format = "#,##0"
+        Me.Column19.DefaultCellStyle = DataGridViewCellStyle8
         Me.Column19.HeaderText = "quantity"
         Me.Column19.Name = "Column19"
         Me.Column19.ReadOnly = True
@@ -264,9 +264,9 @@ Partial Class FormSalesReport
         'Column20
         '
         Me.Column20.DataPropertyName = "totalsales"
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle3.Format = "#,##0.00"
-        Me.Column20.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle9.Format = "#,##0.00"
+        Me.Column20.DefaultCellStyle = DataGridViewCellStyle9
         Me.Column20.HeaderText = "totalsales"
         Me.Column20.Name = "Column20"
         Me.Column20.ReadOnly = True
@@ -274,9 +274,9 @@ Partial Class FormSalesReport
         'Column21
         '
         Me.Column21.DataPropertyName = "totalcost"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle4.Format = "#,##0.00"
-        Me.Column21.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle10.Format = "#,##0.00"
+        Me.Column21.DefaultCellStyle = DataGridViewCellStyle10
         Me.Column21.HeaderText = "totalcost"
         Me.Column21.Name = "Column21"
         Me.Column21.ReadOnly = True
@@ -298,9 +298,9 @@ Partial Class FormSalesReport
         'Column24
         '
         Me.Column24.DataPropertyName = "retail"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle5.Format = "#,##0.00"
-        Me.Column24.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle11.Format = "#,##0.00"
+        Me.Column24.DefaultCellStyle = DataGridViewCellStyle11
         Me.Column24.HeaderText = "retail"
         Me.Column24.Name = "Column24"
         Me.Column24.ReadOnly = True
@@ -308,9 +308,9 @@ Partial Class FormSalesReport
         'Column25
         '
         Me.Column25.DataPropertyName = "unit_price"
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle6.Format = "#,##0.00"
-        Me.Column25.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle12.Format = "#,##0.00"
+        Me.Column25.DefaultCellStyle = DataGridViewCellStyle12
         Me.Column25.HeaderText = "unit_price"
         Me.Column25.Name = "Column25"
         Me.Column25.ReadOnly = True
@@ -374,7 +374,7 @@ Partial Class FormSalesReport
         'ToolStripStatusLabel1
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(738, 17)
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(707, 17)
         Me.ToolStripStatusLabel1.Spring = True
         Me.ToolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '

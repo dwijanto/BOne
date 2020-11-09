@@ -30,19 +30,19 @@ Public Class TWReport
 
             myBrandAdapter = New BrandAdapter
             If Not myBrandAdapter.getDataSet() Then
-                ErrorMessage = mySBUAdapter.errorMsg
+                ErrorMessage = myBrandAdapter.errorMsg
                 Return myret
             End If
 
             myFamilyAdapter = New FamilyTWAdapter
             If Not myFamilyAdapter.getDataSet() Then
-                ErrorMessage = mySBUAdapter.errorMsg
+                ErrorMessage = myFamilyAdapter.errorMsg
                 Return myret
             End If
 
             myFamilyLv2Adapter = New SubFamilyTWAdapter
             If Not myFamilyLv2Adapter.getDataSet() Then
-                ErrorMessage = mySBUAdapter.errorMsg
+                ErrorMessage = myFamilyLv2Adapter.errorMsg
                 Return myret
             End If
 
@@ -56,7 +56,8 @@ Public Class TWReport
             Dim BS = New BindingSource
             myadapter = New SalesOrderTWAdapter
             'If myadapter.LoadData(Today.Date.AddDays(-1), Today.Date.AddDays(-1)) Then
-            If myadapter.LoadData(startdate, Today.Date.AddDays(-1)) Then
+            'If myadapter.LoadData(startdate, Today.Date.AddDays(-1)) Then
+            If myadapter.LoadData(startdate, Today.Date.AddDays(0)) Then
                 fillMissingData()
                 GenerateSalesExtract()
                 InsertIntoTable()
@@ -290,7 +291,8 @@ Public Class TWReport
 
         'Delete previous data
         'mySB.Append(String.Format("delete from sales.txtw where invdate >= '{0:yyyy-MM-dd}' and invdate <='{0:yyyy-MM-dd}';", Date.Today.Date.AddDays(-1)))
-        mySB.Append(String.Format("delete from sales.txtw where invdate >= '{0:yyyy-MM-dd}' and invdate <='{1:yyyy-MM-dd}';", startdate, Date.Today.Date.AddDays(-1)))
+        'mySB.Append(String.Format("delete from sales.txtw where invdate >= '{0:yyyy-MM-dd}' and invdate <='{1:yyyy-MM-dd}';", startdate, Date.Today.Date.AddDays(-1)))
+        mySB.Append(String.Format("delete from sales.txtw where invdate >= '{0:yyyy-MM-dd}' and invdate <='{1:yyyy-MM-dd}';", startdate, Date.Today.Date.AddDays(0)))
         'Create Insert Data
 
         mySB.Append("insert into sales.txtw(invid, invdate,  orderno ,  customerid ,  customername,  reportcode,  saleforce ,  country ,  custtype ,  salesman ,  shipto ,  productid ,  cmmf ,  sbu ,  productfamily ,  brand ,  materialdesc ,  supplierid ,  qty ,  totalsales ,  totalcost ,  retur,creditnote,  custname ,  merch ,  storename ,  mlacode ,  posid ,  od ) values ")

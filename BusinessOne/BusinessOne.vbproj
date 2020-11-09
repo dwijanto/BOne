@@ -131,23 +131,29 @@
     <Compile Include="Class\CreateUserRule.vb" />
     <Compile Include="Class\DbAdapter.vb" />
     <Compile Include="Class\DBAdapterTW.vb" />
+    <Compile Include="Class\Email.vb" />
     <Compile Include="Class\ExcelExtract.vb" />
     <Compile Include="Class\ExcellStuff.vb" />
     <Compile Include="Class\FamilyAdapter.vb" />
     <Compile Include="Class\FamilyTWAdapter.vb" />
     <Compile Include="Class\HKReport.vb" />
+    <Compile Include="Class\HKWarehouse.vb" />
+    <Compile Include="Class\HKWarehouseAdapter.vb" />
     <Compile Include="Class\IActiveRecord.vb" />
     <Compile Include="Class\IAdapter.vb" />
     <Compile Include="Class\IdbAdapter.vb" />
     <Compile Include="Class\IIdentity.vb" />
     <Compile Include="Class\Adapter\ItemPriceAdapter.vb" />
     <Compile Include="Class\ModelAdapterTW.vb" />
+    <Compile Include="Class\Model\HKWarehouseModel.vb" />
     <Compile Include="Class\Model\ItemPriceTMPModel.vb" />
     <Compile Include="Class\Logger.vb" />
     <Compile Include="Class\MLAAdapter.vb" />
     <Compile Include="Class\ModelAdapter.vb" />
+    <Compile Include="Class\Model\TWWarehouseModel.vb" />
     <Compile Include="Class\OITMAdapter.vb" />
     <Compile Include="Class\ORDRAdapter.vb" />
+    <Compile Include="Class\Param.vb" />
     <Compile Include="Class\PostgreSQLDBAdapter.vb" />
     <Compile Include="Class\PostgreSQLModelAdapter.vb" />
     <Compile Include="Class\RDR1Adapter.vb" />
@@ -165,9 +171,18 @@
     <Compile Include="Class\SubFamilyTWAdapter.vb" />
     <Compile Include="Class\TaiwanModelAdapter.vb" />
     <Compile Include="Class\TWReport.vb" />
+    <Compile Include="Class\TWWarehouse.vb" />
+    <Compile Include="Class\TWWarehouseAdapter.vb" />
     <Compile Include="Class\UserAdapter.vb" />
     <Compile Include="Class\UserAssignmentAdapter.vb" />
     <Compile Include="Class\ValidateClass.vb" />
+    <Compile Include="Class\WHEmail.vb" />
+    <Compile Include="DialogDate.Designer.vb">
+      <DependentUpon>DialogDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DialogDateRange.Designer.vb">
       <DependentUpon>DialogDateRange.vb</DependentUpon>
     </Compile>
@@ -205,10 +220,22 @@
     <Compile Include="FormAutoGenerate.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormAutoGenerateWarehouse.Designer.vb">
+      <DependentUpon>FormAutoGenerateWarehouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAutoGenerateWarehouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormFamilyHK.Designer.vb">
       <DependentUpon>FormFamilyHK.vb</DependentUpon>
     </Compile>
     <Compile Include="FormFamilyHK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHKWarehouse.Designer.vb">
+      <DependentUpon>FormHKWarehouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHKWarehouse.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormItemPrice.Designer.vb">
@@ -265,6 +292,12 @@
     <Compile Include="FormSalesReportTW.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormTWWarehouse.Designer.vb">
+      <DependentUpon>FormTWWarehouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTWWarehouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormUser.Designer.vb">
       <DependentUpon>FormUser.vb</DependentUpon>
     </Compile>
@@ -315,6 +348,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DialogDate.resx">
+      <DependentUpon>DialogDate.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DialogDateRange.resx">
       <DependentUpon>DialogDateRange.vb</DependentUpon>
     </EmbeddedResource>
@@ -333,8 +369,14 @@
     <EmbeddedResource Include="FormAutoGenerate.resx">
       <DependentUpon>FormAutoGenerate.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAutoGenerateWarehouse.resx">
+      <DependentUpon>FormAutoGenerateWarehouse.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormFamilyHK.resx">
       <DependentUpon>FormFamilyHK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHKWarehouse.resx">
+      <DependentUpon>FormHKWarehouse.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormItemPrice.resx">
       <DependentUpon>FormItemPrice.vb</DependentUpon>
@@ -362,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSalesReportTW.resx">
       <DependentUpon>FormSalesReportTW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTWWarehouse.resx">
+      <DependentUpon>FormTWWarehouse.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUser.resx">
       <DependentUpon>FormUser.vb</DependentUpon>

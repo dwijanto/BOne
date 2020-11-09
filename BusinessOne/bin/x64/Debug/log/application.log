@@ -9,3 +9,5 @@
 2019-04-24 10:10:07.885 AM	doWork	--------Start----------
 2019-04-24 10:10:17.528 AM	doWork	Generate HK Report.
 2019-04-24 10:10:42.468 AM	doWork	SalesExtract
+2020-06-26 02:46:54.770 PM	GenerateReport	Generate Report.
+2020-06-26 02:46:58.754 PM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x64\Debug\templates\warehouse.xltx

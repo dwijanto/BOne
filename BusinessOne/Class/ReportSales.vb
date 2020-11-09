@@ -173,6 +173,7 @@ Public Class ReportSales
                   " select distinct cmmf,first_value(materialdesc) over (partition by cmmf order by invdate desc,cmmf,materialdesc  )as materialdesc  from sales.tx) " &
                   ", family as (select distinct cmmf,first_value(productfamily) over (partition by cmmf order by invdate desc,cmmf,productfamily  )as productfamily from sales.tx ) " &
                   " , cmmftxdate as (select distinct cmmf,first_value(invdate) over (partition by cmmf order by invdate asc)as firsttxdate  from sales.tx where invdate >= '{0:yyyy-MM-dd}')  " &
+                  " , seven as (select paramname as group,cvalue from sales.paramdt where paramname = 'Seven')" &
                   " (select invid,invdate,firsttxdate,orderno,tx.customerid,c.customername,reportcode,saleforce,country,custtype,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then cp.ckw else cp.sda end as salesman,shipto,productid,tx.cmmf,sbu,family.productfamily,brand,cmmf.materialdesc,supplierid,qty as qty" & enddate.Year - 1 & ",totalsales as totalsales" & enddate.Year - 1 & ",totalcost as totalcost" & enddate.Year - 1 & ",null::integer as qty" & enddate.Year & ",null::numeric(13,2) as totalsales" & enddate.Year & ",null::numeric(15,5) as totalcost" & enddate.Year & ",qty as totalqty ,totalsales as totalsales,totalcost as totalcost,region,location,invdate as filterdate1,invdate as filterdate2" &
                   ",rp.retailprice,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then  null else (1 - (totalsales/qty) / rp.retailprice)  end as sda,case brand when 'LAGOSTINA' then (1 - (totalsales/qty) / rp.retailprice)  when ('LAGOSTINA CASA')  then (1 - (totalsales/qty) / rp.retailprice)  end as lagocookware ,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice * 0.7))) end )end as tefalcookwaretradediscount,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice ))) end )end as tefalcookwaredirectdiscount" &
                   " ,cm.series,cm.range,cm.inductionproperty,cm.type,cm.size,cm.extmaterial,cm.intmaterial,ct.type as channel" &
@@ -182,8 +183,10 @@ Public Class ReportSales
                   " case when sales.get_sd_type(tx.sbu,tx.brand) = 3 then totalsales * (1-coalesce(sd.amount,sd1.amount))::numeric end as lagockwnet" & enddate.Year - 1 & "," &
                   " case when sales.get_sd_type(tx.sbu,tx.brand) = 4 then totalsales * (1-coalesce(sd.amount,sd1.amount))::numeric end as wmfckwnet" & enddate.Year - 1 & "," &
                   " null::numeric as sdanet" & enddate.Year & ",null::numeric as tefalckwnet" & enddate.Year & ",null::numeric as lagockwnet" & enddate.Year & ",null::numeric as wmfckwnet" & enddate.Year &
+                  " ,s.group" &
                   " from sales.tx " &
                   " left join sales.customer c on c.customerid = tx.customerid " &
+                  " left join seven s on s.cvalue = tx.customerid" &
                   " left join sales.custprodkam cp on cp.customerid = tx.customerid" &
                   " left join cmmf on cmmf.cmmf = tx.cmmf " &
                   " left join family on family.cmmf = tx.cmmf" &
@@ -205,9 +208,11 @@ Public Class ReportSales
                   " case when sales.get_sd_type(tx.sbu,tx.brand) = 2 then totalsales * (1-coalesce(sd.amount,sd1.amount))::numeric end as tefalckwnet," &
                   " case when sales.get_sd_type(tx.sbu,tx.brand) = 3 then totalsales * (1-coalesce(sd.amount,sd1.amount))::numeric end as lagockwnet," &
                   " case when sales.get_sd_type(tx.sbu,tx.brand) = 4 then totalsales * (1-coalesce(sd.amount,sd1.amount))::numeric end as wmfckwnet" &
+                  " ,s.group" &
                   " from sales.tx " &
                    " left join sales.customer c on c.customerid = tx.customerid " &
                    " left join sales.custprodkam cp on cp.customerid = tx.customerid" &
+                   " left join seven s on s.cvalue = tx.customerid" &
                    " left join cmmf on cmmf.cmmf = tx.cmmf " &
                    " left join family on family.cmmf = tx.cmmf" &
                    " left join sales.cmmfinfo cm on cm.cmmf = tx.cmmf" &
@@ -224,12 +229,15 @@ Public Class ReportSales
                    " select distinct cmmf,first_value(materialdesc) over (partition by cmmf order by invdate desc,cmmf,materialdesc  )as materialdesc  from sales.tx) " &
                    ", family as (select distinct cmmf,first_value(productfamily) over (partition by cmmf order by invdate desc,cmmf,productfamily  )as productfamily from sales.tx ) " &
                    " , cmmftxdate as (select distinct cmmf,first_value(invdate) over (partition by cmmf order by invdate asc)as firsttxdate  from sales.tx where invdate >= '{0:yyyy-MM-dd}')  " &
+                   " , seven as (select paramname as group,cvalue from sales.paramdt where paramname = 'Seven')" &
                    " (select invid,invdate,firsttxdate,orderno,tx.customerid,c.customername,reportcode,saleforce,country,custtype,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then cp.ckw else cp.sda end as salesman,shipto,productid,tx.cmmf,sbu,family.productfamily,brand,cmmf.materialdesc,supplierid,qty as qty" & enddate.Year - 1 & ",totalsales as totalsales" & enddate.Year - 1 & ",totalcost as totalcost" & enddate.Year - 1 & ",null::integer as qty" & enddate.Year & ",null::numeric(13,2) as totalsales" & enddate.Year & ",null::numeric(15,5) as totalcost" & enddate.Year & ",qty as totalqty ,totalsales as totalsales,totalcost as totalcost,region,location,invdate as filterdate1,invdate as filterdate2" &
                    ",rp.retailprice,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then  null else (1 - (totalsales/qty) / rp.retailprice)  end as sda,case brand when 'LAGOSTINA' then (1 - (totalsales/qty) / rp.retailprice)  when ('LAGOSTINA CASA')  then (1 - (totalsales/qty) / rp.retailprice)  end as lagocookware ,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice * 0.7))) end )end as tefalcookwaretradediscount,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice ))) end )end as tefalcookwaredirectdiscount" &
                    " ,cm.series,cm.range,cm.inductionproperty,cm.type,cm.size,cm.extmaterial,cm.intmaterial,ct.type as channel" &
                    ",date_part('week',tx.invdate) as week,sales.dow(date_part('ISODOW',tx.invdate)::integer) as dow,sales.weekofmonth(tx.invdate) as wof,os.trafficios,os.storevisitor,os.cash,os.creditcard,os.storevisitor/os.trafficios as catchmentrate,ck.typekey as keychannel" &
+                   " ,s.group" &
                    " from sales.tx " &
                    " left join sales.customer c on c.customerid = tx.customerid " &
+                   " left join seven s on s.cvalue = tx.customerid" &
                    " left join sales.custprodkam cp on cp.customerid = tx.customerid" &
                    " left join cmmf on cmmf.cmmf = tx.cmmf " &
                    " left join family on family.cmmf = tx.cmmf" &
@@ -244,8 +252,10 @@ Public Class ReportSales
                    ",rp.retailprice,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then  null else (1 - (totalsales/qty) / rp.retailprice)  end as sda,case brand when 'LAGOSTINA' then (1 - (totalsales/qty) / rp.retailprice)  when ('LAGOSTINA CASA')  then (1 - (totalsales/qty) / rp.retailprice)  end as lagocookware ,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice * 0.7))) end )end as tefalcookwaretradediscount,case when  (sbu = 'COOKWARE & BAKEWARE' or sbu = 'KITCHENWARE & DINNER' or sbu = 'COOKWARE' ) then( case brand when 'TEFAL' then (1 - ((totalsales/qty) / (rp.retailprice ))) end )end as tefalcookwaredirectdiscount" &
                    " ,cm.series,cm.range,cm.inductionproperty,cm.type,cm.size,cm.extmaterial,cm.intmaterial,ct.type as channel" &
                    " ,date_part('week',tx.invdate) as week,sales.dow(date_part('ISODOW',tx.invdate)::integer) as dow,sales.weekofmonth(tx.invdate) as wof,os.trafficios,os.storevisitor,os.cash,os.creditcard,os.storevisitor/os.trafficios as catchmentrate,ck.typekey" &
+                   " ,s.group" &
                    " from sales.tx " &
                     " left join sales.customer c on c.customerid = tx.customerid " &
+                    " left join seven s on s.cvalue = tx.customerid" &
                     " left join sales.custprodkam cp on cp.customerid = tx.customerid" &
                     " left join cmmf on cmmf.cmmf = tx.cmmf " &
                     " left join family on family.cmmf = tx.cmmf" &
@@ -335,7 +345,7 @@ Public Class ReportSales
 
     Private Sub CreatePivotTable(ByVal oxl As Excel.Application, ByVal oWb As Excel.Workbook, ByVal isheet As Integer, ByVal mydate As Date)
         Dim osheet As Excel.Worksheet
-
+        Dim ExcludeSalesman = "Philippines,Taiwan,Von Ryan BORINES,UK,Export,Thailand,Singapore,Malaysia"
         oWb.Worksheets(isheet).select()
         osheet = oWb.Worksheets(isheet)
         oWb.PivotCaches.Create(Excel.XlPivotTableSourceType.xlDatabase, "DATA!ExternalData_1").CreatePivotTable(osheet.Name & "!R7C1", "PivotTable1", Excel.XlPivotTableVersionList.xlPivotTableVersionCurrent)
@@ -487,9 +497,15 @@ Public Class ReportSales
         osheet.Name = "YTD"
 
         For Each PV As Excel.PivotItem In osheet.PivotTables("PivotTable1").PivotFields("salesman").PivotItems
-            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
+            'If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Or
+            '    PV.Value = "Thailand" Then
+            '    PV.Visible = False
+            'End If
+
+            If ExcludeSalesman.ToString.Contains(PV.Value) Then
                 PV.Visible = False
             End If
+
         Next
         ''"THE DAIRY FARM COMPANY LTD. (Mannings)"
         'For Each PV As Excel.PivotItem In osheet.PivotTables("PivotTable1").PivotFields("customername").PivotItems
@@ -528,7 +544,10 @@ Public Class ReportSales
         osheet.PivotTables("PivotTable1").pivotfields("invdate").orientation = Excel.XlPivotFieldOrientation.xlPageField
         osheet.PivotTables("PivotTable1").pivotfields("invdate").currentpage = Format(mydate, "MMM")
         For Each PV As Excel.PivotItem In osheet.PivotTables("PivotTable1").PivotFields("salesman").PivotItems
-            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
+            'If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
+            '    PV.Visible = False
+            'End If
+            If ExcludeSalesman.ToString.Contains(PV.Value) Then
                 PV.Visible = False
             End If
         Next
@@ -643,7 +662,11 @@ Public Class ReportSales
         osheet.PivotTables("PivotTable1").pivotfields("years").currentpage = Format(mydate, "yyyy")
 
         For Each PV As Excel.PivotItem In osheet.PivotTables("PivotTable1").PivotFields("salesman").PivotItems
-            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
+            'If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Or
+            '    PV.Value = "Thailand" Then
+            '    PV.Visible = False
+            'End If
+            If ExcludeSalesman.ToString.Contains(PV.Value) Then
                 PV.Visible = False
             End If
         Next
@@ -726,7 +749,11 @@ Public Class ReportSales
         osheet.PivotTables("PivotTable1").PivotFields(" %Margin " & mydate.Year).numberformat = "0.00%"
 
         For Each PV As Excel.PivotItem In osheet.PivotTables("PivotTable1").PivotFields("salesman").PivotItems
-            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
+            'If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Or
+            '    PV.Value = "Thailand" Then
+            '    PV.Visible = False
+            'End If
+            If ExcludeSalesman.ToString.Contains(PV.Value) Then
                 PV.Visible = False
             End If
         Next
@@ -757,7 +784,10 @@ Public Class ReportSales
         osheet.PivotTables("PivotTable1").pivotfields("Years2").Caption = "Filter Years"
 
         For Each PV As Excel.PivotItem In osheet.PivotTables("PivotTable1").PivotFields("salesman").PivotItems
-            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
+            'If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
+            '    PV.Visible = False
+            'End If
+            If ExcludeSalesman.ToString.Contains(PV.Value) Then
                 PV.Visible = False
             End If
         Next
@@ -833,7 +863,11 @@ Public Class ReportSales
         osheet.PivotTables("PivotTable1").pivotfields("Years2").Caption = "Filter Years"
 
         For Each PV As Excel.PivotItem In osheet.PivotTables("PivotTable1").PivotFields("salesman").PivotItems
-            If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Then
+            'If PV.Value = "Philippines" Or PV.Value = "Singapore" Or PV.Value = "N/A" Or PV.Value = "Taiwan" Or PV.Value = "Export" Or PV.Value = "Von Ryan BORINES" Or PV.Value = "Malaysia" Or
+            '    PV.Value = "Thailand" Then
+            '    PV.Visible = False
+            'End If
+            If ExcludeSalesman.ToString.Contains(PV.Value) Then
                 PV.Visible = False
             End If
         Next

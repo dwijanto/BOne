@@ -1,5 +1,6 @@
 ﻿Public Class ModelAdapterTW
-    Protected sqlstr As String = String.Empty
+    'Protected sqlstr As String = String.Empty
+    Public Sqlstr As String = String.Empty
     Public DS As DataSet
     Private DBAdapter1 = DBAdapterTW.getInstance
     Public errorMsg As String = String.Empty

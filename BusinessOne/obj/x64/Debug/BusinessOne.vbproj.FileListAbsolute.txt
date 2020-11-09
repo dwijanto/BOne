@@ -58,3 +58,8 @@ C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x64\Debug\BusinessOne.FormUs
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x64\Debug\BusinessOne.Resources.resources
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x64\Debug\BusinessOne.FormImportPOS.resources
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x64\Debug\BusinessOne.vbproj.GenerateResource.Cache
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x64\Debug\BusinessOne.FormTaxInvoice.resources
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x64\Debug\BusinessOne.DialogDate.resources
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x64\Debug\BusinessOne.FormAutoGenerateWarehouse.resources
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x64\Debug\BusinessOne.FormHKWarehouse.resources
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x64\Debug\BusinessOne.FormTWWarehouse.resources

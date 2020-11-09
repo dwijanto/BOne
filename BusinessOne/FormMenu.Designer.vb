@@ -28,8 +28,11 @@ Partial Class FormMenu
         Me.QueryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HKSalesExtractionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AutoReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HKWarehouseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QueryTaiwanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TWSalesExtractToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TWInvoiceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TWWarehouseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdminToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImportPOSDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -43,7 +46,7 @@ Partial Class FormMenu
         Me.POInformationV2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TWInvoiceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AutoReportWarehouseToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -66,7 +69,7 @@ Partial Class FormMenu
         '
         'QueryToolStripMenuItem
         '
-        Me.QueryToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HKSalesExtractionToolStripMenuItem, Me.AutoReportToolStripMenuItem})
+        Me.QueryToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HKSalesExtractionToolStripMenuItem, Me.AutoReportToolStripMenuItem, Me.HKWarehouseToolStripMenuItem})
         Me.QueryToolStripMenuItem.Name = "QueryToolStripMenuItem"
         Me.QueryToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
         Me.QueryToolStripMenuItem.Text = "Query HK"
@@ -83,11 +86,17 @@ Partial Class FormMenu
         Me.AutoReportToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
         Me.AutoReportToolStripMenuItem.Text = "Auto Report"
         '
+        'HKWarehouseToolStripMenuItem
+        '
+        Me.HKWarehouseToolStripMenuItem.Name = "HKWarehouseToolStripMenuItem"
+        Me.HKWarehouseToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.HKWarehouseToolStripMenuItem.Text = "HK - Warehouse"
+        '
         'QueryTaiwanToolStripMenuItem
         '
-        Me.QueryTaiwanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TWSalesExtractToolStripMenuItem, Me.TWInvoiceToolStripMenuItem})
+        Me.QueryTaiwanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TWSalesExtractToolStripMenuItem, Me.TWInvoiceToolStripMenuItem, Me.TWWarehouseToolStripMenuItem})
         Me.QueryTaiwanToolStripMenuItem.Name = "QueryTaiwanToolStripMenuItem"
-        Me.QueryTaiwanToolStripMenuItem.Size = New System.Drawing.Size(92, 20)
+        Me.QueryTaiwanToolStripMenuItem.Size = New System.Drawing.Size(91, 20)
         Me.QueryTaiwanToolStripMenuItem.Text = "Query Taiwan"
         '
         'TWSalesExtractToolStripMenuItem
@@ -96,9 +105,21 @@ Partial Class FormMenu
         Me.TWSalesExtractToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.TWSalesExtractToolStripMenuItem.Text = "TW - SalesExtract"
         '
+        'TWInvoiceToolStripMenuItem
+        '
+        Me.TWInvoiceToolStripMenuItem.Name = "TWInvoiceToolStripMenuItem"
+        Me.TWInvoiceToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
+        Me.TWInvoiceToolStripMenuItem.Text = "TW - Tax Invoice"
+        '
+        'TWWarehouseToolStripMenuItem
+        '
+        Me.TWWarehouseToolStripMenuItem.Name = "TWWarehouseToolStripMenuItem"
+        Me.TWWarehouseToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
+        Me.TWWarehouseToolStripMenuItem.Text = "TW - Warehouse"
+        '
         'AdminToolStripMenuItem
         '
-        Me.AdminToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UserToolStripMenuItem, Me.ImportPOSDataToolStripMenuItem})
+        Me.AdminToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UserToolStripMenuItem, Me.ImportPOSDataToolStripMenuItem, Me.AutoReportWarehouseToolStripMenuItem1})
         Me.AdminToolStripMenuItem.Name = "AdminToolStripMenuItem"
         Me.AdminToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
         Me.AdminToolStripMenuItem.Text = "Admin"
@@ -106,13 +127,13 @@ Partial Class FormMenu
         'UserToolStripMenuItem
         '
         Me.UserToolStripMenuItem.Name = "UserToolStripMenuItem"
-        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
         Me.UserToolStripMenuItem.Text = "User"
         '
         'ImportPOSDataToolStripMenuItem
         '
         Me.ImportPOSDataToolStripMenuItem.Name = "ImportPOSDataToolStripMenuItem"
-        Me.ImportPOSDataToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.ImportPOSDataToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
         Me.ImportPOSDataToolStripMenuItem.Text = "Import POS Data"
         '
         'MasterToolStripMenuItem
@@ -125,13 +146,13 @@ Partial Class FormMenu
         'MLATWToolStripMenuItem
         '
         Me.MLATWToolStripMenuItem.Name = "MLATWToolStripMenuItem"
-        Me.MLATWToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.MLATWToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.MLATWToolStripMenuItem.Text = "MLA-TW"
         '
         'FamilyHKToolStripMenuItem
         '
         Me.FamilyHKToolStripMenuItem.Name = "FamilyHKToolStripMenuItem"
-        Me.FamilyHKToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.FamilyHKToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FamilyHKToolStripMenuItem.Text = "Family HK"
         '
         'StaffPurchaseToolStripMenuItem
@@ -183,11 +204,11 @@ Partial Class FormMenu
         Me.Label2.Size = New System.Drawing.Size(0, 13)
         Me.Label2.TabIndex = 6
         '
-        'TWInvoiceToolStripMenuItem
+        'AutoReportWarehouseToolStripMenuItem1
         '
-        Me.TWInvoiceToolStripMenuItem.Name = "TWInvoiceToolStripMenuItem"
-        Me.TWInvoiceToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
-        Me.TWInvoiceToolStripMenuItem.Text = "TW - Tax Invoice"
+        Me.AutoReportWarehouseToolStripMenuItem1.Name = "AutoReportWarehouseToolStripMenuItem1"
+        Me.AutoReportWarehouseToolStripMenuItem1.Size = New System.Drawing.Size(200, 22)
+        Me.AutoReportWarehouseToolStripMenuItem1.Text = "Auto Report Warehouse"
         '
         'FormMenu
         '
@@ -229,4 +250,7 @@ Partial Class FormMenu
     Friend WithEvents POInformationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents POInformationV2ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TWInvoiceToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents HKWarehouseToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TWWarehouseToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AutoReportWarehouseToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -16,7 +16,7 @@ Public Class ReportSalesTW
         Dim oWb As Excel.Workbook = Nothing
         Dim oSheet As Excel.Worksheet = Nothing
         Dim SheetName As String = vbEmpty
-        Dim enddate As Date = Today.Date.AddDays(-1)
+        Dim enddate As Date = Today.Date.AddDays(0)
         Dim hwnd As System.IntPtr
         Dim result As Boolean
         Try

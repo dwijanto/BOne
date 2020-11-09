@@ -1,5 +1,6 @@
 ﻿Public Class ModelAdapter
-    Protected sqlstr As String = String.Empty
+    'Protected sqlstr As String = String.Empty
+    Public sqlstr As String = String.Empty
     Public DS As DataSet
     Private DBAdapter1 = DbAdapter.getInstance
     Public errorMsg As String = String.Empty
@@ -19,5 +20,10 @@
             errorMsg = ex.Message
         End Try        
         Return myret
+    End Function
+
+    Public Function Copy() As Boolean
+
+        Return True
     End Function
 End Class

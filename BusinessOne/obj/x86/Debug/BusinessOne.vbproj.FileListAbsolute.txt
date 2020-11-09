@@ -36,7 +36,6 @@ C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.pdb
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\BusinessOne.exe
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\BusinessOne.pdb
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\BusinessOne.xml
-C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.vbprojResolveAssemblyReference.cache
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.DialogDateRange.resources
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.DialogFamilyHK.resources
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.DialogMLATWInput.resources
@@ -59,3 +58,8 @@ C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.Resour
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.FormImportPOS.resources
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.vbproj.GenerateResource.Cache
 C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.FormTaxInvoice.resources
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.vbprojResolveAssemblyReference.cache
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.DialogDate.resources
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.FormAutoGenerateWarehouse.resources
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.FormHKWarehouse.resources
+C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\obj\x86\Debug\BusinessOne.FormTWWarehouse.resources

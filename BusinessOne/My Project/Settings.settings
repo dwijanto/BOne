@@ -26,7 +26,7 @@
       <Value Profile="(Default)">\\172.22.10.77\sharedfolder\BOne\HK\</Value>
     </Setting>
     <Setting Name="PostgreSQLDev" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">host=localhost;port=5432;database=LogisticDb20150120;CommandTimeout=1000;TimeOut=1000;</Value>
+      <Value Profile="(Default)">host=localhost;port=5433;database=LogisticDb20200406;CommandTimeout=1000;TimeOut=1000;</Value>
     </Setting>
     <Setting Name="PostgreSQLLive" Type="System.String" Scope="Application">
       <Value Profile="(Default)">host=hon14nt;port=5432;database=LogisticDb;CommandTimeout=1000;TimeOut=1000;</Value>
@@ -76,6 +76,9 @@
     </Setting>
     <Setting Name="pwdinterfacenew" Type="System.String" Scope="User">
       <Value Profile="(Default)">B104int</Value>
+    </Setting>
+    <Setting Name="smtpclient" Type="System.String" Scope="User">
+      <Value Profile="(Default)">smtp.seb.com</Value>
     </Setting>
   </Settings>
 </SettingsFile>

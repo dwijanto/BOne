@@ -95,3 +95,15 @@
 2018-09-13 09:58:34.079 AM	doWork	Invalid index. (Exception from HRESULT: 0x8002000B (DISP_E_BADINDEX))
 2018-09-13 10:02:33.344 AM	doWork	--------Start----------
 2018-09-13 10:02:37.969 AM	doWork	Generate HK Report.
+2020-03-12 09:49:27.036 AM	dowork	--------Start Warehouse----------
+2020-03-12 09:49:27.771 AM	dowork	Generate HK Warehouse Text File.
+2020-03-12 09:52:28.414 AM	dowork	Generate HK Warehouse Text File.
+2020-03-12 09:52:46.113 AM	dowork	Generate TW Warehouse Text File.
+2020-03-12 09:53:07.593 AM	dowork	Generate TW Warehouse Text File.
+2020-10-05 11:15:58.613 AM	doWork	--------Start----------
+2020-10-05 11:16:42.575 AM	doWork	SalesReportHK001
+2020-10-05 11:17:15.046 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-10-05 11:17:39.266 AM	GenerateReport	SalesReportHK - Try
+2020-10-05 11:17:46.481 AM	GenerateReport	SalesReportHK - After Create Object
+2020-10-05 11:17:46.965 AM	GenerateReport	User :AS\dlie
+2020-10-05 11:17:52.101 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\Debug\templates\ExcelTemplateNew.xltx False

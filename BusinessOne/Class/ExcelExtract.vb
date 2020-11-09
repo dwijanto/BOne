@@ -25,6 +25,15 @@ Public Class ExcelExtract
     Public Shared Function EndTask(ByVal hWnd As IntPtr, ByVal fShutDown As Boolean, ByVal fForce As Boolean) As Boolean
     End Function
 
+    Public Sub New(ByRef Parent As Object, ByVal ReportName As String, ByVal datasheet As Integer, ByRef myTemplate As String, ByVal FormatReportCallBack As FormatReportDelegate, ByVal PivotCallback As FormatReportDelegate, Optional openfile As Boolean = True)
+        Me.Parent = Parent
+        Me.ReportName = ReportName
+        Me.mytemplate = myTemplate
+        Me.Datasheet = Datasheet
+        Me.FormatReportCallback = FormatReportCallBack
+        Me.PivotCallback = PivotCallback
+    End Sub
+
     Public Sub New(ByRef Parent As Object, ByVal ReportName As String, ByRef myTemplate As String, ByVal dt As DataTable, ByVal FormatReportCallBack As FormatReportDelegate, ByVal PivotCallback As FormatReportDelegate, Optional openfile As Boolean = True)
         Me.Parent = Parent
         Me.ReportName = ReportName
@@ -384,7 +393,129 @@ Public Class ExcelExtract
         End Try
         Return result
     End Function
+    Public Function GenerateReport(ByRef FileName As String, ByVal sqlstr As String, ByRef errorMsg As String) As Boolean
+        Logger.log("Generate Report.")
+        Dim myCriteria As String = String.Empty
+        Dim result As Boolean = False
 
+        Dim StopWatch As New Stopwatch
+        StopWatch.Start()
+        'Open Excel
+        Application.DoEvents()
+
+        'Excel Variable
+        Dim oXl As Excel.Application = Nothing
+        Dim oWb As Excel.Workbook = Nothing
+        Dim oSheet As Excel.Worksheet = Nothing
+        Dim SheetName As String = vbEmpty
+        Dim hwnd As System.IntPtr
+        Try
+            'Create Object Excel 
+            ProgressReport(2, "CreateObject..")
+            oXl = CType(CreateObject("Excel.Application"), Excel.Application)
+            hwnd = oXl.Hwnd
+            'oXl.ScreenUpdating = False
+            'oXl.Visible = False
+            oXl.DisplayAlerts = False
+            ProgressReport(2, "Opening Template...")
+            ProgressReport(2, "Generating records..")
+            Logger.log(String.Format("Open Template : {0}", Application.StartupPath & mytemplate))
+            oWb = oXl.Workbooks.Open(Application.StartupPath & mytemplate)
+            oXl.Visible = False
+            ProgressReport(2, "Creating Worksheet...")
+            'DATA
+
+            If IsNothing(DataTableList) Then
+                'Print One Worksheet 
+                oWb.Worksheets(Datasheet).select()
+                oSheet = oWb.Worksheets(Datasheet)
+
+                If sqlstr <> "" Then
+                    ProgressReport(2, "Get records..")
+                    FillWorksheet(oSheet, sqlstr)
+                    Dim orange = oSheet.Range("A1")
+                    Dim lastrow = GetLastRow(oXl, oSheet, orange)
+                    If lastrow > 1 Then
+                        FormatReportCallback.Invoke(oSheet, New EventArgs)
+                    End If
+                Else
+                    FormatReportCallback.Invoke(oSheet, New EventArgs)
+                End If
+            Else
+                'Print Multiple Worksheet
+                'Looping from here
+                For i = 0 To DataTableList.Count - 1
+                    Dim MyDataTable = CType(DataTableList(i), DataTableWorksheet)
+                    oWb.Worksheets(MyDataTable.DataSheet).select()
+                    oSheet = oWb.Worksheets(MyDataTable.DataSheet)
+                    oSheet.Name = MyDataTable.SheetName
+                    ProgressReport(2, "Get records..")
+                    FillWorksheet(oSheet, sqlstr)
+                    Dim orange = oSheet.Range("A1")
+                    Dim lastrow = GetLastRow(oXl, oSheet, orange)
+
+
+                    If lastrow > 1 Then
+                        'Delegate for modification
+                        'oSheet.Columns("A:A").numberformat = "dd-MMM-yyyy"
+                        FormatReportCallback.Invoke(oSheet, New EventArgs)
+                    End If
+                Next
+
+
+
+                'End Looping
+            End If
+
+
+            PivotCallback.Invoke(oWb, New EventArgs)
+            For i = 0 To oWb.Connections.Count - 1
+                oWb.Connections(1).Delete()
+                Thread.Sleep(200)
+            Next
+            StopWatch.Stop()
+
+            'FileName = FileName & "\" & String.Format("Report" & ReportName & "-{0}-{1}-{2}.xlsx", Today.Year, Format("00", Today.Month), Format("00", Today.Day))
+            FileName = String.Format(ReportName)
+            ProgressReport(3, "")
+            ProgressReport(2, "Saving File ..." & FileName)
+            'oSheet.Name = ReportName
+            Logger.log(String.Format("Saving File...{0}", FileName))
+            If FileName.Contains("xlsm") Then
+                oWb.SaveAs(FileName, FileFormat:=Excel.XlFileFormat.xlOpenXMLWorkbookMacroEnabled)
+            Else
+                oWb.SaveAs(FileName)
+            End If
+
+            ProgressReport(2, "Elapsed Time: " & Format(StopWatch.Elapsed.Minutes, "00") & ":" & Format(StopWatch.Elapsed.Seconds, "00") & "." & StopWatch.Elapsed.Milliseconds.ToString)
+            result = True
+        Catch ex As Exception
+            ProgressReport(3, ex.Message & FileName)
+            errorMsg = ex.Message
+            Logger.log(String.Format("Error : {0}", errorMsg))
+        Finally
+            'clear excel from memory
+            Try
+                oXl.Quit()
+                releaseComObject(oSheet)
+                releaseComObject(oWb)
+                releaseComObject(oXl)
+                GC.Collect()
+                GC.WaitForPendingFinalizers()
+            Catch ex As Exception
+
+            End Try
+
+            Try
+                'to make sure excel is no longer in memory
+                EndTask(hwnd, True, True)
+            Catch ex As Exception
+            End Try
+
+        End Try
+        Logger.log(String.Format("End {0}", result))
+        Return result
+    End Function
     Private Sub ProgressReport(ByVal id As Integer, ByVal message As String)
         If Parent.InvokeRequired Then
             Dim d As New ProgressReportDelegate(AddressOf ProgressReport)
@@ -421,6 +552,38 @@ Public Class ExcelExtract
         End Try
     End Sub
 
+    Public Shared Sub FillWorksheet(ByVal osheet As Excel.Worksheet, ByVal sqlstr As String, Optional ByVal Location As String = "A1")
+        Dim oExCon As String = My.Settings.oExcon ' My.Settings.oExCon.ToString '"ODBC;DSN=PostgreSQL30;"
+        'oExCon = oExCon.Insert(oExCon.Length, "UID=" & dbadapter1.userid & ";PWD=" & dbadapter1.password)
+        'Dim dbAdapter1 = PostgreSQLDBAdapter.getInstance
+        oExCon = oExCon.Insert(oExCon.Length, "UID=admin;PWD=admin;")
+        Dim oRange As Excel.Range
+        oRange = osheet.Range(Location)
+        With osheet.QueryTables.Add(oExCon.Replace("Host=", "Server="), oRange)          
+            .CommandText = sqlstr
+            .FieldNames = True
+            .RowNumbers = False
+            .FillAdjacentFormulas = False
+            .PreserveFormatting = True
+            .RefreshOnFileOpen = False
+            .BackgroundQuery = True
+            .RefreshStyle = Excel.XlCellInsertionMode.xlInsertDeleteCells
+            .SavePassword = True
+            .SaveData = True
+            .AdjustColumnWidth = True
+            .RefreshPeriod = 0
+            .PreserveColumnInfo = True
+            .Refresh(BackgroundQuery:=False)
+            Application.DoEvents()
+        End With
+        oRange = Nothing
+
+        oRange = osheet.Range("1:1")
+        oRange = osheet.Range(Location)
+        oRange.Select()
+        osheet.Application.Selection.autofilter()
+        osheet.Cells.EntireColumn.AutoFit()
+    End Sub
 
     Private Sub FillWorksheet(ByVal osheet As Excel.Worksheet, DT As DataTable)
         Dim dc As System.Data.DataColumn

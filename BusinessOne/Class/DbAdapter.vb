@@ -67,9 +67,6 @@ Public Class DbAdapter
         Return myret
     End Function
 
-
-
-
 #Region "IDisposable Support"
     Private disposedValue As Boolean ' To detect redundant calls
 

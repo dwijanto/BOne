@@ -349,3 +349,277 @@
 2019-05-08 11:43:06.985 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
 2019-05-08 11:43:07.163 AM	GenerateReport	Can Open
 2019-05-08 11:52:33.342 AM	doWork	--------Start----------
+2020-01-02 10:54:21.913 AM	doWork	--------Start----------
+2020-01-02 10:54:38.864 AM	doWork	Generate HK Report.
+2020-01-02 10:54:47.413 AM	doWork	SalesExtract
+2020-01-02 10:56:25.972 AM	doWork	SalesReportHK001
+2020-01-02 10:56:31.025 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-01-02 10:56:34.018 AM	GenerateReport	SalesReportHK - Try
+2020-01-02 10:56:37.562 AM	GenerateReport	SalesReportHK - After Create Object
+2020-01-02 10:56:37.770 AM	GenerateReport	User :AS\dlie
+2020-01-02 10:56:39.056 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-01-02 10:56:40.879 AM	GenerateReport	Can Open
+2020-01-02 11:00:05.345 AM	doWork	Exception from HRESULT: 0x800A03EC
+2020-01-02 11:01:33.211 AM	doWork	SalesReportHK
+2020-01-02 11:01:38.487 AM	doWork	SalesReportHK001
+2020-01-02 11:01:51.649 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-01-02 11:01:52.365 AM	GenerateReport	SalesReportHK - Try
+2020-01-02 11:02:04.610 AM	GenerateReport	SalesReportHK - After Create Object
+2020-01-02 11:02:04.612 AM	GenerateReport	User :AS\dlie
+2020-01-02 11:02:04.618 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-01-02 11:02:04.923 AM	GenerateReport	Can Open
+2020-01-02 11:05:29.536 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-01-02 11:05:30.142 AM	GenerateReport	SalesReportHK - Try
+2020-01-02 11:05:31.645 AM	GenerateReport	SalesReportHK - After Create Object
+2020-01-02 11:05:31.647 AM	GenerateReport	User :AS\dlie
+2020-01-02 11:05:31.650 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-01-02 11:05:31.909 AM	GenerateReport	Can Open
+2020-01-02 11:08:35.989 AM	doWork	Exception from HRESULT: 0x800A03EC
+2020-01-02 11:09:50.645 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-01-02 11:09:52.203 AM	GenerateReport	SalesReportHK - Try
+2020-01-02 11:09:53.648 AM	GenerateReport	SalesReportHK - After Create Object
+2020-01-02 11:09:53.649 AM	GenerateReport	User :AS\dlie
+2020-01-02 11:09:53.652 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-01-02 11:09:53.902 AM	GenerateReport	Can Open
+2020-01-02 11:37:31.960 AM	doWork	Exception from HRESULT: 0x800A03EC
+2020-01-02 11:37:39.197 AM	doWork	SalesReportHK001
+2020-01-02 11:37:39.880 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-01-02 11:37:40.783 AM	GenerateReport	SalesReportHK - Try
+2020-01-02 11:37:42.362 AM	GenerateReport	SalesReportHK - After Create Object
+2020-01-02 11:37:42.364 AM	GenerateReport	User :AS\dlie
+2020-01-02 11:37:42.368 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-01-02 11:37:42.654 AM	GenerateReport	Can Open
+2020-01-02 11:37:58.148 AM	doWork	General ODBC Error
+2020-01-02 11:38:02.616 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-01-02 11:38:03.295 AM	GenerateReport	SalesReportHK - Try
+2020-01-02 11:38:04.859 AM	GenerateReport	SalesReportHK - After Create Object
+2020-01-02 11:38:04.861 AM	GenerateReport	User :AS\dlie
+2020-01-02 11:38:04.864 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-01-02 11:38:05.147 AM	GenerateReport	Can Open
+2020-01-02 11:40:30.551 AM	doWork	Exception from HRESULT: 0x800A03EC
+2020-01-02 11:40:34.299 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-01-02 11:40:34.992 AM	GenerateReport	SalesReportHK - Try
+2020-01-02 11:40:36.664 AM	GenerateReport	SalesReportHK - After Create Object
+2020-01-02 11:40:36.665 AM	GenerateReport	User :AS\dlie
+2020-01-02 11:40:36.669 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-01-02 11:40:36.925 AM	GenerateReport	Can Open
+2020-01-02 11:46:24.551 AM	doWork	Exception from HRESULT: 0x800A03EC
+2020-01-02 11:46:25.056 AM	doWork	SalesReportHK
+2020-02-25 11:17:27.834 AM	dowork	--------Start Warehouse----------
+2020-02-25 11:17:31.129 AM	dowork	Generate HK Warehouse Text File.
+2020-02-25 11:21:15.798 AM	dowork	--------Start Warehouse----------
+2020-02-25 11:21:20.965 AM	dowork	Generate HK Warehouse Text File.
+2020-02-25 11:26:22.529 AM	dowork	--------Start Warehouse----------
+2020-02-25 11:26:23.578 AM	dowork	Generate HK Warehouse Text File.
+2020-02-25 11:28:37.165 AM	dowork	--------Start Warehouse----------
+2020-02-25 11:28:37.196 AM	dowork	Generate HK Warehouse Text File.
+2020-02-25 11:29:27.139 AM	dowork	--------Start Warehouse----------
+2020-02-25 11:29:27.147 AM	dowork	Generate HK Warehouse Text File.
+2020-02-25 11:30:37.551 AM	dowork	--------Start Warehouse----------
+2020-02-25 11:30:37.571 AM	dowork	Generate HK Warehouse Text File.
+2020-02-25 11:37:27.761 AM	dowork	--------Start Warehouse----------
+2020-02-25 11:37:27.774 AM	dowork	Generate HK Warehouse Text File.
+2020-02-25 11:37:58.451 AM	dowork	Generate HK Warehouse Text File.
+2020-02-25 03:31:50.551 PM	dowork	--------Start Warehouse----------
+2020-02-25 03:31:50.566 PM	dowork	Generate HK Warehouse Text File.
+2020-02-25 03:39:00.758 PM	dowork	--------Start Warehouse----------
+2020-02-25 03:39:00.758 PM	dowork	Generate HK Warehouse Text File.
+2020-02-25 04:01:39.589 PM	dowork	--------Start Warehouse----------
+2020-02-25 04:01:39.605 PM	dowork	Generate HK Warehouse Text File.
+2020-02-25 04:02:35.856 PM	dowork	Generate TW Warehouse Text File.
+2020-03-12 09:55:15.160 AM	dowork	--------Start Warehouse----------
+2020-03-12 09:55:15.176 AM	dowork	Generate HK Warehouse Text File.
+2020-03-12 09:56:57.778 AM	dowork	Generate TW Warehouse Text File.
+2020-03-12 10:42:22.481 AM	dowork	--------Start Warehouse----------
+2020-03-12 10:42:22.496 AM	dowork	Generate HK Warehouse Text File.
+2020-03-12 10:43:03.737 AM	dowork	--------Start Warehouse----------
+2020-03-12 10:43:04.737 AM	dowork	Generate HK Warehouse Text File.
+2020-03-12 10:45:40.091 AM	dowork	Generate TW Warehouse Text File.
+2020-03-12 10:47:23.513 AM	dowork	--------Start Warehouse----------
+2020-03-12 10:47:23.513 AM	dowork	Generate HK Warehouse Text File.
+2020-03-12 10:48:05.815 AM	dowork	Generate TW Warehouse Text File.
+2020-03-12 10:50:21.965 AM	dowork	--------Start Warehouse----------
+2020-03-12 10:50:21.981 AM	dowork	Generate HK Warehouse Text File.
+2020-03-12 10:51:02.616 AM	dowork	Generate TW Warehouse Text File.
+2020-04-20 10:14:55.332 AM	GenerateReport	Generate Report.
+2020-04-20 10:14:57.939 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-04-20 10:30:33.445 AM	GenerateReport	Generate Report.
+2020-04-20 10:30:35.128 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-04-20 10:31:47.706 AM	GenerateReport	Generate Report.
+2020-04-20 10:31:49.248 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-04-20 10:33:36.857 AM	GenerateReport	Generate Report.
+2020-04-20 10:33:38.595 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-06-01 09:42:58.992 AM	GenerateReport	Generate Report.
+2020-06-01 09:43:00.780 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-06-01 09:45:49.001 AM	GenerateReport	Generate Report.
+2020-06-01 09:45:50.633 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-06-01 09:46:46.181 AM	GenerateReport	Generate Report.
+2020-06-01 09:46:47.701 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-06-01 09:47:34.522 AM	GenerateReport	Generate Report.
+2020-06-01 09:47:36.101 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-06-01 09:54:07.403 AM	GenerateReport	Generate Report.
+2020-06-01 09:54:09.170 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-06-01 09:54:59.603 AM	GenerateReport	Generate Report.
+2020-06-01 09:55:01.280 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-06-01 09:55:33.332 AM	GenerateReport	Generate Report.
+2020-06-01 09:55:34.908 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-06-01 09:56:04.561 AM	GenerateReport	Generate Report.
+2020-06-01 09:56:06.159 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-06-01 09:56:39.664 AM	GenerateReport	Generate Report.
+2020-06-01 09:56:41.090 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouseTW.xltx
+2020-06-01 09:57:36.296 AM	GenerateReport	Generate Report.
+2020-06-01 09:57:37.712 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouseTW.xltx
+2020-06-01 09:58:20.885 AM	GenerateReport	Generate Report.
+2020-06-01 09:58:22.330 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouseTW.xltx
+2020-06-01 09:59:02.353 AM	GenerateReport	Generate Report.
+2020-06-01 09:59:04.020 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouseTW.xltx
+2020-06-26 02:49:22.297 PM	GenerateReport	Generate Report.
+2020-06-26 02:49:23.989 PM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-07-17 10:11:56.471 AM	GenerateReport	Generate Report.
+2020-07-17 10:12:00.066 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-07-17 10:13:08.027 AM	GenerateReport	Generate Report.
+2020-07-17 10:13:15.834 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-07-17 10:14:48.781 AM	GenerateReport	Generate Report.
+2020-07-17 10:14:50.567 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-07-17 10:18:39.082 AM	GenerateReport	Generate Report.
+2020-07-17 10:18:40.718 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-07-20 10:05:58.755 AM	GenerateReport	Generate Report.
+2020-07-20 10:06:02.493 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-07-20 10:06:58.421 AM	GenerateReport	Generate Report.
+2020-07-20 10:07:00.063 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-07-20 10:07:35.757 AM	GenerateReport	Generate Report.
+2020-07-20 10:07:37.315 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-07-20 10:08:04.416 AM	GenerateReport	Generate Report.
+2020-07-20 10:08:05.989 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-07-20 10:08:53.624 AM	GenerateReport	Generate Report.
+2020-07-20 10:08:55.203 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-07-24 09:35:09.508 AM	GenerateReport	Generate Report.
+2020-07-24 09:35:12.737 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-08-03 09:35:10.081 AM	GenerateReport	Generate Report.
+2020-08-03 09:35:12.111 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-08-03 09:35:56.982 AM	GenerateReport	Generate Report.
+2020-08-03 09:35:58.841 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-08-03 09:37:01.032 AM	GenerateReport	Generate Report.
+2020-08-03 09:37:02.893 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-08-03 09:37:41.448 AM	GenerateReport	Generate Report.
+2020-08-03 09:37:43.300 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-08-05 09:29:10.467 AM	GenerateReport	Generate Report.
+2020-08-05 09:29:18.679 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-08-05 09:33:21.947 AM	GenerateReport	Generate Report.
+2020-08-05 09:33:23.669 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-08-27 04:23:23.422 PM	GenerateReport	Generate Report.
+2020-08-27 04:23:25.972 PM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-08-27 04:44:54.320 PM	GenerateReport	Generate Report.
+2020-08-27 04:44:56.377 PM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-08-27 04:45:37.184 PM	GenerateReport	Saving File...\\172.22.10.77\bonehk\Warehouse\HK\Excel\HKWarehouse_20200826.xlsx
+2020-08-27 04:45:49.863 PM	GenerateReport	End True
+2020-08-31 10:25:56.014 AM	dowork	--------Start Warehouse----------
+2020-08-31 10:25:58.315 AM	dowork	Generate HK Warehouse Text File.
+2020-08-31 10:28:33.564 AM	DoExcelWork	Generate HK Excel.
+2020-08-31 10:29:46.097 AM	GenerateReport	Generate Report.
+2020-08-31 10:29:50.297 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-08-31 10:30:53.120 AM	GenerateReport	Saving File...c:\junk\HKWarehouse_20200830.xlsx
+2020-08-31 10:31:11.886 AM	GenerateReport	End True
+2020-08-31 03:11:06.239 PM	dowork	--------Start Warehouse----------
+2020-08-31 03:11:08.278 PM	dowork	Generate HK Warehouse Text File.
+2020-08-31 03:14:19.029 PM	dowork	--------Start Warehouse----------
+2020-08-31 03:14:20.702 PM	dowork	Generate HK Warehouse Text File.
+2020-08-31 03:15:53.774 PM	DoExcelWork	Generate HK Excel.
+2020-08-31 03:17:05.519 PM	GenerateReport	Generate Report.
+2020-08-31 03:17:09.350 PM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-08-31 03:17:54.580 PM	GenerateReport	Saving File...c:\junk\HKWarehouse_20200830.xlsx
+2020-08-31 03:18:08.188 PM	GenerateReport	End True
+2020-08-31 03:18:43.548 PM	DoExcelWork	SendTo: dwijanto@yahoo.com;dlie@groupeseb.com, SendTo Name: All, StatusName: c:\junk\HKWarehouse_20200830.xlsx
+2020-08-31 03:25:30.844 PM	send	Create SMTPClient
+2020-08-31 03:25:35.953 PM	send	SMTP Send
+2020-08-31 03:25:41.369 PM	send	SMTP Send Done
+2020-08-31 03:25:49.229 PM	DoExcelWork	Email Sent
+2020-09-28 10:12:29.701 AM	dowork	--------Start Warehouse----------
+2020-09-28 10:12:29.716 AM	dowork	Generate HK Warehouse Text File.
+2020-09-28 10:19:26.789 AM	GenerateReport	Generate Report.
+2020-09-28 10:20:38.708 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-09-28 10:20:52.876 AM	GenerateReport	Saving File...\\172.22.10.77\bonehk\Warehouse\HK\Excel\HKWarehouse_20200925.xlsx
+2020-09-28 10:20:55.936 AM	GenerateReport	End True
+2020-09-28 10:27:47.901 AM	GenerateReport	Generate Report.
+2020-09-28 10:29:39.778 AM	GenerateReport	Generate Report.
+2020-09-28 10:29:41.965 AM	GenerateReport	Open Template : C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\warehouse.xltx
+2020-09-28 10:29:53.315 AM	GenerateReport	Saving File...\\172.22.10.77\bonehk\Warehouse\HK\Excel\HKWarehouse_20200925.xlsx
+2020-09-28 10:29:57.923 AM	GenerateReport	End True
+2020-09-30 10:34:15.789 AM	doWork	--------Start----------
+2020-09-30 10:34:37.578 AM	doWork	Generate HK Report.
+2020-09-30 10:34:52.332 AM	doWork	SalesExtract
+2020-09-30 10:35:11.696 AM	doWork	Generate Taiwan Report.
+2020-09-30 10:46:52.323 AM	doWork	General ODBC Error
+2020-09-30 10:47:28.375 AM	doWork	--------End------------
+2020-10-05 11:18:30.858 AM	doWork	--------Start----------
+2020-10-05 11:18:45.102 AM	doWork	SalesReportHK001
+2020-10-05 11:18:48.767 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-10-05 11:18:51.941 AM	GenerateReport	SalesReportHK - Try
+2020-10-05 11:19:06.274 AM	GenerateReport	SalesReportHK - After Create Object
+2020-10-05 11:19:06.359 AM	GenerateReport	User :AS\dlie
+2020-10-05 11:19:08.809 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-10-05 11:19:10.713 AM	GenerateReport	Can Open
+2020-10-05 11:24:51.170 AM	doWork	SalesReportHK
+2020-10-05 11:24:55.050 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-10-05 11:24:56.403 AM	GenerateReport	SalesReportHK - Try
+2020-10-05 11:24:58.976 AM	GenerateReport	SalesReportHK - After Create Object
+2020-10-05 11:24:58.977 AM	GenerateReport	User :AS\dlie
+2020-10-05 11:24:58.981 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-10-05 11:24:59.251 AM	GenerateReport	Can Open
+2020-11-06 05:45:40.768 PM	doWork	--------Start----------
+2020-11-06 05:45:54.572 PM	GenerateReport	SalesReportHK - GenerateReport
+2020-11-06 05:45:56.741 PM	GenerateReport	SalesReportHK - Try
+2020-11-06 05:46:07.263 PM	GenerateReport	SalesReportHK - After Create Object
+2020-11-06 05:46:07.266 PM	GenerateReport	User :AS\dlie
+2020-11-06 05:46:07.272 PM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-11-06 05:46:07.720 PM	GenerateReport	Can Open
+2020-11-09 09:29:02.037 AM	doWork	--------Start----------
+2020-11-09 09:29:09.302 AM	doWork	Generate HK Report.
+2020-11-09 09:29:16.133 AM	doWork	SalesExtract
+2020-11-09 09:29:20.317 AM	doWork	SalesReportHK001
+2020-11-09 09:29:23.551 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-11-09 09:29:27.787 AM	GenerateReport	SalesReportHK - Try
+2020-11-09 09:29:31.480 AM	GenerateReport	SalesReportHK - After Create Object
+2020-11-09 09:29:31.484 AM	GenerateReport	User :AS\dlie
+2020-11-09 09:29:31.490 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-11-09 09:29:31.847 AM	GenerateReport	Can Open
+2020-11-09 09:58:20.968 AM	doWork	--------Start----------
+2020-11-09 09:58:25.031 AM	doWork	Generate HK Report.
+2020-11-09 09:58:33.457 AM	doWork	SalesReportHK001
+2020-11-09 09:58:40.263 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-11-09 09:58:40.914 AM	GenerateReport	SalesReportHK - Try
+2020-11-09 09:58:44.660 AM	GenerateReport	SalesReportHK - After Create Object
+2020-11-09 09:58:44.664 AM	GenerateReport	User :AS\dlie
+2020-11-09 09:58:44.669 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-11-09 09:58:45.104 AM	GenerateReport	Can Open
+2020-11-09 10:04:12.689 AM	doWork	--------Start----------
+2020-11-09 10:04:14.848 AM	doWork	Generate HK Report.
+2020-11-09 10:04:14.858 AM	doWork	SalesExtract
+2020-11-09 10:04:32.214 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-11-09 10:04:32.975 AM	GenerateReport	SalesReportHK - Try
+2020-11-09 10:04:35.459 AM	GenerateReport	SalesReportHK - After Create Object
+2020-11-09 10:04:35.463 AM	GenerateReport	User :AS\dlie
+2020-11-09 10:04:35.468 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-11-09 10:04:35.948 AM	GenerateReport	Can Open
+2020-11-09 10:04:57.830 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-11-09 10:04:58.494 AM	GenerateReport	SalesReportHK - Try
+2020-11-09 10:05:01.111 AM	GenerateReport	SalesReportHK - After Create Object
+2020-11-09 10:05:01.114 AM	GenerateReport	User :AS\dlie
+2020-11-09 10:05:01.120 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-11-09 10:05:01.410 AM	GenerateReport	Can Open
+2020-11-09 10:15:23.457 AM	doWork	--------Start----------
+2020-11-09 10:15:33.994 AM	doWork	SalesReportHK001
+2020-11-09 10:15:36.611 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-11-09 10:15:37.667 AM	GenerateReport	SalesReportHK - Try
+2020-11-09 10:15:40.113 AM	GenerateReport	SalesReportHK - After Create Object
+2020-11-09 10:15:40.118 AM	GenerateReport	User :AS\dlie
+2020-11-09 10:15:40.124 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-11-09 10:15:40.503 AM	GenerateReport	Can Open
+2020-11-09 10:24:04.879 AM	doWork	--------Start----------
+2020-11-09 10:24:13.651 AM	doWork	SalesReportHK
+2020-11-09 10:24:17.273 AM	GenerateReport	SalesReportHK - GenerateReport
+2020-11-09 10:24:18.437 AM	GenerateReport	SalesReportHK - Try
+2020-11-09 10:24:21.079 AM	GenerateReport	SalesReportHK - After Create Object
+2020-11-09 10:24:21.083 AM	GenerateReport	User :AS\dlie
+2020-11-09 10:24:21.089 AM	GenerateReport	File Exist: C:\Users\dlie\Documents\GitHub\BOne\BusinessOne\bin\x86\Debug\templates\ExcelTemplateNew.xltx True
+2020-11-09 10:24:21.400 AM	GenerateReport	Can Open

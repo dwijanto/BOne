@@ -40,6 +40,7 @@
         AdminToolStripMenuItem.Visible = User.can("View-Admin") 'identity.isAdmin
         UserToolStripMenuItem.Visible = User.can("createUser")
         QueryToolStripMenuItem.Visible = User.can("View-HKReport")
+        HKWarehouseToolStripMenuItem.Visible = User.can("View-HKReport")
         QueryTaiwanToolStripMenuItem.Visible = User.can("View-TWReport")
         MLATWToolStripMenuItem.Visible = User.can("View-TWReport")
         MasterToolStripMenuItem.Visible = User.can("View-TWReport") Or User.can("View-HKReport")
@@ -118,7 +119,22 @@
     End Sub
 
     Private Sub TWInvoiceToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TWInvoiceToolStripMenuItem.Click
-        Dim myform = FormTaxInvoice
-        myform.ShowDialog()
+        Dim myform = New FormTaxInvoice
+        myform.Show()
+    End Sub
+
+    Private Sub HKWarehouseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HKWarehouseToolStripMenuItem.Click
+        Dim myform = New FormHKWarehouse
+        myform.Show()
+    End Sub
+
+    Private Sub TWWarehouseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TWWarehouseToolStripMenuItem.Click
+        Dim myform = New FormTWWarehouse
+        myform.Show()
+    End Sub
+
+    Private Sub AutoReportWarehouseToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AutoReportWarehouseToolStripMenuItem1.Click
+        Dim myform As New FormAutoGenerateWarehouse
+        myform.Show()
     End Sub
 End Class

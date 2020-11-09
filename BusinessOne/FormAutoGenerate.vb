@@ -31,7 +31,7 @@ Public Class FormAutoGenerate
 
     Sub doWork()
         Logger.log("--------Start----------")
-
+        Dim mycheck As Boolean = True
         ProgressReport(6, "Start")
         'Get Last Running Task
         Dim lastUpdate As Date = dbAdapter1.getLastImportDate
@@ -47,6 +47,7 @@ Public Class FormAutoGenerate
         ProgressReport(2, "1/15")
         Logger.log("SalesExtract")
         If Not myHKReport.SalesExtract Then
+            mycheck = False
             Logger.log(myHKReport.ErrorMessage)
         End If
 
@@ -198,8 +199,10 @@ Public Class FormAutoGenerate
         Logger.log("Generate Taiwan Report.")
         'Email For CC Status Completed
         Dim myTWReport = New TWReport(Me)
-        myTWReport.startdate = lastUpdate.AddDays(1) 'start date after last import date
+        'myTWReport.startdate = lastUpdate.AddDays(1) 'start date after last import date
+        myTWReport.startdate = lastUpdate.AddDays(-30) 'start date after last import date
         If Not myTWReport.SalesExtract Then
+            mycheck = False
             Logger.log(myTWReport.ErrorMessage)
         End If
 
@@ -219,8 +222,9 @@ Public Class FormAutoGenerate
         End If
 
         'Update LastRunning Task
-
-        dbAdapter1.setLastImportDate(Today.Date.AddDays(-1))
+        If mycheck Then
+            dbAdapter1.setLastImportDate(Today.Date.AddDays(-1))
+        End If
         ProgressReport(2, "Done.")
         Logger.log("--------End------------")
 
